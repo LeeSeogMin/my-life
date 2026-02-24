@@ -72,18 +72,17 @@ export default function FrameworkPage() {
 
                     <ArrowDown className="w-6 h-6 text-gray-300 my-2" />
 
-                    {/* Step 2: Decision making */}
-                    <div className="w-full flex items-center justify-between bg-gray-900 border border-gray-800 rounded-lg p-5 shadow-md z-10 transition-transform hover:scale-[1.02]">
+                    <div className="w-full flex items-center justify-between bg-slate-50 border border-slate-200 rounded-lg p-5 shadow-sm z-10 transition-transform hover:scale-[1.02]">
                         <div className="flex items-center gap-4">
-                            <div className="p-3 bg-gray-800 rounded-full text-gray-100">
+                            <div className="p-3 bg-slate-200 rounded-full text-slate-700">
                                 <Cpu className="w-6 h-6" />
                             </div>
                             <div>
-                                <h3 className="text-lg font-bold text-white font-mono">Decision(t) = f(State(t))</h3>
-                                <p className="text-sm text-gray-400 font-medium">상태값을 바탕으로 한 동태적 의사결정 규칙 연산</p>
+                                <h3 className="text-lg font-bold text-slate-900 font-mono">Decision(t) = f(State(t))</h3>
+                                <p className="text-sm text-slate-600 font-medium">상태값을 바탕으로 한 동태적 의사결정 규칙 연산</p>
                             </div>
                         </div>
-                        <span className="text-xs font-bold text-gray-500 uppercase tracking-widest bg-gray-800 px-2 py-1 rounded">Computation</span>
+                        <span className="text-xs font-bold text-slate-400 uppercase tracking-widest bg-slate-200 px-2 py-1 rounded">Computation</span>
                     </div>
 
                     <ArrowDown className="w-6 h-6 text-gray-300 my-2" />
