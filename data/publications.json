@@ -1,5 +1,23 @@
 [
     {
+        "id": "J-007",
+        "title": "XAI-based Data Quality Diagnosis Framework for Machine Learning Pipelines",
+        "author": "이석민 (Seog-Min Lee)",
+        "journal": "Journal of Information Processing Systems (SCOPUS)",
+        "volume_issue": "Under Review",
+        "year": "2026",
+        "filename": ""
+    },
+    {
+        "id": "J-006",
+        "title": "Sanctions Leakage Dynamics: Product-Level Evidence on Trade Restrictions and Third-Country Rerouting",
+        "author": "이석민 (Seog-Min Lee)",
+        "journal": "Journal of International Economics (SSCI)",
+        "volume_issue": "Under Review",
+        "year": "2026",
+        "filename": ""
+    },
+    {
         "id": "J-001",
         "title": "국민청원 텍스트의 언어적 특성이 정책의제화에 미치는 영향: 기계학습 기반 예측 및 인과분석",
         "author": "이석민 (Seog-Min Lee)",
@@ -20,7 +38,7 @@
     {
         "id": "J-003",
         "title": "Variable-Dependent Cultural Alignment in LLM Survey Simulation: Comparing Indigenous and Global Models",
-        "author": "Seog-Min Lee",
+        "author": "이석민 (Seog-Min Lee)",
         "journal": "International Journal of Internet, Broadcasting and Communication",
         "volume_issue": "Vol.18 No.1",
         "year": "2026",
@@ -39,7 +57,7 @@
         "id": "J-005",
         "title": "Semantic-based Evaluation Framework for Topic Models: Integrated Deep Learning and LLM Validation",
         "author": "이석민 (Seog-Min Lee)",
-        "journal": "Journal of Information Processing Systems (JIPS)",
+        "journal": "Journal of Information Processing Systems (JIPS, SCOPUS)",
         "volume_issue": "",
         "year": "2026",
         "filename": "JIPS_11page.pdf"
