@@ -11,7 +11,7 @@ export default function WritingPage() {
     return (
         <div className="space-y-16">
             <header className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">글쓰기 및 인사이트 (Writing & Insight)</h1>
+                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">칼럼 및 인사이트 (Column & Insight)</h1>
                 <p className="text-xl text-gray-600 font-light max-w-2xl">
                     PSDS 프레임워크를 기반으로 한 공공 의사결정 시스템의 개념적 확장, 아키텍처 분석, 에세이 모음입니다.
                 </p>
@@ -23,8 +23,8 @@ export default function WritingPage() {
                         <div key={post.slug} className="relative">
                             <div
                                 className={`absolute top-2 -left-8 w-4 h-4 rounded-full border-2 ${index % 2 === 0
-                                        ? 'bg-blue-100 border-blue-500'
-                                        : 'bg-gray-100 border-gray-400'
+                                    ? 'bg-blue-100 border-blue-500'
+                                    : 'bg-gray-100 border-gray-400'
                                     }`}
                             />
                             <h2 className="text-xl font-bold text-gray-900 mb-2">
@@ -40,7 +40,7 @@ export default function WritingPage() {
                                 href={`/writing/${post.slug}`}
                                 className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors border-b border-transparent hover:border-blue-800"
                             >
-                                글 읽기 &rarr;
+                                자세히 보기 &rarr;
                             </Link>
                         </div>
                     ))}
