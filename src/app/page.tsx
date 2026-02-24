@@ -1,132 +1,266 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen, BarChart3, Brain, Code2, GraduationCap, Mic } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="space-y-24 pb-12">
-      {/* Hero Section */}
-      <section className="pt-16 lg:pt-24 pb-8">
-        {/* Identity */}
-        <div className="text-sm font-medium tracking-widest text-gray-500 mb-6 uppercase">
-          Decision Systems Lab
+    <div className="space-y-20 pb-12">
+      {/* Hero Section — "누구인가"를 명확하게 */}
+      <section className="pt-16 lg:pt-20 pb-4">
+        {/* 이름과 소속 */}
+        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-8">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
+            이석민
+          </h1>
+          <span className="text-lg text-gray-500 font-light">
+            한신대학교 공공인재빅데이터융합학부
+          </span>
         </div>
 
-        {/* Main Tagline */}
-        <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] font-semibold leading-tight text-gray-900 mb-8 tracking-tight">
-          인문사회과학과 AI·Software를 융합하여<br className="hidden sm:block" />
-          공공 의사결정 시스템을 연구하고 구현합니다
-        </h1>
-
-        {/* Subline */}
-        <div className="text-lg sm:text-xl text-gray-600 mb-10 font-light">
-          Adaptive Decision Systems for Public Strategy and Policy
+        {/* 두 축을 병렬로 — 핵심 역량 한눈에 */}
+        <div className="flex flex-wrap gap-3 mb-8">
+          {[
+            "정책 기획",
+            "정책 분석·평가",
+            "데이터 분석",
+            "딥러닝·NLP",
+            "AI 시스템 개발",
+            "웹 개발",
+          ].map((tag) => (
+            <span
+              key={tag}
+              className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm font-medium rounded-md"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
 
-        {/* Description */}
-        <p className="text-lg text-gray-700 leading-relaxed max-w-3xl font-normal">
-          인문사회과학적 이해를 기반으로, 데이터, 딥러닝, 그리고 Software 기술을 활용하여
-          공공 정책과 전략적 의사결정 시스템을 연구합니다.<br className="hidden sm:block" />
-          정책을 개별 개입이 아니라, 데이터와 AI를 통해 지속적으로 적응하는 의사결정 시스템으로
-          정의하고, 이를 분석·구현하는 연구와 교육을 수행합니다.
+        {/* 한 줄 소개 */}
+        <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl">
+          정책학·행정학의 이론적 기반 위에 데이터 분석, 딥러닝, AI 시스템 개발 역량을 결합하여
+          공공 정책의 기획부터 평가까지 전 과정을 연구하고 구현합니다.
         </p>
 
-        {/* CTA */}
-        <div className="pt-10">
+        {/* 학력 요약 — 신뢰도 확보 */}
+        <p className="text-sm text-gray-500 mt-4 leading-relaxed max-w-3xl">
+          서울대학교 인류학(학사) → 의회정치(석사) → 과학기술정책(박사) · 통계학·계량경제학(박사후 과정)
+        </p>
+      </section>
+
+      {/* 할 수 있는 일 — 구체적 역량 카드 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
+        <header>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">What I Do</h2>
+          <p className="text-2xl font-semibold text-gray-900">전문 영역</p>
+        </header>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            {
+              icon: <BarChart3 className="w-5 h-5" />,
+              title: "정책 기획·분석·평가",
+              desc: "정책 문제 구조화, 성과 논리 설계, 데이터 기반 정책 효과 분석 및 평가 체계 구축",
+              keywords: ["정책분석", "성과평가", "기획"],
+            },
+            {
+              icon: <Brain className="w-5 h-5" />,
+              title: "AI·딥러닝 응용 연구",
+              desc: "자연어처리(NLP), 영상분석(geoAI), 강화학습 등 딥러닝 기법의 공공 정책 적용",
+              keywords: ["NLP", "geoAI", "강화학습"],
+            },
+            {
+              icon: <Code2 className="w-5 h-5" />,
+              title: "AI 시스템 설계·개발",
+              desc: "정책 의사결정 지원 시스템, AI 파이프라인, 웹 기반 분석 플랫폼 설계 및 구현",
+              keywords: ["LLMOps", "파이프라인", "웹 개발"],
+            },
+            {
+              icon: <BarChart3 className="w-5 h-5" />,
+              title: "데이터 분석·시각화",
+              desc: "공공 데이터 수집·정제·분석, 통계 모델링, 인과추론, 대시보드 및 시각화 구축",
+              keywords: ["통계분석", "인과추론", "시각화"],
+            },
+            {
+              icon: <GraduationCap className="w-5 h-5" />,
+              title: "교육·강의",
+              desc: "딥러닝, 데이터분석, 정책분석, 웹프로그래밍, AI 에이전트 등 학부·대학원 강의",
+              keywords: ["학부 강의", "실습 중심"],
+            },
+            {
+              icon: <Mic className="w-5 h-5" />,
+              title: "특강·자문",
+              desc: "공공기관·지자체 대상 AI 활용, 데이터 기반 정책, 디지털 전환 관련 특강 및 자문",
+              keywords: ["공무원 특강", "자문", "컨설팅"],
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3"
+            >
+              <div className="flex items-center gap-3">
+                <div className="text-gray-500">{item.icon}</div>
+                <h3 className="font-semibold text-gray-900 text-base">{item.title}</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {item.keywords.map((kw) => (
+                  <span
+                    key={kw}
+                    className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded"
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 해온 일 — 대표 프로젝트 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
+        <header>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Key Projects</h2>
+          <p className="text-2xl font-semibold text-gray-900">주요 연구·개발 실적</p>
+        </header>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-6 bg-white border border-gray-200 rounded-lg space-y-3">
+            <div className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-wider">
+              <span className="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">AI 개발</span>
+              <span className="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">공공 보건</span>
+            </div>
+            <h3 className="font-bold text-gray-900 text-lg">AI 기반 시니어 정신건강 진단 앱</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              한신대학교 소프트웨어중심대학사업단 프로젝트. 학부생과 함께 시니어의 정신건강을 선제적으로 진단·관리하는 AI 소프트웨어를 개발.
+            </p>
+            <p className="text-xs text-gray-400">2025. 05 – 2025. 09 · 한신대 SW중심대학사업단</p>
+          </div>
+
+          <div className="p-6 bg-white border border-gray-200 rounded-lg space-y-3">
+            <div className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-wider">
+              <span className="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded">Forecasting</span>
+              <span className="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded">국제관계</span>
+            </div>
+            <h3 className="font-bold text-gray-900 text-lg">AI 기반 국제관계 통합 분석 파이프라인</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              동아시아 국제관계 변동이 국내에 미치는 영향을 분석하는 AI 파이프라인. LLM Router 패턴과 인과추론 모듈을 결합.
+            </p>
+            <p className="text-xs text-gray-400">진행 중</p>
+          </div>
+
+          <div className="p-6 bg-white border border-gray-200 rounded-lg space-y-3">
+            <div className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-wider">
+              <span className="bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded">Decision Support</span>
+              <span className="bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded">Digital Twin</span>
+            </div>
+            <h3 className="font-bold text-gray-900 text-lg">지능형 정책 의사결정 지원 시스템</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              강화학습, 디지털 트윈, Causal ML을 통합한 계산사회과학 기반 정책 지원 체계. 정책 생애주기 전반의 지능화를 목표.
+            </p>
+            <p className="text-xs text-gray-400">진행 중</p>
+          </div>
+        </div>
+
+        <div className="pt-2">
           <Link
-            href="/framework"
-            className="inline-flex items-center gap-2 border border-gray-300 bg-white text-gray-900 px-6 py-3 rounded-md font-medium hover:bg-gray-50 transition-all hover:border-gray-400 text-sm"
+            href="/research"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
-            Explore PSDS Framework
-            <ArrowRight className="w-4 h-4 text-gray-500" />
+            전체 연구 실적 보기
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>
 
-      {/* Researcher Bio Section */}
-      <section className="space-y-12 pt-16 border-t border-gray-100">
+      {/* 교육 영역 간략 소개 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
         <header>
-          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-4">Principal Investigator</h2>
-          <p className="text-2xl font-semibold text-gray-900">
-            이석민은 공공 정책과 전략적 의사결정 시스템을 연구하는 전문가이다.
-          </p>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Teaching</h2>
+          <p className="text-2xl font-semibold text-gray-900">강의 영역</p>
         </header>
 
-        <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed font-normal space-y-6">
-          <p>
-            서울대학교에서 인류학(학부), 의회정치(석사), 과학기술정책(박사)을 수학하였으며, 박사후 과정에서 통계학과 계량경제학을 연구하였다. 인류학적 관찰에서 출발하여 정치학과 정책학의 이론적 토대를 거쳐, 계량경제학과 통계학의 방법론적 엄밀성을 습득하였으며, 최근에는 딥러닝과 생성형 AI를 정책 의사결정에 적용하는 연구를 수행하고 있다.
-          </p>
-          <p>
-            수원대학교 행정학과에서 빅데이터 분석과 정책 분석 방법론을 연구하였으며, 현재 한신대학교 공공인재빅데이터융합학부에서 AI 기반 정책 분석, 딥러닝 응용, 그리고 공공 전략 및 정책 의사결정 시스템에 대한 연구를 진행하고 있다.
-          </p>
-          <p>
-            그의 연구는 개별 정책의 효과 분석에 머무르지 않고, 정책을 생성하고 조정하는 의사결정 시스템의 구조 자체를 연구하는 데 초점을 둔다. 특히 데이터, 평가, 의사결정이 시간 속에서 지속적으로 통합되는 적응형 의사결정 시스템(adaptive decision system)의 구조를 탐구하고 있으며, 이를 위해 PSDS Framework (Public Strategy and Decision System Framework)를 제시하였다.
-          </p>
-          <p>
-            이 Framework는 공공 정책을 고정된 개입이 아니라, 상태 변수(State Variable), 의사결정 변수(Decision Variable), 의사결정 규칙(Decision Rule)에 기반하여 지속적으로 진화하는 의사결정 시스템의 산출물로 이해하는 구조를 제시한다.
-          </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            { icon: <BookOpen className="w-4 h-4" />, area: "정책 분석·기획·평가", courses: "정책분석과 기획, 정책분석평가론" },
+            { icon: <Brain className="w-4 h-4" />, area: "딥러닝·AI", courses: "딥러닝자연어처리, 딥러닝 영상데이터분석(geoAI)" },
+            { icon: <Code2 className="w-4 h-4" />, area: "개발·엔지니어링", courses: "웹프로그래밍, LLMOPs & 데이터 엔지니어링, AI 에이전트 캡스톤" },
+            { icon: <BarChart3 className="w-4 h-4" />, area: "데이터 분석", courses: "데이터분석과 시각화" },
+          ].map((item, idx) => (
+            <div key={idx} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+              <div className="text-gray-400 mt-0.5">{item.icon}</div>
+              <div>
+                <p className="font-medium text-gray-900 text-sm">{item.area}</p>
+                <p className="text-xs text-gray-500 mt-1">{item.courses}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 pt-8">
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold tracking-widest text-gray-400 uppercase">연구 관심 분야 (Research Interests)</h3>
-            <ul className="space-y-3 list-none pl-0">
-              {[
-                "공공 전략 및 정책 의사결정 시스템",
-                "Adaptive Decision System Architecture",
-                "AI 기반 정책 분석 및 딥러닝 응용",
-                "데이터 기반 정책 설계 및 평가",
-                "정책 시스템의 구조적 분석"
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-gray-700">
-                  <span className="text-gray-300 mt-1">•</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold tracking-widest text-gray-400 uppercase">전환적 연구 지향점 (Direction)</h3>
-            <p className="text-lg font-medium text-gray-800 leading-relaxed italic border-l-2 border-gray-200 pl-4 py-1">
-              현재 그의 연구는 Evidence-based Policy를 넘어, AI 기반 Adaptive Decision System으로의 전환을 위한 이론 및 구조 기반을 구축하는 데 초점을 두고 있다.
-            </p>
-          </div>
+        <div>
+          <Link
+            href="/lectures"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            강의 상세 보기
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 
-      {/* Philosophy / Paradigm Shift Section */}
-      <section className="space-y-12 pt-16 border-t border-gray-100">
+      {/* 연구 철학 — 하단으로 이동, 간결하게 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
         <header>
-          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-4">Research Philosophy</h2>
-          <p className="text-2xl font-semibold text-gray-900">패러다임 전환 (Paradigm Shift)</p>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Research Philosophy</h2>
+          <p className="text-2xl font-semibold text-gray-900">연구 방향</p>
         </header>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-4">
-            <h3 className="text-sm font-medium text-gray-500 uppercase tracking-widest">과거 모델 (Traditional Model)</h3>
-            <div className="bg-gray-50 p-6 rounded border border-gray-100 space-y-3">
-              <strong className="block text-gray-900 border-b border-gray-200 pb-3 mb-3">증거 기반 정책 (Evidence-based Policy)</strong>
-              <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mb-4">Discrete & Sequential</p>
-              <ul className="text-sm text-gray-600 space-y-3">
-                <li className="flex items-start gap-2"><span className="text-gray-300">•</span> 사후 평가 위주 (Retrospective)</li>
-                <li className="flex items-start gap-2"><span className="text-gray-300">•</span> 정적 정책 구조 (Static structure)</li>
-                <li className="flex items-start gap-2"><span className="text-gray-300">•</span> 제한된 적응성 (Low adaptability)</li>
-              </ul>
-            </div>
-          </div>
+        <div className="max-w-3xl space-y-4">
+          <p className="text-gray-700 leading-relaxed">
+            정책을 일회적 개입이 아니라 <strong className="text-gray-900">데이터와 AI를 통해 지속적으로 적응하는
+            의사결정 시스템</strong>으로 정의한다. 이를 위해 PSDS Framework(Public Strategy and Decision System
+            Framework)를 제시하고, 정책 시스템의 구조 자체를 설계·분석하는 연구를 수행하고 있다.
+          </p>
 
-          <div className="space-y-4">
-            <h3 className="text-sm font-medium text-gray-800 uppercase tracking-widest">새로운 모델 (New Model)</h3>
-            <div className="bg-white p-6 rounded border border-gray-200 space-y-3 shadow-sm">
-              <strong className="block text-gray-900 border-b border-gray-200 pb-3 mb-3">적응형 의사결정 시스템 (Adaptive)</strong>
-              <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mb-4">Continuous & Adaptive</p>
-              <ul className="text-sm text-gray-700 space-y-3">
-                <li className="flex items-start gap-2"><span className="text-gray-300">•</span> 실시간 데이터 통합 (Real-time)</li>
-                <li className="flex items-start gap-2"><span className="text-gray-300">•</span> 지속적 학습 (Continuous learning)</li>
-                <li className="flex items-start gap-2"><span className="text-gray-300">•</span> 시스템 주도 진화 (System-driven)</li>
-              </ul>
+          <div className="grid sm:grid-cols-2 gap-4 pt-4">
+            <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">기존 접근</p>
+              <p className="text-sm font-medium text-gray-700">증거 기반 정책 (Evidence-based Policy)</p>
+              <p className="text-xs text-gray-500 mt-1">사후 평가 · 정적 구조 · 제한된 적응성</p>
+            </div>
+            <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">연구 지향</p>
+              <p className="text-sm font-medium text-gray-900">적응형 의사결정 시스템 (Adaptive Decision System)</p>
+              <p className="text-xs text-gray-500 mt-1">실시간 데이터 · 지속적 학습 · 시스템 주도 진화</p>
             </div>
           </div>
+        </div>
+
+        <div className="pt-2">
+          <Link
+            href="/framework"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            PSDS Framework 상세 보기
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
+      {/* 연락처 / CTA */}
+      <section className="pt-12 border-t border-gray-200">
+        <div className="bg-gray-50 rounded-lg p-8 space-y-4">
+          <h2 className="text-xl font-semibold text-gray-900">연구 협업·특강·자문 문의</h2>
+          <p className="text-sm text-gray-600">
+            연구과제 협업, 특강 의뢰, AI·데이터 기반 정책 자문 등 문의를 환영합니다.
+          </p>
+          <a
+            href="mailto:newmind68@hs.ac.kr"
+            className="inline-flex items-center gap-2 border border-gray-300 bg-white text-gray-900 px-5 py-2.5 rounded-md font-medium hover:bg-gray-50 transition-all hover:border-gray-400 text-sm"
+          >
+            newmind68@hs.ac.kr
+            <ArrowRight className="w-4 h-4 text-gray-500" />
+          </a>
         </div>
       </section>
     </div>
