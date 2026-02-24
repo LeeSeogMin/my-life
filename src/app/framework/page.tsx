@@ -1,3 +1,5 @@
+import { ArrowDown, Database, Cpu, Activity, RefreshCw } from "lucide-react";
+
 export const metadata = {
     title: "Framework - PSDS",
 };
@@ -13,7 +15,7 @@ export default function FrameworkPage() {
             </header>
 
             <section className="space-y-6">
-                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">프레임워크 구조 (Framework Layers)</h2>
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">프레임워크 5대 구조 (Framework Layers)</h2>
                 <div className="space-y-8 pl-4 border-l border-gray-200">
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
@@ -43,18 +45,84 @@ export default function FrameworkPage() {
                 </div>
             </section>
 
-            <section className="space-y-6 bg-gray-50 border border-gray-200 rounded-lg p-8">
-                <h2 className="text-xl font-bold border-b border-gray-300 pb-2">시스템 작동 구조 (Operational Layer Structure)</h2>
-                <div className="font-mono text-sm bg-gray-800 text-gray-100 p-6 rounded-md">
-                    <p>State(t)  <span className="text-gray-400 font-sans ml-4">// 시스템 상태 관찰</span></p>
-                    <p className="text-gray-400">   ↓</p>
-                    <p>Decision(t) = f(State(t)) <span className="text-gray-400 font-sans ml-4">// 의사결정 규칙 적용</span></p>
-                    <p className="text-gray-400">   ↓</p>
-                    <p>System response <span className="text-gray-400 font-sans ml-4">// 시스템 반응 및 실행</span></p>
-                    <p className="text-gray-400">   ↓</p>
-                    <p>State(t+1) <span className="text-gray-400 font-sans ml-4">// 변화된 상태 재관찰</span></p>
+            <section className="space-y-8 bg-white border border-gray-200 shadow-sm rounded-xl p-8 relative overflow-hidden">
+                {/* Background purely aesthetic gradient */}
+                <div className="absolute -top-24 -right-24 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-50" />
+
+                <header>
+                    <h2 className="text-2xl font-bold text-gray-900">시스템 작동 구조 (Operational Layer Structure)</h2>
+                    <p className="text-gray-500 mt-2 font-medium">이 연속적인 순환 피드백 루프가 적응형 의사결정 시스템(Adaptive Decision System)의 본질입니다.</p>
+                </header>
+
+                <div className="flex flex-col items-center justify-center py-6 mt-8 relative max-w-2xl mx-auto">
+
+                    {/* Step 1: State(t) */}
+                    <div className="w-full flex items-center justify-between bg-blue-50 border border-blue-200 rounded-lg p-5 shadow-sm z-10 transition-transform hover:scale-[1.02]">
+                        <div className="flex items-center gap-4">
+                            <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                                <Database className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-blue-900 font-mono">State(t)</h3>
+                                <p className="text-sm text-blue-700 font-medium">단기 시스템 상태 관찰 및 데이터 수집</p>
+                            </div>
+                        </div>
+                        <span className="text-xs font-bold text-blue-400 uppercase tracking-widest bg-blue-100 px-2 py-1 rounded">Observation</span>
+                    </div>
+
+                    <ArrowDown className="w-6 h-6 text-gray-300 my-2" />
+
+                    {/* Step 2: Decision making */}
+                    <div className="w-full flex items-center justify-between bg-gray-900 border border-gray-800 rounded-lg p-5 shadow-md z-10 transition-transform hover:scale-[1.02]">
+                        <div className="flex items-center gap-4">
+                            <div className="p-3 bg-gray-800 rounded-full text-gray-100">
+                                <Cpu className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-white font-mono">Decision(t) = f(State(t))</h3>
+                                <p className="text-sm text-gray-400 font-medium">상태값을 바탕으로 한 동태적 의사결정 규칙 연산</p>
+                            </div>
+                        </div>
+                        <span className="text-xs font-bold text-gray-500 uppercase tracking-widest bg-gray-800 px-2 py-1 rounded">Computation</span>
+                    </div>
+
+                    <ArrowDown className="w-6 h-6 text-gray-300 my-2" />
+
+                    {/* Step 3: System response */}
+                    <div className="w-full flex items-center justify-between bg-emerald-50 border border-emerald-200 rounded-lg p-5 shadow-sm z-10 transition-transform hover:scale-[1.02]">
+                        <div className="flex items-center gap-4">
+                            <div className="p-3 bg-emerald-100 rounded-full text-emerald-600">
+                                <Activity className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-emerald-900 font-mono">System response</h3>
+                                <p className="text-sm text-emerald-700 font-medium">결정 실행에 따른 시스템 물리/사회적 반응 촉발</p>
+                            </div>
+                        </div>
+                        <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-100 px-2 py-1 rounded">Action</span>
+                    </div>
+
+                    <ArrowDown className="w-6 h-6 text-gray-300 my-2" />
+
+                    {/* Step 4: State(t+1) */}
+                    <div className="w-full flex items-center justify-between bg-purple-50 border border-purple-200 rounded-lg p-5 shadow-sm z-10 transition-transform hover:scale-[1.02]">
+                        <div className="flex items-center gap-4">
+                            <div className="p-3 bg-purple-100 rounded-full text-purple-600">
+                                <RefreshCw className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-purple-900 font-mono">State(t+1)</h3>
+                                <p className="text-sm text-purple-700 font-medium">변화된 새로운 시스템 상태로 갱신 (리셋 및 반복)</p>
+                            </div>
+                        </div>
+                        <span className="text-xs font-bold text-purple-400 uppercase tracking-widest bg-purple-100 px-2 py-1 rounded">Feedback Update</span>
+                    </div>
+
+                    {/* The Loop Line (visually connecting bottom to top using absolute positioning) */}
+                    <div className="absolute top-14 bottom-14 -left-12 w-20 border-l-2 border-t-2 border-b-2 border-dashed border-gray-300 rounded-l-3xl hidden sm:block opacity-60" />
+                    <div className="absolute top-[80px] -left-[54px] w-3 h-3 border-t-2 border-r-2 border-gray-400 transform rotate-45 hidden sm:block" />
+
                 </div>
-                <p className="text-sm font-medium text-gray-700">이 연속적인 순환 구조가 바로 적응형 의사결정 시스템(Adaptive Decision System)의 본질입니다.</p>
             </section>
         </div>
     );
