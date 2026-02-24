@@ -23,10 +23,10 @@ export default function RootLayout({
               Decision Systems Lab
             </Link>
             <nav className="flex gap-6 text-sm font-medium text-gray-600">
+              <Link href="/" className="hover:text-black transition-colors">Main</Link>
               <Link href="/framework" className="hover:text-black transition-colors">프레임워크</Link>
               <Link href="/research" className="hover:text-black transition-colors">연구</Link>
               <Link href="/writing" className="hover:text-black transition-colors">글쓰기</Link>
-              <Link href="/about" className="hover:text-black transition-colors">Main</Link>
               <Link href="/archive" className="hover:text-black transition-colors">아카이브</Link>
               <Link href="/lectures" className="hover:text-black transition-colors">강의</Link>
             </nav>
