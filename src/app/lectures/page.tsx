@@ -1,6 +1,6 @@
 export const metadata = {
     title: "강의 — 딥러닝, 데이터, 정책분석",
-    description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터분석과 시각화, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+    description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
     openGraph: {
         title: "강의 — 이석민 | 정책 × AI",
         description: "딥러닝, 데이터분석, 정책분석, 웹프로그래밍 등 학부 강의 안내.",
@@ -15,7 +15,7 @@ export default function LecturesPage() {
                 { title: "딥러닝자연어처리 (Deep Learning Natural Language Processing)", desc: "정책 신호 추출을 위한 최신 자연어 처리(NLP) 방법론 연구 및 적용." },
                 { title: "웹프로그래밍 (Web Programming)", desc: "공공 의사결정 시스템을 시각화하고 상호작용할 수 있는 웹 플랫폼 개발." },
                 { title: "정책분석과 기획 (Policy Analysis and Planning)", desc: "정책의 기초 구조 이해 및 전략적 기획 역량 강화." },
-                { title: "데이터분석과 시각화 (Data Analysis and Visualization)", desc: "의사결정을 지원하기 위한 데이터 분석 및 효과적인 시각적 표현 방법론." }
+                { title: "데이터사이언스 (Data Science)", desc: "계량경제학, 인과추론, 머신러닝, 딥러닝을 결합한 데이터 기반 의사결정 방법론." }
             ]
         },
         {

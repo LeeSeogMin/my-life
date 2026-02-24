@@ -76,9 +76,9 @@ export default function Home() {
             },
             {
               icon: <BarChart3 className="w-5 h-5" />,
-              title: "데이터 분석·시각화",
-              desc: "공공 데이터 수집·정제·분석, 통계 모델링, 인과추론, 대시보드 및 시각화 구축",
-              keywords: ["통계분석", "인과추론", "시각화"],
+              title: "데이터사이언스",
+              desc: "계량경제학·인과추론·머신러닝·딥러닝을 결합한 정책 데이터 분석. 인과 데이터사이언스, 데이터사이언스 방법론 저서 발간",
+              keywords: ["계량경제학", "인과추론", "ML/DL"],
             },
             {
               icon: <GraduationCap className="w-5 h-5" />,

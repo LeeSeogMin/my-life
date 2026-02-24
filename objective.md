@@ -68,7 +68,7 @@
 - **딥러닝자연어처리**
 - **웹프로그래밍**
 - **정책분석과 기획**
-- **데이터분석과 시각화**
+- **데이터사이언스**
 
 #### 2학기 (Semester 2) 강의과목
 - **LLMOPs & 데이터 엔지니어링**
@@ -119,7 +119,7 @@
 - 6.5 About
 - 6.6 Archive
 - **6.7 Lectures**
-  - Semester 1: Deep Learning Natural Language Processing, Web Programming, Policy Analysis and Planning, Data Analysis and Visualization
+  - Semester 1: Deep Learning Natural Language Processing, Web Programming, Policy Analysis and Planning, Data Science
   - Semester 2: LLMOPs & Data Engineering, Deep Learning Image Data Analysis (geoAI), AI Agent Capstone, Policy Analysis and Evaluation Theory
 
 ## 7. Next.js Implementation Specification (Canonical)
