@@ -27,7 +27,7 @@ export default function RootLayout({
               <Link href="/framework" className="hover:text-black transition-colors">PSDS</Link>
               <Link href="/research" className="hover:text-black transition-colors">연구</Link>
               <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
-              <Link href="/archive" className="hover:text-black transition-colors">아카이브</Link>
+              <Link href="/archive" className="hover:text-black transition-colors">저서/논문</Link>
               <Link href="/lectures" className="hover:text-black transition-colors">강의</Link>
             </nav>
           </div>
