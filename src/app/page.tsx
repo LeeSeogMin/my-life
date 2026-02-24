@@ -7,7 +7,6 @@ export default function Home() {
       {/* Bio Section (Main) */}
       <section className="space-y-8">
         <header className="space-y-4">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b border-gray-900 pb-4">Researcher</h1>
           <p className="text-2xl font-bold text-gray-900">
             이석민은 공공 정책과 전략적 의사결정 시스템을 연구하는 연구자이다.
           </p>
