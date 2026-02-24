@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* 학력 요약 — 신뢰도 확보 */}
         <p className="text-sm text-gray-500 mt-4 leading-relaxed max-w-3xl">
-          서울대학교 인류학(학사) → 의회정치(석사) → 과학기술정책(박사) · 통계학·계량경제학(박사후 과정)
+          서울대학교 인류학(학사) → 의회정치(석사) → 과학기술정책(박사) · 통계학·계량경제학(박사후 과정) → 빅데이터 분석 → 인공지능 응용·개발
         </p>
       </section>
 
@@ -88,9 +88,9 @@ export default function Home() {
             },
             {
               icon: <Mic className="w-5 h-5" />,
-              title: "특강·자문",
-              desc: "공공기관·지자체 대상 AI 활용, 데이터 기반 정책, 디지털 전환 관련 특강 및 자문",
-              keywords: ["공무원 특강", "자문", "컨설팅"],
+              title: "자문·컨설팅",
+              desc: "공공기관·지자체 대상 AI 활용, 데이터 기반 정책, 디지털 전환 관련 자문 및 컨설팅",
+              keywords: ["자문", "컨설팅", "정책 자문"],
             },
           ].map((item, idx) => (
             <div
@@ -250,9 +250,9 @@ export default function Home() {
       {/* 연락처 / CTA */}
       <section className="pt-12 border-t border-gray-200">
         <div className="bg-gray-50 rounded-lg p-8 space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900">연구 협업·특강·자문 문의</h2>
+          <h2 className="text-xl font-semibold text-gray-900">연구 협업</h2>
           <p className="text-sm text-gray-600">
-            연구과제 협업, 특강 의뢰, AI·데이터 기반 정책 자문 등 문의를 환영합니다.
+            연구자, 공공기관 종사자, 학생들과의 연구 협업을 환영합니다.
           </p>
           <a
             href="mailto:newmind68@hs.ac.kr"
