@@ -82,24 +82,59 @@ export default function ResearchPage() {
             </section>
 
             {/* Theoretical Paradigms */}
-            <section className="space-y-8 pt-8 border-t border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900">학술적 패러다임 연구 (Academic Focus)</h2>
-                <div className="grid gap-8 md:grid-cols-2">
-                    <div className="space-y-4 p-8 bg-gray-50 rounded-xl border border-gray-100">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2 underline decoration-gray-300 underline-offset-8">
-                            공공 의사결정 아키텍처
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            알고리즘 거버넌스 및 스마트시티 도메인 내부의 구조적 경계, 권한 체계, 그리고 적응형 피드백 루프 작동 방식을 분석합니다.
-                        </p>
+            <section className="space-y-12 pt-12 border-t border-gray-100">
+                <header>
+                    <h2 className="text-2xl font-bold text-gray-900 border-l-4 border-gray-900 pl-3">
+                        학술적 패러다임 연구 (Academic Focus)
+                    </h2>
+                </header>
+
+                {/* Ongoing Research Focus */}
+                <div className="space-y-6">
+                    <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                        현재 진행형 (Ongoing Paradigms)
+                    </h3>
+                    <div className="grid gap-6 md:grid-cols-2">
+                        <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
+                            <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
+                                공공 의사결정 아키텍처
+                            </h4>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                알고리즘 거버넌스 및 스마트시티 도메인 내부의 구조적 경계, 권한 체계, 그리고 적응형 피드백 루프 작동 방식을 분석합니다.
+                            </p>
+                        </div>
+                        <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
+                            <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
+                                AI 지원 의사결정 구조
+                            </h4>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                정책 수명 주기 전반에 걸친 패턴 탐지, 생성적 전략 도입 및 실시간 최적화 모델 적용 연구를 수행합니다.
+                            </p>
+                        </div>
                     </div>
-                    <div className="space-y-4 p-8 bg-gray-50 rounded-xl border border-gray-100">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2 underline decoration-gray-300 underline-offset-8">
-                            AI 지원 의사결정 구조
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                            정책 수명 주기 전반에 걸친 패턴 탐지, 생성적 전략 도입 및 실시간 최적화 모델 적용 연구를 수행합니다.
-                        </p>
+                </div>
+
+                {/* Past Programs */}
+                <div className="space-y-6 pt-4">
+                    <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2 text-opacity-80">
+                        <span className="w-2 h-2 rounded-full bg-gray-400"></span>
+                        과거 진행 프로그램 (Past Programs)
+                    </h3>
+                    <div className="grid gap-6 md:grid-cols-2">
+                        <div className="space-y-3 p-6 bg-white rounded-xl border border-dashed border-gray-200">
+                            <h4 className="text-lg font-bold text-gray-600">
+                                [업데이트 예정]
+                            </h4>
+                            <p className="text-gray-500 text-sm leading-relaxed">
+                                과거 진행되었던 주요 학술 프로그램 및 연구 프로젝트 내역이 이곳에 구조화되어 정리될 예정입니다.
+                            </p>
+                        </div>
+                        <div className="space-y-3 p-6 bg-white rounded-xl border border-dashed border-gray-200 hidden md:block">
+                            <div className="h-full w-full flex items-center justify-center">
+                                <span className="text-gray-300 text-sm font-medium italic">Reserved for archive</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
