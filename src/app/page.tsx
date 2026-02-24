@@ -25,9 +25,9 @@ export default function Home() {
         {/* Description */}
         <p className="text-lg text-gray-700 leading-relaxed max-w-3xl font-normal">
           인문사회과학적 이해를 기반으로, 데이터, 딥러닝, 그리고 Software 기술을 활용하여
-          공공 정책과 전략 의사결정 시스템을 연구합니다.<br className="hidden sm:block" />
+          공공 정책과 전략적 의사결정 시스템을 연구합니다.<br className="hidden sm:block" />
           정책을 개별 개입이 아니라, 데이터와 AI를 통해 지속적으로 적응하는 의사결정 시스템으로
-          이해하고, 이를 분석하고 구현하는 연구와 교육을 수행하고 있습니다.
+          정의하고, 이를 분석·구현하는 연구와 교육을 수행합니다.
         </p>
 
         {/* CTA */}
@@ -47,7 +47,7 @@ export default function Home() {
         <header>
           <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-4">Principal Investigator</h2>
           <p className="text-2xl font-semibold text-gray-900">
-            이석민은 공공 정책과 전략적 의사결정 시스템을 연구하는 연구자이다.
+            이석민은 공공 정책과 전략적 의사결정 시스템을 연구하는 전문가이다.
           </p>
         </header>
 
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-widest text-gray-400 uppercase">전환적 연구 지향점 (Direction)</h3>
             <p className="text-lg font-medium text-gray-800 leading-relaxed italic border-l-2 border-gray-200 pl-4 py-1">
-              현재 그의 연구는 Evidence-based Policy를 넘어, AI 기반 Adaptive Decision System으로의 전환을 위한 이론적 및 구조적 기반을 구축하는 데 초점을 두고 있다.
+              현재 그의 연구는 Evidence-based Policy를 넘어, AI 기반 Adaptive Decision System으로의 전환을 위한 이론 및 구조 기반을 구축하는 데 초점을 두고 있다.
             </p>
           </div>
         </div>
