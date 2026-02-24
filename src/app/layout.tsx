@@ -20,7 +20,7 @@ export default function RootLayout({
         <header className="border-b border-gray-200 bg-white sticky top-0 z-10 w-full">
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-600 transition-colors">
-              이석민 (Seog-Min Lee) / PSDS
+              Decision Systems Lab
             </Link>
             <nav className="flex gap-6 text-sm font-medium text-gray-600">
               <Link href="/framework" className="hover:text-black transition-colors">프레임워크</Link>

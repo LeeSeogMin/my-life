@@ -1,8 +1,8 @@
 [
     {
         "id": "J-001",
-        "title": "The Impact of Linguistic Features of National Petitions on Policy Agenda-Setting: A Machine Learning-Based Prediction and Causal Analysis",
-        "author": "Seog-Min Lee",
+        "title": "국민청원 텍스트의 언어적 특성이 정책의제화에 미치는 영향: 기계학습 기반 예측 및 인과분석",
+        "author": "이석민 (Seog-Min Lee)",
         "journal": "융합사회연구소",
         "volume_issue": "Vol.19, No. 4",
         "year": "2026",
@@ -28,9 +28,9 @@
     },
     {
         "id": "J-004",
-        "title": "AMICE: Doubly Robust Causal Inference Pipeline",
-        "author": "Seog-Min Lee",
-        "journal": "AMICE (한국정보기처학회 KIPS 제출용)",
+        "title": "AMICE: 이중 강건 인과 추론 파이프라인 (고차원 관찰 데이터 분석을 중심으로)",
+        "author": "이석민 (Seog-Min Lee)",
+        "journal": "정보처리학회 논문지 (제15권 제2호)",
         "volume_issue": "",
         "year": "2025",
         "filename": "kips.pdf"
