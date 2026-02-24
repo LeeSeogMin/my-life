@@ -8,14 +8,14 @@ export default function FrameworkPage() {
     return (
         <div className="space-y-16">
             <header className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">PSDS 프레임워크</h1>
+                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 shadow-sm inline-block">PSDS Framework</h1>
                 <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    적응형 공공 의사결정 시스템(Adaptive public decision systems)을 위한 구조적 아키텍처 (PSDS: Public Strategy and Decision System Framework)
+                    적응형 공공 의사결정 시스템을 위한 구조적 아키텍처 (Public Strategy and Decision System Framework)
                 </p>
             </header>
 
             <section className="space-y-6">
-                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">프레임워크 5대 구조 (Framework Layers)</h2>
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">Framework 5대 구조 (Layers)</h2>
                 <div className="space-y-8 pl-4 border-l border-gray-200">
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
