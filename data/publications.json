@@ -1,0 +1,47 @@
+[
+    {
+        "id": "J-001",
+        "title": "The Impact of Linguistic Features of National Petitions on Policy Agenda-Setting: A Machine Learning-Based Prediction and Causal Analysis",
+        "author": "Seog-Min Lee",
+        "journal": "융합사회연구소",
+        "volume_issue": "Vol.19, No. 4",
+        "year": "2026",
+        "filename": "융합사회연구소.pdf"
+    },
+    {
+        "id": "J-002",
+        "title": "2018-2019년 한국의 최저임금 인상과 일자리안정자금이 산업별 고용에 미친결합 효과 분석: 노출강도 기반 이중차분(Exposure-based Difference-in-Differences) 접근",
+        "author": "이석민 (Seog-Min Lee)",
+        "journal": "한국사회와 행정연구",
+        "volume_issue": "제36권 제4호",
+        "year": "2026",
+        "filename": "한국사회와행정연구소.pdf"
+    },
+    {
+        "id": "J-003",
+        "title": "Variable-Dependent Cultural Alignment in LLM Survey Simulation: Comparing Indigenous and Global Models",
+        "author": "Seog-Min Lee",
+        "journal": "International Journal of Internet, Broadcasting and Communication",
+        "volume_issue": "Vol.18 No.1",
+        "year": "2026",
+        "filename": "IJIBC.pdf"
+    },
+    {
+        "id": "J-004",
+        "title": "AMICE: Doubly Robust Causal Inference Pipeline",
+        "author": "Seog-Min Lee",
+        "journal": "AMICE (한국정보기처학회 KIPS 제출용)",
+        "volume_issue": "",
+        "year": "2025",
+        "filename": "kips.pdf"
+    },
+    {
+        "id": "J-005",
+        "title": "Semantic-based Evaluation Framework for Topic Models: Integrated Deep Learning and LLM Validation",
+        "author": "Seog-Min Lee",
+        "journal": "J Inf Process Syst (JIPS)",
+        "volume_issue": "",
+        "year": "202x",
+        "filename": "JIPS_11page.pdf"
+    }
+]

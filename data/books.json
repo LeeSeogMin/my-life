@@ -1,0 +1,29 @@
+[
+    {
+        "id": "B-001",
+        "title": "Python을 활용한 LLM 시대의 인문사회과학방법론",
+        "subtitle": "AI 도구를 활용한 연구 설계와 분석",
+        "author": "이석민",
+        "publisher": "윤성사",
+        "publishDate": "2025-12-31",
+        "url": "https://product.kyobobook.co.kr/detail/S000218960507"
+    },
+    {
+        "id": "B-002",
+        "title": "구조방정식모형의 이해와 R분석",
+        "subtitle": "(준)실험설계접근",
+        "author": "이석민",
+        "publisher": "윤성사",
+        "publishDate": "2021-02-25",
+        "url": "https://product.kyobobook.co.kr/detail/S000001919113"
+    },
+    {
+        "id": "B-003",
+        "title": "인문사회과학을 위한 빅데이터 분석방법론",
+        "subtitle": "",
+        "author": "이석민",
+        "publisher": "윤성사",
+        "publishDate": "2019-06-30",
+        "url": "https://product.kyobobook.co.kr/detail/S000001919065"
+    }
+]
