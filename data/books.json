@@ -1,5 +1,14 @@
 [
     {
+        "id": "B-004",
+        "title": "Python을 활용한 AI 기반 데이터 사이언스 방법론",
+        "subtitle": "머신러닝부터 생성형 AI까지",
+        "author": "이석민",
+        "publisher": "윤성사",
+        "publishDate": "2026-02-27",
+        "url": "https://product.kyobobook.co.kr/detail/S000219302880"
+    },
+    {
         "id": "B-001",
         "title": "Python을 활용한 LLM 시대의 인문사회과학방법론",
         "subtitle": "AI 도구를 활용한 연구 설계와 분석",
