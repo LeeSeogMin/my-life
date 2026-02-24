@@ -40,7 +40,12 @@ export default function RootLayout({
         <footer className="border-t border-gray-200 bg-white py-10 mt-auto">
           <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
             <p>© {new Date().getFullYear()} Seog-Min Lee. All rights reserved.</p>
-            <p className="mt-2">공공 전략 및 정책 의사결정 시스템 연구자 (한신대학교 공공인재빅데이터융합학부)</p>
+            <p className="mt-2 text-gray-400">
+              공공 전략 및 정책 의사결정 시스템 연구자 (한신대학교 공공인재빅데이터융합학부) |{' '}
+              <a href="mailto:newmind68@hs.ac.kr" className="hover:text-blue-600 transition-colors">
+                newmind68@hs.ac.kr
+              </a>
+            </p>
           </div>
         </footer>
       </body>
