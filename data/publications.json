@@ -6,7 +6,8 @@
         "journal": "Journal of Information Processing Systems (SCOPUS)",
         "volume_issue": "Under Review",
         "year": "2026",
-        "filename": ""
+        "filename": "",
+        "description": ""
     },
     {
         "id": "J-006",
@@ -15,7 +16,8 @@
         "journal": "Journal of International Economics (SSCI)",
         "volume_issue": "Under Review",
         "year": "2026",
-        "filename": ""
+        "filename": "",
+        "description": ""
     },
     {
         "id": "J-001",
@@ -24,7 +26,8 @@
         "journal": "융합사회연구소",
         "volume_issue": "Vol.19, No. 4",
         "year": "2026",
-        "filename": "융합사회연구소.pdf"
+        "filename": "융합사회연구소.pdf",
+        "description": "청와대 국민청원 427,903건(2017–2019)을 대상으로 12개 언어적 특성(텍스트 길이, 분노 점수, 구체성 등)이 정책의제화에 미치는 영향을 분석한 연구. Random Forest 기반 예측 모형(AUC-ROC 0.91)과 성향점수매칭(PSM) 인과분석을 결합하여, 텍스트의 구조적 특성이 청원의 정책 반영 여부에 유의미한 인과적 효과를 가짐을 실증하였다."
     },
     {
         "id": "J-002",
@@ -33,7 +36,8 @@
         "journal": "한국사회와 행정연구",
         "volume_issue": "제36권 제4호",
         "year": "2026",
-        "filename": "한국사회와행정연구소.pdf"
+        "filename": "한국사회와행정연구소.pdf",
+        "description": "고용보험 월별 산업별 데이터(2016–2019, 12개 산업, N=576)를 활용하여 최저임금 인상과 일자리안정자금의 결합 효과를 노출강도 기반 이중차분법(Exposure-based DID)으로 분석한 연구. Wild cluster bootstrap 기법을 적용하여 소표본 군집 문제를 보정하고, 두 정책의 상호작용이 산업별로 이질적인 고용 효과를 가짐을 실증하였다."
     },
     {
         "id": "J-003",
@@ -42,7 +46,8 @@
         "journal": "International Journal of Internet, Broadcasting and Communication",
         "volume_issue": "Vol.18 No.1",
         "year": "2026",
-        "filename": "IJIBC.pdf"
+        "filename": "IJIBC.pdf",
+        "description": "한국종합사회조사(KGSS 2023)의 문화적 변수를 기준으로, 글로벌 모델(GPT-5.2)과 한국 토착 모델(CLOVA HCX-007)의 설문 시뮬레이션 정합성을 비교한 연구. Jensen-Shannon 발산과 Kolmogorov-Smirnov 검정을 적용하여, LLM의 문화적 정렬이 변수에 따라 이질적으로 나타나며 토착 모델의 우위가 특정 영역에 한정됨을 밝혔다."
     },
     {
         "id": "J-004",
@@ -51,7 +56,8 @@
         "journal": "정보처리학회 논문지 (제15권 제2호)",
         "volume_issue": "",
         "year": "2025",
-        "filename": "kips.pdf"
+        "filename": "kips.pdf",
+        "description": "다중대입(MICE)과 증강역확률가중(AIPW) 추정량을 결합한 이중 강건(doubly robust) 인과 추론 파이프라인을 제안한 연구. 한국 제조업 디지털 전환 데이터(n=31,572, p=281)에 적용하여, 디지털 전환이 총요소생산성(TFP)을 평균 3.9% 향상시킴을 실증하였다. 고차원 관찰 데이터에서의 결측치 처리와 인과 추론을 체계적으로 통합하는 방법론을 제시한다."
     },
     {
         "id": "J-005",
@@ -60,6 +66,7 @@
         "journal": "Journal of Information Processing Systems (JIPS, SCOPUS)",
         "volume_issue": "",
         "year": "2026",
-        "filename": "JIPS_11page.pdf"
+        "filename": "JIPS_11page.pdf",
+        "description": "신경 토픽 모델의 평가를 위한 의미 기반 프레임워크를 제안한 연구. 딥러닝 임베딩과 LLM 앙상블(Claude, GPT-4.1, Grok)을 통합한 검증 체계를 구축하여, 기존 NPMI 대비 7.62배 향상된 일관성 판별력(Cohen's d = 2.96)을 달성하였다. 토픽 모델 평가에서 인간 판단과의 정렬 문제를 해결하는 새로운 방법론을 제시한다."
     }
 ]

@@ -6,7 +6,8 @@
         "author": "이석민",
         "publisher": "윤성사",
         "publishDate": "2026-02-27",
-        "url": "https://product.kyobobook.co.kr/detail/S000219302880"
+        "url": "https://product.kyobobook.co.kr/detail/S000219302880",
+        "description": "머신러닝, 딥러닝, 생성형 AI에 이르는 데이터 사이언스 전 영역을 Python으로 구현하는 방법론 교재. 이론적 배경과 실습 코드를 결합하여, 연구자와 실무자가 AI 기반 분석을 체계적으로 수행할 수 있도록 구성하였다."
     },
     {
         "id": "B-001",
@@ -15,7 +16,8 @@
         "author": "이석민",
         "publisher": "윤성사",
         "publishDate": "2025-12-31",
-        "url": "https://product.kyobobook.co.kr/detail/S000218960507"
+        "url": "https://product.kyobobook.co.kr/detail/S000218960507",
+        "description": "대규모 언어모델(LLM) 시대에 인문사회과학 연구 방법론이 어떻게 변화하는지를 다룬다. AI 도구를 활용한 연구 설계, 데이터 수집, 분석의 전 과정을 Python 기반으로 제시하며, 전통적 방법론과 AI 접근의 융합을 탐구한다."
     },
     {
         "id": "B-002",
@@ -24,7 +26,8 @@
         "author": "이석민",
         "publisher": "윤성사",
         "publishDate": "2021-02-25",
-        "url": "https://product.kyobobook.co.kr/detail/S000001919113"
+        "url": "https://product.kyobobook.co.kr/detail/S000001919113",
+        "description": "구조방정식모형(SEM)의 이론적 기초부터 R을 활용한 실제 분석까지를 체계적으로 다룬다. 특히 준실험설계 관점에서 인과추론의 엄밀성을 강조하며, 인문사회과학 연구자를 위한 실증 분석 가이드를 제공한다."
     },
     {
         "id": "B-003",
@@ -33,7 +36,8 @@
         "author": "이석민",
         "publisher": "윤성사",
         "publishDate": "2019-06-30",
-        "url": "https://product.kyobobook.co.kr/detail/S000001919065"
+        "url": "https://product.kyobobook.co.kr/detail/S000001919065",
+        "description": "한국출판문화산업진흥원 세종도서 학술부문 선정 도서. 인문사회과학 분야 연구자를 위한 빅데이터 분석 방법론을 체계적으로 정리한 교재로, 데이터 수집·정제·분석·시각화의 전 과정을 다룬다."
     },
     {
         "id": "B-005",
@@ -42,6 +46,7 @@
         "author": "이석민",
         "publisher": "법문사",
         "publishDate": "2018-10-05",
-        "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=170564568"
+        "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=170564568",
+        "description": "정책 및 프로그램의 효과를 과학적으로 평가하기 위한 방법론 교재. 이중차분법, 회귀불연속, 도구변수 등 준실험설계 기법과 질적 평가 접근을 R과 STATA로 구현하는 방법을 제시한다."
     }
 ]

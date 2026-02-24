@@ -18,6 +18,7 @@ interface Book {
     publisher: string;
     publishDate: string;
     url: string;
+    description: string;
 }
 
 interface Publication {
@@ -28,6 +29,7 @@ interface Publication {
     volume_issue: string;
     year: string;
     filename: string;
+    description: string;
 }
 
 export default async function ArchivePage() {
@@ -59,6 +61,9 @@ export default async function ArchivePage() {
                             <div className="space-y-2 mb-4">
                                 <h3 className="text-lg font-bold text-gray-900 leading-snug">{book.title}</h3>
                                 {book.subtitle && <p className="text-sm font-medium text-gray-600">{book.subtitle}</p>}
+                                {book.description && (
+                                    <p className="text-sm text-gray-600 leading-relaxed mt-2">{book.description}</p>
+                                )}
                             </div>
                             <div>
                                 <div className="text-sm text-gray-500 space-y-1 mb-4">
@@ -88,6 +93,9 @@ export default async function ArchivePage() {
                                 <p className="font-medium text-gray-800">{pub.journal} {pub.volume_issue ? `(${pub.volume_issue})` : ''}</p>
                                 <p>연도: {pub.year} / 저자: {pub.author}</p>
                             </div>
+                            {pub.description && (
+                                <p className="text-sm text-gray-600 leading-relaxed mt-3">{pub.description}</p>
+                            )}
                         </article>
                     ))}
                 </div>
