@@ -46,8 +46,11 @@ export default function WritingPage() {
                     ))}
                 </section>
             ) : (
-                <div className="bg-gray-50 border border-gray-200 rounded-md p-6 my-10 text-center">
-                    <p className="text-gray-500 font-medium">분석적이고 개념적인 학술 에세이들이 이곳에 지속적으로 게시될 예정입니다.</p>
+                <div className="bg-gray-50 border border-gray-200 rounded-md p-8 my-10 text-center">
+                    <p className="text-gray-500 font-medium leading-relaxed">
+                        PSDS 프레임워크를 기반으로 한 분석적이고 개념적인 학술 칼럼들이<br className="hidden sm:block" />
+                        이곳에 지속적으로 게재될 예정입니다.
+                    </p>
                 </div>
             )}
         </div>

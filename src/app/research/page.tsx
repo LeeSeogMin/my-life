@@ -59,7 +59,7 @@ export default function ResearchPage() {
                     <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
                         <h3 className="text-lg font-bold text-gray-900">AI 기반 국제관계 통합 분석 파이프라인 (Forecasting)</h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            동아시아 국제관계의 변동이 국내에 미치는 영향을 과학적으로 분석하기 위한 AI 기반 통합 파이프라인 및 DSLM(Domain Specific Language Model) 기법을 연구합니다. LLM Router 패턴과 인과 추론 모듈을 결합하여 합리적인 국가 전략 대응 방안을 도출합니다.
+                            동아시아 국제관계의 변동이 국내에 미치는 영향을 과학적으로 분석하기 위해 AI 기반 통합 파이프라인 및 DSLM(Domain Specific Language Model) 방법론을 탐구합니다. LLM Router 패턴과 인과 추론 모듈을 결합하여 합리적인 국가 전략 대응 방안을 도출하는 데 주력하고 있습니다.
                         </p>
                         <div className="flex gap-2 pt-2">
                             <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">Forecasting</span>

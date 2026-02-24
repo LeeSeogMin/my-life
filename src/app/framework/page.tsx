@@ -35,7 +35,7 @@ export default function FrameworkPage() {
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
                         <h3 className="text-lg font-bold text-gray-900">Layer 4: 데이터 통합 (Data Integration)</h3>
-                        <p className="text-gray-600">실황 데이터와 AI(인공지능)를 의사결정 시스템 내부로 통합합니다.</p>
+                        <p className="text-gray-600">실시간 데이터와 AI(인공지능)를 의사결정 시스템 내부로 통합합니다.</p>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />

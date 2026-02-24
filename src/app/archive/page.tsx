@@ -37,7 +37,8 @@ export default async function ArchivePage() {
             <header className="space-y-4">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">아카이브 (Archive)</h1>
                 <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    PSDS 프레임워크를 뒷받침하는 경험적, 지적 기반. 출판된 저서 및 전공 논문 자료입니다.
+                    PSDS 프레임워크를 뒷받침하는 지적 자산이자 경험적 근거인<br className="hidden sm:block" />
+                    주요 저서 및 학술 논문 아카이브입니다.
                 </p>
             </header>
 

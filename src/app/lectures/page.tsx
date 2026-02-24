@@ -29,7 +29,8 @@ export default function LecturesPage() {
             <header className="space-y-4">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">강의 코너 (Lectures)</h1>
                 <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    데이터 주도 정책 통합, 딥러닝, 그리고 적응형 거버넌스 시스템을 중심으로 구성된 학기별 교육 콘텐츠입니다.
+                    데이터 주도형 정책 통합, 딥러닝 방법론, 그리고 적응형 거버넌스 시스템을<br className="hidden sm:block" />
+                    중심으로 구성된 학술적 교육 콘텐츠를 제공합니다.
                 </p>
             </header>
 
