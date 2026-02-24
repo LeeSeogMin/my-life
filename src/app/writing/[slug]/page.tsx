@@ -18,8 +18,13 @@ export async function generateMetadata({ params, searchParams }: Props) {
     if (!post) return { title: "Not Found" };
 
     return {
-        title: `${post.meta.title} - PSDS`,
-        description: post.meta.description,
+        title: post.meta.title,
+        description: post.meta.description || `이석민의 칼럼: ${post.meta.title}`,
+        openGraph: {
+            title: `${post.meta.title} — 이석민 | 정책 × AI`,
+            description: post.meta.description || `이석민의 칼럼: ${post.meta.title}`,
+            type: "article",
+        },
     };
 }
 

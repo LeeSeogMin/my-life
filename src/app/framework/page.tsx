@@ -1,7 +1,12 @@
 import { ArrowDown, Database, Cpu, Activity, RefreshCw } from "lucide-react";
 
 export const metadata = {
-    title: "Framework - PSDS",
+    title: "PSDS Framework — 공공 의사결정 시스템",
+    description: "적응형 공공 의사결정 시스템을 위한 5단계 구조적 아키텍처. 문제 구조화, 전략 설계, 의사결정 아키텍처, 데이터 통합, 평가 및 적응형 피드백.",
+    openGraph: {
+        title: "PSDS Framework — 이석민 | 정책 × AI",
+        description: "적응형 공공 의사결정 시스템을 위한 PSDS 프레임워크 상세 구조.",
+    },
 };
 
 export default function FrameworkPage() {

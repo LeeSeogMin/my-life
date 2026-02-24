@@ -1,7 +1,12 @@
 import { Calendar, Briefcase, Code } from "lucide-react";
 
 export const metadata = {
-    title: "Research - Decision Systems Lab",
+    title: "연구 — 주요 연구·개발 프로젝트",
+    description: "이석민의 AI 기반 정책 분석, 국제관계 예측 파이프라인, 정책 의사결정 지원 시스템 등 주요 연구·개발 프로젝트 소개.",
+    openGraph: {
+        title: "연구 — 이석민 | 정책 × AI",
+        description: "AI 기반 정책 분석, 국제관계 예측, 정책 의사결정 지원 시스템 등 연구·개발 프로젝트.",
+    },
 };
 
 export default function ResearchPage() {

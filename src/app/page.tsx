@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
             이석민
           </h1>
-          <span className="text-lg text-gray-500 font-light">
+          <span className="text-lg text-gray-700 font-medium">
             한신대학교 공공인재빅데이터융합학부
           </span>
         </div>

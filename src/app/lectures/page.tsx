@@ -1,5 +1,10 @@
 export const metadata = {
-    title: "Lectures - PSDS",
+    title: "강의 — 딥러닝, 데이터, 정책분석",
+    description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터분석과 시각화, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+    openGraph: {
+        title: "강의 — 이석민 | 정책 × AI",
+        description: "딥러닝, 데이터분석, 정책분석, 웹프로그래밍 등 학부 강의 안내.",
+    },
 };
 
 export default function LecturesPage() {
