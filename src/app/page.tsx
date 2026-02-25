@@ -261,7 +261,7 @@ export default function Home() {
             언제든 연락 주시기 바랍니다.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            전공에 관계없이 인공지능과 데이터 분석에 관심 있는 학생이라면
+            전공 관계없이 AI 기반 데이터 사이언스에 관심 있는 학생이라면
             누구나 한신대 공공인재빅데이터융합학부의 <strong className="text-gray-900">인공지능학회</strong>에 참여를 신청할 수 있습니다.
           </p>
         </div>
