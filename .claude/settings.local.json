@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm run build)",
-      "Bash(npx next build)"
+      "Bash(npx next build)",
+      "Bash(npm ls remark-gfm)",
+      "Bash(npm install remark-gfm)",
+      "Bash(npm install @tailwindcss/typography)",
+      "Bash(pkill -f \"next dev\")"
     ]
   }
 }
