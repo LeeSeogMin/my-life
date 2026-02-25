@@ -150,7 +150,7 @@ export default function RootLayout({
             <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-600 transition-colors">
               이석민 | 정책 × AI
             </Link>
-            <nav className="flex gap-6 text-sm font-medium text-gray-600">
+            <nav className="flex gap-6 text-base font-semibold text-gray-700">
               <Link href="/" className="hover:text-black transition-colors">Main</Link>
               <Link href="/framework" className="hover:text-black transition-colors">PSDS</Link>
               <Link href="/research" className="hover:text-black transition-colors">연구</Link>
