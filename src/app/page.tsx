@@ -257,8 +257,8 @@ export default function Home() {
         <div className="max-w-3xl space-y-4">
           <p className="text-gray-700 leading-relaxed">
             연구자, 공공기관 종사자, 학생들과의 연구 협업을 환영합니다.
-            정책분석, AI 응용, 데이터사이언스 등 관심 분야가 겹치는 분이라면
-            언제든 연락 주시기 바랍니다.
+            공공분야 정책분석/전략기획/평가, AI 응용, 데이터사이언스 분야에서
+            협업을 원하시는 분은 연락 주시기 바랍니다.
           </p>
           <p className="text-gray-700 leading-relaxed">
             전공 관계없이 AI 기반 데이터 사이언스에 관심 있는 학생이라면
