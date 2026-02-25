@@ -6,7 +6,25 @@
       "Bash(npm ls remark-gfm)",
       "Bash(npm install remark-gfm)",
       "Bash(npm install @tailwindcss/typography)",
-      "Bash(pkill -f \"next dev\")"
+      "Bash(pkill -f \"next dev\")",
+      "Bash(grep -r \"pandoc\" /c/Dev/sscience_research/*.md)",
+      "Bash(pip show openai anthropic)",
+      "Bash(py --version)",
+      "Bash(py -m pip show openai anthropic)",
+      "Bash(py -m pip install openai anthropic httpx)",
+      "Bash(py phase7_review/run_review.py)",
+      "Bash(py -c \":*)",
+      "Bash(pip install pypandoc-hwpx)",
+      "Bash(pandoc --version)",
+      "Bash(py -m pip install pypandoc-hwpx)",
+      "Bash(py -m pypandoc.pandoc_download)",
+      "Bash(py -c \"import pypandoc; print\\(pypandoc.get_pandoc_version\\(\\)\\)\")",
+      "Bash(py -m pypandoc_hwpx \"c:/Dev/my-life/SAPD/phase10_submission/paper_final.md\" --reference-doc=\"C:/Users/user/.claude/skills/hwpx/assets/blank_justify.hwpx\" -o \"c:/Dev/my-life/SAPD/phase10_submission/paper_final.hwpx\")",
+      "Bash(pypandoc-hwpx \"c:/Dev/my-life/SAPD/phase10_submission/paper_final.md\" --reference-doc=\"C:/Users/user/.claude/skills/hwpx/assets/blank_justify.hwpx\" -o \"c:/Dev/my-life/SAPD/phase10_submission/paper_final.hwpx\")",
+      "Bash(py \"C:/Users/user/.claude/skills/hwpx/scripts/hwpx_postprocess.py\" \"c:/Dev/my-life/SAPD/phase10_submission/paper_final.hwpx\")",
+      "WebFetch(domain:zdnet.co.kr)",
+      "WebFetch(domain:www.kimchang.com)",
+      "WebFetch(domain:www.korea.kr)"
     ]
   }
 }
