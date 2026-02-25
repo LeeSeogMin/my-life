@@ -247,19 +247,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 연락처 / CTA */}
-      <section className="pt-12 border-t border-gray-200">
-        <div className="bg-gray-50 rounded-lg p-8 space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900">연구 협업</h2>
-          <p className="text-sm text-gray-600">
+      {/* 연구 협업 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
+        <header>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Collaboration</h2>
+          <p className="text-2xl font-semibold text-gray-900">연구 협업</p>
+        </header>
+
+        <div className="max-w-3xl space-y-4">
+          <p className="text-gray-700 leading-relaxed">
             연구자, 공공기관 종사자, 학생들과의 연구 협업을 환영합니다.
+            정책분석, AI 응용, 데이터사이언스 등 관심 분야가 겹치는 분이라면
+            언제든 연락 주시기 바랍니다.
           </p>
+          <p className="text-gray-700 leading-relaxed">
+            전공에 관계없이 인공지능과 데이터 분석에 관심 있는 학생이라면
+            누구나 한신대 공공인재빅데이터융합학부의 <strong className="text-gray-900">인공지능학회</strong>에 참여를 신청할 수 있습니다.
+          </p>
+        </div>
+
+        <div className="pt-2">
           <a
             href="mailto:newmind68@hs.ac.kr"
-            className="inline-flex items-center gap-2 border border-gray-300 bg-white text-gray-900 px-5 py-2.5 rounded-md font-medium hover:bg-gray-50 transition-all hover:border-gray-400 text-sm"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             newmind68@hs.ac.kr
-            <ArrowRight className="w-4 h-4 text-gray-500" />
+            <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </section>
