@@ -11,7 +11,8 @@
 ## 1. 핵심 정체성 (Core Identity)
 - **주요 정체성**: 공공 전략 및 정책 의사결정 시스템 연구자 (Public Strategy and Policy Decision System Researcher)
 - **조작적 정의**: 전략, 정책, 데이터, 평가, 그리고 AI를 통합하는 공공 의사결정 시스템의 연구 및 설계
-- **핵심 패러다임 전환**: 증거 기반 정책(Evidence-based Policy) → AI 기반 적응형 의사결정 시스템(AI-driven Adaptive Decision System)
+- **핵심 패러다임 전환**: 증거 기반 정책(Evidence-based Policy) → 적응형 정책(Adaptive Policy)
+- **구현 프레임워크**: PSDS Framework — 적응형 정책을 실현하기 위한 5단계 의사결정 아키텍처
 
 ### 1.1 핵심 명제 (Core Thesis)
 - 공공 정책은 고립된 개입이 아니다.
@@ -19,8 +20,8 @@
 - 정책의 질은 의사결정 시스템의 구조에 달려 있다.
 
 ## 2. 패러다임 전환 (Paradigm Shift)
-- **과거 모델 (증거 기반 정책)**: 정책 → 실행 → 평가 → 정책 수정. 사후 평가 위주이며 정적이고 변환이 느림.
-- **새로운 모델 (적응형 의사결정 시스템)**: 의사결정 시스템 → 데이터 통합 → 평가 → 지속적 적응. 실시간 데이터를 통합하며 지속적으로 학습하고 진화함.
+- **과거 모델 — 증거 기반 정책(Evidence-based Policy)**: 정책 → 실행 → 평가 → 정책 수정. 사후 평가 위주이며 정적이고 변환이 느림.
+- **새로운 모델 — 적응형 정책(Adaptive Policy)**: 의사결정 시스템 → 데이터 통합 → 평가 → 지속적 적응. 실시간 데이터를 통합하며 지속적으로 학습하고 진화함. PSDS Framework가 이를 구현하는 설계 아키텍처.
 
 ## 3. PSDS 프레임워크 아키텍처 (PSDS Framework Definition)
 적응형 공공 의사결정 시스템을 위한 5단계 구조적 아키텍처:
@@ -97,7 +98,7 @@
 
 ## 2. Paradigm Shift
 - 2.1 Traditional Model: Evidence-based Policy
-- 2.2 New Model: Adaptive Decision System
+- 2.2 New Model: Adaptive Policy (implemented via PSDS Framework)
 
 ## 3. PSDS Framework Definition
 - 3.1 Layer 1: Problem Structuring

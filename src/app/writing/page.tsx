@@ -18,7 +18,7 @@ export default function WritingPage() {
             <header className="space-y-4">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">칼럼 및 인사이트 (Column & Insight)</h1>
                 <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    PSDS 프레임워크를 기반으로 한 공공 의사결정 시스템의 개념적 확장, 아키텍처 분석, 에세이 모음입니다.
+                    적응형 정책(Adaptive Policy)과 PSDS 프레임워크를 기반으로 한 개념적 확장, 아키텍처 분석, 에세이 모음입니다.
                 </p>
             </header>
 
@@ -53,7 +53,7 @@ export default function WritingPage() {
             ) : (
                 <div className="bg-gray-50 border border-gray-200 rounded-md p-8 my-10 text-center">
                     <p className="text-gray-500 font-medium leading-relaxed">
-                        PSDS 프레임워크를 기반으로 한 분석적이고 개념적인 학술 칼럼들이<br className="hidden sm:block" />
+                        적응형 정책과 PSDS 프레임워크를 기반으로 한 분석적이고 개념적인 학술 칼럼들이<br className="hidden sm:block" />
                         이곳에 지속적으로 게재될 예정입니다.
                     </p>
                 </div>

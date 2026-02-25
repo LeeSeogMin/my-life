@@ -21,7 +21,7 @@ export default function LecturesPage() {
         {
             term: "2학기 (Semester 2)",
             courses: [
-                { title: "LLMOPs & 데이터 엔지니어링 (LLMOPs & Data Engineering)", desc: "AI 기반 적응형 거버넌스를 위한 데이터 파이프라인 및 LLM 운영 구축." },
+                { title: "LLMOPs & 데이터 엔지니어링 (LLMOPs & Data Engineering)", desc: "적응형 정책을 위한 데이터 파이프라인 및 LLM 운영 구축." },
                 { title: "딥러닝 영상데이터분석(geoAI) (Deep Learning Image Data Analysis)", desc: "딥러닝 패러다임을 활용한 위성/항공 등 공간 데이터(geoAI) 분석 전략." },
                 { title: "AI 에이전트 캡스톤 (AI Agent Capstone)", desc: "실제 정책 시나리오에 적용가능한 자율형 AI 에이전트 개발 실무 프로젝트." },
                 { title: "정책분석평가론 (Policy Analysis and Evaluation Theory)", desc: "지속적인 상태 평가와 적응형 피드백을 위한 정책 프레임워크 학습." }
