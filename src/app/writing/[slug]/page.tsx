@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params, searchParams }: Props) {
                 </header>
             </div>
 
-            <div className="prose prose-gray prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-img:rounded-md">
+            <div className="prose prose-gray prose-base max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-img:rounded-md">
                 <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
             </div>
         </article>
