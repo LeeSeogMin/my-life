@@ -35,16 +35,34 @@ export default function Home() {
           ))}
         </div>
 
-        {/* 한 줄 소개 */}
+        {/* 한 줄 소개 + 학문적 여정 */}
         <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl">
-          정책학·행정학의 이론적 기반 위에 데이터 분석, 딥러닝, AI 시스템 개발 역량을 결합하여
-          공공 정책의 기획부터 평가까지 전 과정을 연구하고 구현합니다.
+          인간과 사회에 대한 이해에서 출발하여, 데이터와 AI로 공공 문제를 해결하는 융합 연구자.
         </p>
 
-        {/* 학력 요약 — 신뢰도 확보 */}
-        <p className="text-sm text-gray-500 mt-4 leading-relaxed max-w-3xl">
-          서울대학교 인류학(학사) → 의회정치(석사) → 과학기술정책(박사) · 통계학·계량경제학(박사후 과정) → 빅데이터 분석 → 인공지능 응용·개발
-        </p>
+        {/* 학력 — 3단계 융합 궤적 */}
+        <div className="mt-5 max-w-3xl flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-0">
+          <div className="flex-1">
+            <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">사회과학 기반</p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              서울대 인류학(학사) → 의회정치(석사) → 과학기술정책(박사)
+            </p>
+          </div>
+          <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
+          <div className="flex-1">
+            <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">방법론 확장</p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              통계학·계량경제학(박사후 과정)
+            </p>
+          </div>
+          <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
+          <div className="flex-1">
+            <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">기술 융합</p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              빅데이터 분석 → 인공지능 응용·개발
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* 할 수 있는 일 — 구체적 역량 카드 */}
