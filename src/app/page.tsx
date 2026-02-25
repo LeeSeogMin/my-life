@@ -235,9 +235,9 @@ export default function Home() {
 
         <div className="max-w-3xl space-y-4">
           <p className="text-gray-700 leading-relaxed">
-            정책을 일회적 개입이 아니라 <strong className="text-gray-900">데이터와 AI를 통해 지속적으로 적응하는
-            시스템</strong>으로 정의한다. 이 패러다임을 <strong className="text-gray-900">적응형 정책(Adaptive Policy)</strong>이라 부르며,
-            이를 구현하기 위한 설계 아키텍처로 PSDS Framework를 제시하고 있다.
+            정책을 일회적 개입이 아니라 <strong className="text-gray-900">실시간 상태(State) 데이터를 통해 지속적으로 적응하는
+            시스템</strong>으로 정의한다. 이 패러다임을 <strong className="text-gray-900">상태 기반 적응형 정책(State-based Adaptive Policy)</strong>이라 부르며,
+            이를 구현하기 위한 설계 아키텍처로 SAPD Framework를 제시하고 있다.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 pt-4">
@@ -248,8 +248,8 @@ export default function Home() {
             </div>
             <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
               <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">연구 지향</p>
-              <p className="text-sm font-medium text-gray-900">적응형 정책 (Adaptive Policy)</p>
-              <p className="text-xs text-gray-500 mt-1">실시간 데이터 · 지속적 학습 · 시스템 주도 진화</p>
+              <p className="text-sm font-medium text-gray-900">상태 기반 적응형 정책 (State-based Adaptive Policy)</p>
+              <p className="text-xs text-gray-500 mt-1">실시간 상태 관찰 · 지속적 학습 · 시스템 주도 진화</p>
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function Home() {
             href="/framework"
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
-            PSDS Framework 상세 보기
+            SAPD Framework 상세 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

@@ -18,7 +18,7 @@
 - **다목적 컴포넌트 구현**: 본문을 감싸는 Section 컨테이너, 다이어그램/강조 문구를 보여줄 Callout 박스, 논문/강의 등을 표시할 Card 등 재사용 가능한 컴포넌트 제작.
 
 ## 4단계: 핵심 페이지 라우팅 및 화면 구현 (Page Implementation)
-- **정적 페이지 구성**: `/` (Home, 패러다임 전환 소개), `/framework` (PSDS 프레임워크), `/about` (연구자 소개) 등.
+- **정적 페이지 구성**: `/` (Home, 패러다임 전환 소개), `/framework` (SAPD 프레임워크), `/about` (연구자 소개) 등.
 - **동적 라우팅 구현**: 
   - `/writing` 및 `/writing/[slug]`: 작성된 에세이나 칼럼 동적 조회 기능.
   - `/lectures` 및 학기별 안내 페이지: 1학기/2학기 강의 개요 및 구조화 데이터 연출.
@@ -26,7 +26,7 @@
 
 ## 5단계: 콘텐츠/데이터 연동 및 시각화 (Content Integration)
 - 기존 마크다운(MDX) 파일 및 구조화된 JSON(강의, 출판물) 데이터와 Next.js 화면을 바인딩.
-- 필요한 경우 핵심 프레임워크(예: PSDS 5 레이어, Decision Variables 구조)를 인포그래픽(SVG) 혹은 Mermaid.js 지원으로 렌더링 처리.
+- 필요한 경우 핵심 프레임워크(예: SAPD 5 레이어, Decision Variables 구조)를 인포그래픽(SVG) 혹은 Mermaid.js 지원으로 렌더링 처리.
 
 ## 6단계: SEO 최적화 및 접근성 작업 (SEO & Optimization)
 - 각 페이지별로 적절한 `meta tag` 구성 (Title, Description, OpenGraph 등).

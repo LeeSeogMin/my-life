@@ -1,4 +1,4 @@
-# PSDS Website Master Documentation (Objective.md)
+# SAPD Website Master Documentation (Objective.md)
 
 버전: 1.1
 작성자: 한신대학교 공공인재빅데이터융합학부 이석민 (Seog-Min Lee)
@@ -11,8 +11,8 @@
 ## 1. 핵심 정체성 (Core Identity)
 - **주요 정체성**: 공공 전략 및 정책 의사결정 시스템 연구자 (Public Strategy and Policy Decision System Researcher)
 - **조작적 정의**: 전략, 정책, 데이터, 평가, 그리고 AI를 통합하는 공공 의사결정 시스템의 연구 및 설계
-- **핵심 패러다임 전환**: 증거 기반 정책(Evidence-based Policy) → 적응형 정책(Adaptive Policy)
-- **구현 프레임워크**: PSDS Framework — 적응형 정책을 실현하기 위한 5단계 의사결정 아키텍처
+- **핵심 패러다임 전환**: 증거 기반 정책(Evidence-based Policy) → 상태 기반 적응형 정책(State-based Adaptive Policy)
+- **구현 프레임워크**: SAPD Framework — 상태 기반 적응형 정책을 실현하기 위한 5단계 의사결정 아키텍처
 
 ### 1.1 핵심 명제 (Core Thesis)
 - 공공 정책은 고립된 개입이 아니다.
@@ -21,10 +21,10 @@
 
 ## 2. 패러다임 전환 (Paradigm Shift)
 - **과거 모델 — 증거 기반 정책(Evidence-based Policy)**: 정책 → 실행 → 평가 → 정책 수정. 사후 평가 위주이며 정적이고 변환이 느림.
-- **새로운 모델 — 적응형 정책(Adaptive Policy)**: 의사결정 시스템 → 데이터 통합 → 평가 → 지속적 적응. 실시간 데이터를 통합하며 지속적으로 학습하고 진화함. PSDS Framework가 이를 구현하는 설계 아키텍처.
+- **새로운 모델 — 상태 기반 적응형 정책(State-based Adaptive Policy)**: 의사결정 시스템 → 데이터 통합 → 평가 → 지속적 적응. 실시간 상태(State) 데이터를 통합하며 지속적으로 학습하고 진화함. SAPD Framework가 이를 구현하는 설계 아키텍처.
 
-## 3. PSDS 프레임워크 아키텍처 (PSDS Framework Definition)
-적응형 공공 의사결정 시스템을 위한 5단계 구조적 아키텍처:
+## 3. SAPD 프레임워크 아키텍처 (SAPD Framework Definition)
+상태 기반 적응형 정책을 구현하기 위한 5단계 구조적 아키텍처:
 1. **문제 구조화(Problem Structuring)**: 시스템의 경계와 정책 문제를 정의
 2. **전략 구조화(Strategy Structuring)**: 전략적 구조와 성과 논리를 정의
 3. **의사결정 아키텍처(Decision Architecture)**: 의사결정 노드, 권한, 기준을 정의
@@ -48,7 +48,7 @@
 - 정체성과 패러다임 전환을 소개하는 메인 공간.
 
 ### 6.2 Framework (프레임워크)
-- PSDS 프레임워크의 상세 구조와 이론적 설명.
+- SAPD 프레임워크의 상세 구조와 이론적 설명.
 
 ### 6.3 Research (연구)
 - 아카이빙된 학술 연구 및 응용 방식 모델 전시.
@@ -98,9 +98,9 @@
 
 ## 2. Paradigm Shift
 - 2.1 Traditional Model: Evidence-based Policy
-- 2.2 New Model: Adaptive Policy (implemented via PSDS Framework)
+- 2.2 New Model: State-based Adaptive Policy (implemented via SAPD Framework)
 
-## 3. PSDS Framework Definition
+## 3. SAPD Framework Definition
 - 3.1 Layer 1: Problem Structuring
 - 3.2 Layer 2: Strategy Structuring
 - 3.3 Layer 3: Decision Architecture

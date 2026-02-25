@@ -1,11 +1,11 @@
 import { ArrowDown, Database, Cpu, Activity, RefreshCw } from "lucide-react";
 
 export const metadata = {
-    title: "PSDS Framework — 적응형 정책 설계 아키텍처",
-    description: "적응형 정책(Adaptive Policy)을 구현하기 위한 5단계 구조적 아키텍처. 문제 구조화, 전략 설계, 의사결정 아키텍처, 데이터 통합, 평가 및 적응형 피드백.",
+    title: "SAPD Framework — 상태 기반 적응형 정책 설계 아키텍처",
+    description: "상태 기반 적응형 정책(State-based Adaptive Policy)을 구현하기 위한 5단계 구조적 아키텍처. 문제 구조화, 전략 설계, 의사결정 아키텍처, 데이터 통합, 평가 및 적응형 피드백.",
     openGraph: {
-        title: "PSDS Framework — 이석민 | 적응형 정책",
-        description: "적응형 정책(Adaptive Policy)을 구현하기 위한 PSDS 프레임워크 상세 구조.",
+        title: "SAPD Framework — 이석민 | 상태 기반 적응형 정책",
+        description: "상태 기반 적응형 정책(State-based Adaptive Policy)을 구현하기 위한 SAPD 프레임워크 상세 구조.",
     },
 };
 
@@ -13,9 +13,9 @@ export default function FrameworkPage() {
     return (
         <div className="space-y-16">
             <header className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 shadow-sm inline-block">PSDS Framework</h1>
+                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 shadow-sm inline-block">SAPD Framework</h1>
                 <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    적응형 정책(Adaptive Policy)을 구현하기 위한 구조적 아키텍처
+                    상태 기반 적응형 정책(State-based Adaptive Policy)을 구현하기 위한 구조적 아키텍처
                 </p>
             </header>
 
@@ -56,7 +56,7 @@ export default function FrameworkPage() {
 
                 <header>
                     <h2 className="text-2xl font-bold text-gray-900">시스템 작동 구조 (Operational Layer Structure)</h2>
-                    <p className="text-gray-500 mt-2 font-medium">이 연속적인 순환 피드백 루프가 적응형 정책(Adaptive Policy)의 작동 원리입니다.</p>
+                    <p className="text-gray-500 mt-2 font-medium">이 연속적인 순환 피드백 루프가 상태 기반 적응형 정책(State-based Adaptive Policy)의 작동 원리입니다.</p>
                 </header>
 
                 <div className="flex flex-col items-center justify-center py-6 mt-8 relative max-w-2xl mx-auto">

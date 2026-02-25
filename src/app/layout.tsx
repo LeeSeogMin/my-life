@@ -152,7 +152,7 @@ export default function RootLayout({
             </Link>
             <nav className="flex gap-6 text-base font-semibold text-gray-700">
               <Link href="/" className="hover:text-black transition-colors">Main</Link>
-              <Link href="/framework" className="hover:text-black transition-colors">PSDS</Link>
+              <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
               <Link href="/research" className="hover:text-black transition-colors">연구</Link>
               <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
               <Link href="/archive" className="hover:text-black transition-colors">저서/논문</Link>
