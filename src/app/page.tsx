@@ -180,17 +180,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-2">
+        <div className="pt-2 flex flex-col gap-2">
           <Link
             href="/research"
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
-            전체 연구 실적 보기
+            전체연구실적 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
             href="/archive"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors ml-6"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             저서/논문 실적 보기
             <ArrowRight className="w-4 h-4" />
