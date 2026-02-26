@@ -16,7 +16,7 @@ export async function login(formData: FormData) {
     return { error: error.message };
   }
 
-  redirect(redirectTo || '/community');
+  return { success: true, redirectTo: redirectTo || '/community' };
 }
 
 export async function signup(formData: FormData) {
@@ -38,7 +38,7 @@ export async function signup(formData: FormData) {
     return { error: error.message };
   }
 
-  redirect('/auth/login?message=가입 확인 이메일을 확인해주세요.');
+  return { success: true };
 }
 
 export async function logout() {

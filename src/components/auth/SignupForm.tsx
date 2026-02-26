@@ -1,12 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { signup } from '@/lib/actions/auth';
 import Link from 'next/link';
 
 export default function SignupForm() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   async function handleSubmit(formData: FormData) {
     setLoading(true);
@@ -15,6 +17,8 @@ export default function SignupForm() {
     if (result?.error) {
       setError(result.error);
       setLoading(false);
+    } else if (result?.success) {
+      router.push('/auth/login?message=가입 확인 이메일을 확인해주세요.');
     }
   }
 

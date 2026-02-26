@@ -1,12 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { login } from '@/lib/actions/auth';
 import Link from 'next/link';
 
 export default function LoginForm({ redirectTo, message }: { redirectTo?: string; message?: string }) {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   async function handleSubmit(formData: FormData) {
     setLoading(true);
@@ -18,6 +20,9 @@ export default function LoginForm({ redirectTo, message }: { redirectTo?: string
     if (result?.error) {
       setError(result.error);
       setLoading(false);
+    } else if (result?.success) {
+      router.push(result.redirectTo);
+      router.refresh();
     }
   }
 

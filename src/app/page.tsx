@@ -12,7 +12,7 @@ export default function Home() {
             이석민
           </h1>
           <span className="text-lg text-gray-700 font-medium">
-            한신대학교 공공인재빅데이터융합학부
+            한신대학교 공공인재빅데이터융합학
           </span>
         </div>
 
@@ -48,14 +48,14 @@ export default function Home() {
               서울대 인류학(학사) → 정치학(석사) → 과학기술정책(박사)
             </p>
           </div>
-          <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
+          <div className="hidden sm:flex items-center px-3 pt-4 text-gray-500">→</div>
           <div className="flex-1 text-center">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">방법론 확장</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               통계학/계량경제학/빅데이터분석
             </p>
           </div>
-          <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
+          <div className="hidden sm:flex items-center px-3 pt-4 text-gray-500">→</div>
           <div className="flex-1 text-center">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">기술 융합</p>
             <p className="text-sm text-gray-600 leading-relaxed">
@@ -116,7 +116,7 @@ export default function Home() {
               className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3"
             >
               <div className="flex items-center gap-3">
-                <div className="text-gray-500">{item.icon}</div>
+                <div className="text-blue-500">{item.icon}</div>
                 <h3 className="font-semibold text-gray-900 text-base">{item.title}</h3>
               </div>
               <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
@@ -213,7 +213,7 @@ export default function Home() {
             { icon: <BarChart3 className="w-4 h-4" />, area: "데이터 분석", courses: "데이터분석과 시각화" },
           ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
-              <div className="text-gray-400 mt-0.5">{item.icon}</div>
+              <div className="text-blue-500 mt-0.5">{item.icon}</div>
               <div>
                 <p className="font-medium text-gray-900 text-sm">{item.area}</p>
                 <p className="text-xs text-gray-500 mt-1">{item.courses}</p>
@@ -287,7 +287,7 @@ export default function Home() {
           </p>
           <p className="text-gray-700 leading-relaxed">
             전공 관계없이 AI 기반 데이터 사이언스에 관심 있는 학생이라면
-            누구나 한신대 공공인재빅데이터융합학부의 <strong className="text-gray-900">인공지능학회</strong>에 참여를 신청할 수 있습니다.
+            누구나 한신대 공공인재빅데이터융합학의 <strong className="text-gray-900">인공지능학회</strong>에 참여를 신청할 수 있습니다.
           </p>
         </div>
 

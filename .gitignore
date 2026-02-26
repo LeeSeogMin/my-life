@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude context/work files
+context.md
+todo.md
+objective.md
+web_programming_plan.md
+.playwright-mcp/
+*.png

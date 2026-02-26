@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const SITE_URL = "https://my-life-six-pi.vercel.app";
 const SITE_NAME = "이석민 | 정책 × AI";
 const SITE_DESCRIPTION =
-  "이석민 — 한신대학교 공공인재빅데이터융합학부 교수. 정책 기획·분석·평가, AI·딥러닝 응용, 데이터 분석, 공공 의사결정 시스템 연구 및 개발.";
+  "이석민 — 한신대학교 공공인재빅데이터융합학 교수. 정책 기획·분석·평가, AI·딥러닝 응용, 데이터 분석, 공공 의사결정 시스템 연구 및 개발.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   keywords: [
     "이석민",
     "한신대학교",
-    "공공인재빅데이터융합학부",
+    "공공인재빅데이터융합학",
     "정책분석",
     "정책평가",
     "정책기획",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "이석민 | 정책 × AI — 한신대학교 공공인재빅데이터융합학부",
+    title: "이석민 | 정책 × AI — 한신대학교 공공인재빅데이터융합학",
     description: SITE_DESCRIPTION,
   },
   twitter: {
@@ -87,7 +87,7 @@ const jsonLd = {
       jobTitle: "교수",
       worksFor: {
         "@type": "Organization",
-        name: "한신대학교 공공인재빅데이터융합학부",
+        name: "한신대학교 공공인재빅데이터융합학",
         url: "https://www.hs.ac.kr",
       },
       alumniOf: {
@@ -174,7 +174,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
             <p>© {new Date().getFullYear()} Seog-Min Lee. All rights reserved.</p>
             <p className="mt-2 text-gray-400">
-              공공 전략 및 정책 의사결정 시스템 연구자 (한신대학교 공공인재빅데이터융합학부) |{' '}
+              공공 전략 및 정책 의사결정 시스템 연구자 (한신대학교 공공인재빅데이터융합학) |{' '}
               <a href="mailto:newmind68@hs.ac.kr" className="hover:text-blue-600 transition-colors">
                 newmind68@hs.ac.kr
               </a>
