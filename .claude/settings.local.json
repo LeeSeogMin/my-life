@@ -24,7 +24,12 @@
       "Bash(py \"C:/Users/user/.claude/skills/hwpx/scripts/hwpx_postprocess.py\" \"c:/Dev/my-life/SAPD/phase10_submission/paper_final.hwpx\")",
       "WebFetch(domain:zdnet.co.kr)",
       "WebFetch(domain:www.kimchang.com)",
-      "WebFetch(domain:www.korea.kr)"
+      "WebFetch(domain:www.korea.kr)",
+      "Bash(pypandoc-hwpx:*)",
+      "Bash(py:*)",
+      "Bash(which python3 || which py || where python 2>/dev/null || where py 2>/dev/null)",
+      "Bash(cd:*)",
+      "Bash(/c/Windows/py:*)"
     ]
   }
 }
