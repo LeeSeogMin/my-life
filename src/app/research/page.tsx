@@ -12,9 +12,9 @@ export const metadata = {
 export default function ResearchPage() {
     return (
         <div className="space-y-16">
-            <header className="space-y-4">
+            <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b-2 border-gray-900 pb-4 inline-block">Research</h1>
-                <p className="text-xl text-gray-600 font-light max-w-2xl">
+                <p className="text-xl text-gray-600 font-light">
                     공공 의사결정 체계와 관련된 학술 연구 및 데이터 기반의 실제적 응용 모델(Applied AI)을 탐구합니다.
                 </p>
             </header>

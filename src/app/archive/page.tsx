@@ -41,11 +41,10 @@ export default async function ArchivePage() {
 
     return (
         <div className="space-y-16">
-            <header className="space-y-4">
+            <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">저서 및 논문 (Publications)</h1>
-                <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    상태 기반 적응형 정책(State-based Adaptive Policy)과 SAPD 프레임워크를 뒷받침하는 지적 자산이자 경험적 근거인<br className="hidden sm:block" />
-                    주요 저서 및 학술 논문 목록입니다.
+                <p className="text-xl text-gray-600 font-light">
+                    SAPD 프레임워크를 뒷받침하는 주요 저서 및 학술 논문 목록입니다.
                 </p>
             </header>
 

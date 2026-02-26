@@ -52,7 +52,7 @@ export default function Home() {
           <div className="flex-1 text-center">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">방법론 확장</p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              통계학·계량경제학(박사후 과정)
+              통계학/계량경제학/빅데이터분석
             </p>
           </div>
           <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
@@ -186,6 +186,13 @@ export default function Home() {
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             전체 연구 실적 보기
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          <Link
+            href="/archive"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors ml-6"
+          >
+            저서/논문 실적 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

@@ -31,11 +31,10 @@ export default function LecturesPage() {
 
     return (
         <div className="space-y-12">
-            <header className="space-y-4">
+            <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">강의 코너 (Lectures)</h1>
-                <p className="text-xl text-gray-600 font-light max-w-2xl">
-                    데이터 주도형 정책 통합, 딥러닝 방법론, 그리고 상태 기반 적응형 정책 시스템을<br className="hidden sm:block" />
-                    중심으로 구성된 학술적 교육 콘텐츠를 제공합니다.
+                <p className="text-xl text-gray-600 font-light">
+                    데이터 주도형 정책 통합, 딥러닝 방법론, 상태 기반 적응형 정책 시스템 중심의 학술 교육 콘텐츠를 제공합니다.
                 </p>
             </header>
 
