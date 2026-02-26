@@ -42,24 +42,24 @@ export default function Home() {
 
         {/* 학력 — 3단계 융합 궤적 */}
         <div className="mt-5 max-w-3xl flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-0">
-          <div className="flex-1">
+          <div className="flex-1 text-center">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">사회과학 기반</p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              서울대 인류학(학사) → 의회정치(석사) → 과학기술정책(박사)
+              서울대 인류학(학사) → 정치학(석사) → 과학기술정책(박사)
             </p>
           </div>
           <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
-          <div className="flex-1">
+          <div className="flex-1 text-center">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">방법론 확장</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               통계학·계량경제학(박사후 과정)
             </p>
           </div>
           <div className="hidden sm:flex items-center px-3 pt-4 text-gray-300">→</div>
-          <div className="flex-1">
+          <div className="flex-1 text-center">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-1">기술 융합</p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              빅데이터 분석 → 인공지능 응용·개발
+              데이터사이언스 + 인공지능개발/응용
             </p>
           </div>
         </div>
