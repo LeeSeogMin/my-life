@@ -15,9 +15,9 @@ export default function WritingPage() {
 
     return (
         <div className="space-y-16">
-            <header className="space-y-4">
+            <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">칼럼 및 인사이트 (Column & Insight)</h1>
-                <p className="text-xl text-gray-600 font-light max-w-2xl">
+                <p className="text-xl text-gray-600 font-light">
                     상태 기반 적응형 정책(State-based Adaptive Policy)과 SAPD 프레임워크를 기반으로 한 개념적 확장, 아키텍처 분석, 에세이 모음입니다.
                 </p>
             </header>

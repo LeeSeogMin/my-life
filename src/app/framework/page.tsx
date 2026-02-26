@@ -12,9 +12,9 @@ export const metadata = {
 export default function FrameworkPage() {
     return (
         <div className="space-y-16">
-            <header className="space-y-4">
+            <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 shadow-sm inline-block">SAPD Framework</h1>
-                <p className="text-xl text-gray-600 font-light max-w-2xl">
+                <p className="text-xl text-gray-600 font-light">
                     상태 기반 적응형 정책(State-based Adaptive Policy)을 구현하기 위한 구조적 아키텍처
                 </p>
             </header>
