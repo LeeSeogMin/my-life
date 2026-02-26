@@ -2,6 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import AuthButton from "@/components/auth/AuthButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -150,14 +151,18 @@ export default function RootLayout({
             <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-600 transition-colors">
               이석민 | 정책 × AI
             </Link>
-            <nav className="flex gap-6 text-base font-semibold text-gray-700">
-              <Link href="/" className="hover:text-black transition-colors">홈</Link>
-              <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
-              <Link href="/research" className="hover:text-black transition-colors">연구</Link>
-              <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
-              <Link href="/archive" className="hover:text-black transition-colors">저서/논문</Link>
-              <Link href="/lectures" className="hover:text-black transition-colors">강의</Link>
-            </nav>
+            <div className="flex items-center gap-6">
+              <nav className="flex gap-6 text-base font-semibold text-gray-700">
+                <Link href="/" className="hover:text-black transition-colors">홈</Link>
+                <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
+                <Link href="/research" className="hover:text-black transition-colors">연구</Link>
+                <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
+                <Link href="/archive" className="hover:text-black transition-colors">저서/논문</Link>
+                <Link href="/lectures" className="hover:text-black transition-colors">강의</Link>
+                <Link href="/community" className="hover:text-black transition-colors">커뮤니티</Link>
+              </nav>
+              <AuthButton />
+            </div>
           </div>
         </header>
 
