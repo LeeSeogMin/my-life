@@ -30,7 +30,8 @@
       "Bash(which python3 || which py || where python 2>/dev/null || where py 2>/dev/null)",
       "Bash(cd:*)",
       "Bash(/c/Windows/py:*)",
-      "Bash(xargs grep:*)"
+      "Bash(xargs grep:*)",
+      "Bash(npm install:*)"
     ]
   }
 }
