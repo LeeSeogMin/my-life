@@ -31,7 +31,7 @@ export async function createPost(formData: FormData) {
   redirect(`/community?category=${category}`);
 }
 
-export async function deletePost(postId: string) {
+export async function deletePost(postId: string): Promise<void> {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -42,7 +42,7 @@ export async function deletePost(postId: string) {
   const { error } = await supabase.from('posts').delete().eq('id', postId);
 
   if (error) {
-    return { error: error.message };
+    throw new Error(error.message);
   }
 
   redirect('/community');
