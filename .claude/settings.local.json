@@ -58,7 +58,8 @@
       "mcp__playwright__browser_fill_form",
       "mcp__playwright__browser_tabs",
       "Bash(grep:*)",
-      "Bash(npx vercel:*)"
+      "Bash(npx vercel:*)",
+      "Bash(gh api:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
