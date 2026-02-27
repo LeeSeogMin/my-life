@@ -27,8 +27,8 @@ export default async function CommunityPage({
       .from('profiles')
       .select('role')
       .eq('id', user.id)
-      .single();
-    userRole = profile?.role || null;
+      .maybeSingle();
+    userRole = profile?.role ?? null;
   }
 
   const { data: posts } = await supabase

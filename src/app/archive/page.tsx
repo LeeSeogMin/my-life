@@ -36,8 +36,14 @@ export default async function ArchivePage() {
     const booksPath = path.join(process.cwd(), 'data', 'books.json');
     const pubsPath = path.join(process.cwd(), 'data', 'publications.json');
 
-    const booksData: Book[] = fs.existsSync(booksPath) ? JSON.parse(fs.readFileSync(booksPath, 'utf-8')) : [];
-    const pubsData: Publication[] = fs.existsSync(pubsPath) ? JSON.parse(fs.readFileSync(pubsPath, 'utf-8')) : [];
+    let booksData: Book[] = [];
+    let pubsData: Publication[] = [];
+    try {
+        if (fs.existsSync(booksPath)) booksData = JSON.parse(fs.readFileSync(booksPath, 'utf-8'));
+        if (fs.existsSync(pubsPath)) pubsData = JSON.parse(fs.readFileSync(pubsPath, 'utf-8'));
+    } catch {
+        // Gracefully handle malformed JSON — render with empty data
+    }
 
     return (
         <div className="space-y-16">

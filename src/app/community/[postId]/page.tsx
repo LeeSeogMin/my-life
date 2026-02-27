@@ -18,7 +18,7 @@ export async function generateMetadata({
     .from('posts_with_author')
     .select('title')
     .eq('id', postId)
-    .single();
+    .maybeSingle();
 
   return {
     title: post?.title || '게시글',
@@ -41,15 +41,15 @@ export default async function PostDetailPage({
       .from('profiles')
       .select('role')
       .eq('id', user.id)
-      .single();
-    userRole = profile?.role || null;
+      .maybeSingle();
+    userRole = profile?.role ?? null;
   }
 
   const { data: post } = await supabase
     .from('posts_with_author')
     .select('*')
     .eq('id', postId)
-    .single();
+    .maybeSingle();
 
   if (!post) {
     notFound();
@@ -63,17 +63,20 @@ export default async function PostDetailPage({
     .eq('post_id', postId)
     .order('created_at', { ascending: true });
 
-  const commentsWithAuthor: CommentWithAuthor[] = (comments || []).map((c: Record<string, unknown>) => ({
-    id: c.id as string,
-    content: c.content as string,
-    post_id: c.post_id as string,
-    author_id: c.author_id as string,
-    parent_id: c.parent_id as string | null,
-    created_at: c.created_at as string,
-    updated_at: c.updated_at as string,
-    author_name: (c.profiles as Record<string, string>)?.display_name || '알 수 없음',
-    author_role: (c.profiles as Record<string, string>)?.role || 'user',
-  }));
+  const commentsWithAuthor: CommentWithAuthor[] = (comments || []).map((c: Record<string, unknown>) => {
+    const profiles = c.profiles as Record<string, string> | null;
+    return {
+      id: c.id as string,
+      content: c.content as string,
+      post_id: c.post_id as string,
+      author_id: c.author_id as string,
+      parent_id: c.parent_id as string | null,
+      created_at: c.created_at as string,
+      updated_at: c.updated_at as string,
+      author_name: profiles?.display_name ?? '알 수 없음',
+      author_role: profiles?.role ?? 'user',
+    };
+  });
 
   const canDelete = user?.id === typedPost.author_id || userRole === 'admin';
   const categoryLabel = typedPost.category === 'research' ? '연구' : '강의';
