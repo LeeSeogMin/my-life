@@ -59,7 +59,10 @@
       "mcp__playwright__browser_tabs",
       "Bash(grep:*)",
       "Bash(npx vercel:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(git stash pop)",
+      "Bash(git stash drop)",
+      "Bash(git push origin main)"
     ]
   },
   "enableAllProjectMcpServers": true,
