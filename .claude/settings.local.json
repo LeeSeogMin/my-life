@@ -80,7 +80,17 @@
       "WebFetch(domain:namu.wiki)",
       "WebFetch(domain:data360.worldbank.org)",
       "WebFetch(domain:www.innovation.go.kr)",
-      "WebFetch(domain:innovation.go.kr)"
+      "WebFetch(domain:innovation.go.kr)",
+      "Bash(pip install:*)",
+      "Bash(\"$PYTHON\":*)",
+      "Bash(/c/Windows/py.exe:*)",
+      "WebFetch(domain:platform.openai.com)",
+      "WebFetch(domain:docs.x.ai)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:guide.ncloud-docs.com)",
+      "Bash(/c/Users/user/AppData/Local/Programs/Python/Python312/python.exe:*)",
+      "WebFetch(domain:ai.google.dev)",
+      "Bash(python3:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
