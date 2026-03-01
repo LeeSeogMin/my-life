@@ -61,6 +61,11 @@ export default function LoginForm({ redirectTo, message }: { redirectTo?: string
           placeholder="6자 이상"
         />
       </div>
+      <div className="text-right">
+        <Link href="/auth/reset-password" className="text-sm text-blue-600 hover:underline">
+          비밀번호 찾기
+        </Link>
+      </div>
       <button
         type="submit"
         disabled={loading}
