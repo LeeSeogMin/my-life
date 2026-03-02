@@ -11,7 +11,7 @@ export interface Post {
   id: string;
   title: string;
   content: string;
-  category: 'research' | 'lectures';
+  category: 'research' | 'nlp' | 'web' | 'planning' | 'data' | 'survey' | 'agent';
   is_secret: boolean;
   author_id: string;
   created_at: string;

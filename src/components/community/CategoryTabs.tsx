@@ -5,7 +5,12 @@ import { useSearchParams } from 'next/navigation';
 
 const categories = [
   { key: 'research', label: '연구' },
-  { key: 'lectures', label: '강의' },
+  { key: 'nlp', label: '딥러닝자연어처리' },
+  { key: 'web', label: '웹프로그래밍' },
+  { key: 'planning', label: '기획분석' },
+  { key: 'data', label: '데이터사이언스' },
+  { key: 'survey', label: '사회조사분석' },
+  { key: 'agent', label: 'AI에이전트' },
 ];
 
 export default function CategoryTabs() {

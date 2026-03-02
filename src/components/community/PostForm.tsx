@@ -34,7 +34,12 @@ export default function PostForm({ defaultCategory }: { defaultCategory?: string
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         >
           <option value="research">연구</option>
-          <option value="lectures">강의</option>
+          <option value="nlp">딥러닝자연어처리</option>
+          <option value="web">웹프로그래밍</option>
+          <option value="planning">기획분석</option>
+          <option value="data">데이터사이언스</option>
+          <option value="survey">사회조사분석</option>
+          <option value="agent">AI에이전트</option>
         </select>
       </div>
       <div>
