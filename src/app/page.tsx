@@ -40,21 +40,33 @@ export default function Home() {
           인간과 사회에 대한 이해에서 출발하여, 데이터와 AI로 공공 문제를 해결하는 융합 연구자.
         </p>
 
-        {/* 학력 — 3단계 융합 궤적 (카드박스) */}
-        <div className="mt-5 max-w-3xl grid sm:grid-cols-3 gap-4">
-          <div className="p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
+        {/* 학력 — 3단계 융합 궤적 (카드박스 + 화살표) */}
+        <div className="mt-5 max-w-3xl flex flex-col sm:flex-row items-center gap-3">
+          <div className="flex-1 w-full p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-2">사회과학 기반</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               서울대 인류학(학사) → 정치학(석사) → 과학기술정책(박사)
             </p>
           </div>
-          <div className="p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
+          <div className="flex-shrink-0 text-gray-300">
+            <ArrowRight className="hidden sm:block w-5 h-5" />
+            <svg className="block sm:hidden w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+          <div className="flex-1 w-full p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-2">방법론 확장</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               통계학/계량경제학/빅데이터분석
             </p>
           </div>
-          <div className="p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
+          <div className="flex-shrink-0 text-gray-300">
+            <ArrowRight className="hidden sm:block w-5 h-5" />
+            <svg className="block sm:hidden w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+          <div className="flex-1 w-full p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
             <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-2">기술 융합</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               데이터사이언스 + 인공지능개발/응용
