@@ -245,16 +245,35 @@ export default function Home() {
             이를 구현하기 위한 설계 아키텍처로 SAPD Framework를 제시하고 있다.
           </p>
 
-          <div className="grid sm:grid-cols-2 gap-4 pt-4">
-            <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">기존 접근</p>
-              <p className="text-sm font-medium text-gray-700">증거 기반 정책 (Evidence-based Policy)</p>
-              <p className="text-xs text-gray-500 mt-1">사후 평가 · 정적 구조 · 제한된 적응성</p>
+          <div className="flex flex-col sm:flex-row items-center gap-3 pt-4">
+            <div className="flex-1 w-full p-5 bg-gray-50 rounded-xl border border-gray-200">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">기존 접근</p>
+              <p className="text-sm font-bold text-gray-700">증거 기반 정책</p>
+              <p className="text-xs text-gray-500 mt-0.5 mb-2">(Evidence-based Policy)</p>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="text-[10px] bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">사후 평가</span>
+                <span className="text-[10px] bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">정적 구조</span>
+                <span className="text-[10px] bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">제한된 적응성</span>
+              </div>
             </div>
-            <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">연구 지향</p>
-              <p className="text-sm font-medium text-gray-900">상태 기반 적응형 정책 (State-based Adaptive Policy)</p>
-              <p className="text-xs text-gray-500 mt-1">실시간 상태 관찰 · 지속적 학습 · 시스템 주도 진화</p>
+
+            {/* Arrow */}
+            <div className="flex-shrink-0 text-gray-400">
+              <ArrowRight className="hidden sm:block w-6 h-6" />
+              <svg className="block sm:hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
+
+            <div className="flex-1 w-full p-5 bg-white rounded-xl border-2 border-gray-900 shadow-md">
+              <p className="text-xs font-semibold text-gray-900 uppercase tracking-widest mb-3">연구 지향</p>
+              <p className="text-sm font-bold text-gray-900">상태 기반 적응형 정책</p>
+              <p className="text-xs text-gray-500 mt-0.5 mb-2">(State-based Adaptive Policy)</p>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="text-[10px] bg-gray-900 text-white px-2 py-0.5 rounded-full">실시간 상태 관찰</span>
+                <span className="text-[10px] bg-gray-900 text-white px-2 py-0.5 rounded-full">지속적 학습</span>
+                <span className="text-[10px] bg-gray-900 text-white px-2 py-0.5 rounded-full">시스템 주도 진화</span>
+              </div>
             </div>
           </div>
         </div>
