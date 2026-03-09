@@ -145,12 +145,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 연구 철학 — 전문 영역 바로 아래 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
+        <header>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Research Philosophy</h2>
+          <p className="text-2xl font-semibold text-gray-900">연구 방향</p>
+        </header>
+
+        <div className="max-w-3xl space-y-4">
+          <p className="text-gray-700 leading-relaxed">
+            기존 증거 기반 정책(Evidence-based Policy)이 사후 평가와 정적 구조에 머무르는 한계를 넘어,
+            정책을 일회적 개입이 아니라 <strong className="text-gray-900">실시간 상태(State) 데이터를 통해 지속적으로 적응하는
+            시스템</strong>으로 진화시킨다. 이 패러다임을 <strong className="text-gray-900">상태 기반 적응형 정책(State-based Adaptive Policy)</strong>이라 부르며,
+            이를 구현하기 위한 설계 아키텍처로 SAPD Framework를 제시하고 있다.
+          </p>
+        </div>
+
+        {/* SAPD 적응형 의사결정 루프 다이어그램 */}
+        <div className="pt-6 flex justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/sapd-loop.svg"
+            alt="SAPD Adaptive Decision Loop — State(t) → Decision(t) = f(State(t)) → System Response → State(t+1) 순환 피드백 루프"
+            width={800}
+            height={800}
+            className="w-full max-w-2xl h-auto"
+          />
+        </div>
+
+        <div className="pt-2">
+          <Link
+            href="/framework"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            SAPD Framework 상세 보기
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
       {/* 해온 일 — 대표 프로젝트 */}
       <section className="space-y-8 pt-12 border-t border-gray-200">
         <header>
           <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Key Projects</h2>
-          <p className="text-2xl font-semibold text-gray-900">주요 연구·개발 실적</p>
+          <p className="text-2xl font-semibold text-gray-900">주요 연구·개발</p>
         </header>
+
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-2">
+          <h3 className="text-base font-bold text-gray-900">함께 연구할 파트너를 찾습니다</h3>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            위 연구 주제에 관심이 있는 <strong className="text-gray-800">연구자, 공공기관, 지방자치단체</strong>와의 공동 연구·협력을 환영합니다.
+            데이터 기반 정책 분석, AI 활용 의사결정 시스템 구축 등 실질적 문제 해결을 함께 모색하고자 합니다.
+          </p>
+          <p className="text-sm text-gray-700">
+            관심 있으신 분은{" "}
+            <a href="mailto:newmind68@hs.ac.kr" className="font-semibold text-blue-600 hover:underline">
+              newmind68@hs.ac.kr
+            </a>
+            로 편하게 연락 주십시오.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           <Link href="/research" className="p-6 bg-white border border-gray-200 rounded-lg space-y-3 hover:border-gray-300 hover:shadow-sm transition-all block">
@@ -238,45 +292,6 @@ export default function Home() {
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             강의 상세 보기
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </section>
-
-      {/* 연구 철학 — 하단으로 이동, 간결하게 */}
-      <section className="space-y-8 pt-12 border-t border-gray-200">
-        <header>
-          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Research Philosophy</h2>
-          <p className="text-2xl font-semibold text-gray-900">연구 방향</p>
-        </header>
-
-        <div className="max-w-3xl space-y-4">
-          <p className="text-gray-700 leading-relaxed">
-            기존 증거 기반 정책(Evidence-based Policy)이 사후 평가와 정적 구조에 머무르는 한계를 넘어,
-            정책을 일회적 개입이 아니라 <strong className="text-gray-900">실시간 상태(State) 데이터를 통해 지속적으로 적응하는
-            시스템</strong>으로 진화시킨다. 이 패러다임을 <strong className="text-gray-900">상태 기반 적응형 정책(State-based Adaptive Policy)</strong>이라 부르며,
-            이를 구현하기 위한 설계 아키텍처로 SAPD Framework를 제시하고 있다.
-          </p>
-        </div>
-
-        {/* SAPD 적응형 의사결정 루프 다이어그램 */}
-        <div className="pt-6 flex justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/sapd-loop.svg"
-            alt="SAPD Adaptive Decision Loop — State(t) → Decision(t) = f(State(t)) → System Response → State(t+1) 순환 피드백 루프"
-            width={800}
-            height={800}
-            className="w-full max-w-2xl h-auto"
-          />
-        </div>
-
-        <div className="pt-2">
-          <Link
-            href="/framework"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            SAPD Framework 상세 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
