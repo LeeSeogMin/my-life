@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import Link from 'next/link';
+import { getAllBooks, getAllPublications } from '@/lib/archive';
 
 export const metadata = {
     title: "저서/논문 — 출판물 및 학술 자료",
@@ -10,40 +10,9 @@ export const metadata = {
     },
 };
 
-interface Book {
-    id: string;
-    title: string;
-    subtitle: string;
-    author: string;
-    publisher: string;
-    publishDate: string;
-    url: string;
-    description: string;
-}
-
-interface Publication {
-    id: string;
-    title: string;
-    author: string;
-    journal: string;
-    volume_issue: string;
-    year: string;
-    filename: string;
-    description: string;
-}
-
 export default async function ArchivePage() {
-    const booksPath = path.join(process.cwd(), 'data', 'books.json');
-    const pubsPath = path.join(process.cwd(), 'data', 'publications.json');
-
-    let booksData: Book[] = [];
-    let pubsData: Publication[] = [];
-    try {
-        if (fs.existsSync(booksPath)) booksData = JSON.parse(fs.readFileSync(booksPath, 'utf-8'));
-        if (fs.existsSync(pubsPath)) pubsData = JSON.parse(fs.readFileSync(pubsPath, 'utf-8'));
-    } catch {
-        // Gracefully handle malformed JSON — render with empty data
-    }
+    const booksData = getAllBooks();
+    const pubsData = getAllPublications();
 
     return (
         <div className="space-y-16">
@@ -64,7 +33,11 @@ export default async function ArchivePage() {
                     {booksData.sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()).map(book => (
                         <article key={book.id} className="p-6 border border-gray-200 rounded-lg hover:border-gray-300 transition-colors bg-white flex flex-col justify-between">
                             <div className="space-y-2 mb-4">
-                                <h3 className="text-lg font-bold text-gray-900 leading-snug">{book.title}</h3>
+                                <h3 className="text-lg font-bold text-gray-900 leading-snug">
+                                    <Link href={`/archive/${book.id}`} className="hover:text-blue-700 transition-colors">
+                                        {book.title}
+                                    </Link>
+                                </h3>
                                 {book.subtitle && <p className="text-sm font-medium text-gray-600">{book.subtitle}</p>}
                                 {book.description && (
                                     <p className="text-sm text-gray-600 leading-relaxed mt-2">{book.description}</p>
@@ -75,9 +48,16 @@ export default async function ArchivePage() {
                                     <p>출판사: {book.publisher}</p>
                                     <p>출판일: {book.publishDate}</p>
                                 </div>
-                                <a href={book.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-medium text-sm hover:underline inline-flex items-center gap-1">
-                                    교보문고에서 보기 &rarr;
-                                </a>
+                                <div className="flex items-center gap-4">
+                                    <Link href={`/archive/${book.id}`} className="text-blue-600 font-medium text-sm hover:underline">
+                                        상세 보기 &rarr;
+                                    </Link>
+                                    {book.url && (
+                                        <a href={book.url} target="_blank" rel="noopener noreferrer" className="text-gray-500 font-medium text-sm hover:underline inline-flex items-center gap-1">
+                                            서점에서 보기 &rarr;
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </article>
                     ))}
@@ -93,7 +73,11 @@ export default async function ArchivePage() {
                 <div className="space-y-6">
                     {pubsData.sort((a, b) => parseInt(b.year) - parseInt(a.year)).map(pub => (
                         <article key={pub.id} className="group p-6 border-l-4 border-gray-900 bg-gray-50 hover:bg-gray-100 transition-colors">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-2 leading-snug">{pub.title}</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 mb-2 leading-snug">
+                                <Link href={`/archive/${pub.id}`} className="hover:text-blue-700 transition-colors">
+                                    {pub.title}
+                                </Link>
+                            </h3>
                             <div className="text-sm text-gray-600 space-y-1">
                                 <p className="font-medium text-gray-800">{pub.journal} {pub.volume_issue ? `(${pub.volume_issue})` : ''}</p>
                                 <p>연도: {pub.year} / 저자: {pub.author}</p>

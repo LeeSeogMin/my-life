@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/mdx";
+import { getAllBooks, getAllPublications } from "@/lib/archive";
 
 const SITE_URL = "https://my-life-six-pi.vercel.app";
 
@@ -52,5 +53,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...postPages];
+  // 개별 아카이브 항목 페이지
+  const books = getAllBooks();
+  const publications = getAllPublications();
+
+  const archivePages: MetadataRoute.Sitemap = [
+    ...books.map((book) => ({
+      url: `${SITE_URL}/archive/${book.id}`,
+      lastModified: new Date(book.publishDate),
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    })),
+    ...publications.map((pub) => ({
+      url: `${SITE_URL}/archive/${pub.id}`,
+      lastModified: new Date(`${pub.year}-01-01`),
+      changeFrequency: "yearly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  return [...staticPages, ...postPages, ...archivePages];
 }
