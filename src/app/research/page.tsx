@@ -1,4 +1,5 @@
-import { Calendar, Briefcase, Code } from "lucide-react";
+import { Calendar, Briefcase, Code, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const SITE_URL = "https://my-life-six-pi.vercel.app";
 
@@ -176,11 +177,38 @@ export default function ResearchPage() {
                 </div>
             </section>
 
-            <div className="bg-white border-2 border-dashed border-gray-200 rounded-xl p-8 text-center">
-                <p className="text-gray-500 font-medium">
-                    연구 성과 및 구체적인 데이터 기반 방법론은 본 페이지를 통해 지속적으로 업데이트됩니다.
-                </p>
-            </div>
+            {/* 관련 저서·논문·칼럼 교차 링크 */}
+            <section className="space-y-6 pt-12 border-t border-gray-100">
+                <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                    관련 저서·논문·칼럼
+                </h2>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <Link href="/archive/B-006" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">저서</span>
+                        <p className="text-sm font-semibold text-gray-900">인과 데이터 사이언스</p>
+                    </Link>
+                    <Link href="/archive/B-003" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">저서</span>
+                        <p className="text-sm font-semibold text-gray-900">데이터사이언스 방법론</p>
+                    </Link>
+                    <Link href="/archive/B-001" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">저서</span>
+                        <p className="text-sm font-semibold text-gray-900">AI 시대의 정책분석론</p>
+                    </Link>
+                    <Link href="/writing/intro" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-blue-500">칼럼</span>
+                        <p className="text-sm font-semibold text-gray-900">상태 기반 적응형 정책 개론</p>
+                    </Link>
+                    <Link href="/writing/sapd-palantir-convergence" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-blue-500">칼럼</span>
+                        <p className="text-sm font-semibold text-gray-900">SAPD와 팔란티어의 구조적 동형성</p>
+                    </Link>
+                    <Link href="/archive" className="p-4 bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors flex items-center justify-center gap-2">
+                        <span className="text-sm font-medium text-gray-600">전체 저서·논문 보기</span>
+                        <ArrowRight className="w-4 h-4 text-gray-400" />
+                    </Link>
+                </div>
+            </section>
         </div>
         </>
     );

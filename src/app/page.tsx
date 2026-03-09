@@ -153,7 +153,7 @@ export default function Home() {
         </header>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="p-6 bg-white border border-gray-200 rounded-lg space-y-3">
+          <Link href="/research" className="p-6 bg-white border border-gray-200 rounded-lg space-y-3 hover:border-gray-300 hover:shadow-sm transition-all block">
             <div className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-wider">
               <span className="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">AI 개발</span>
               <span className="bg-blue-50 text-blue-600 px-2 py-0.5 rounded">공공 보건</span>
@@ -163,9 +163,9 @@ export default function Home() {
               한신대학교 소프트웨어중심대학사업단 프로젝트. 학부생과 함께 시니어의 정신건강을 선제적으로 진단·관리하는 AI 소프트웨어를 개발.
             </p>
             <p className="text-xs text-gray-400">2025. 05 – 2025. 09 · 한신대 SW중심대학사업단</p>
-          </div>
+          </Link>
 
-          <div className="p-6 bg-white border border-gray-200 rounded-lg space-y-3">
+          <Link href="/research" className="p-6 bg-white border border-gray-200 rounded-lg space-y-3 hover:border-gray-300 hover:shadow-sm transition-all block">
             <div className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-wider">
               <span className="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded">Forecasting</span>
               <span className="bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded">국제관계</span>
@@ -175,9 +175,9 @@ export default function Home() {
               동아시아 국제관계 변동이 국내에 미치는 영향을 분석하는 AI 파이프라인. LLM Router 패턴과 인과추론 모듈을 결합.
             </p>
             <p className="text-xs text-gray-400">진행 중</p>
-          </div>
+          </Link>
 
-          <div className="p-6 bg-white border border-gray-200 rounded-lg space-y-3">
+          <Link href="/research" className="p-6 bg-white border border-gray-200 rounded-lg space-y-3 hover:border-gray-300 hover:shadow-sm transition-all block">
             <div className="flex flex-wrap gap-2 text-[11px] font-semibold uppercase tracking-wider">
               <span className="bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded">Decision Support</span>
               <span className="bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded">Digital Twin</span>
@@ -187,7 +187,7 @@ export default function Home() {
               강화학습, 디지털 트윈, Causal ML을 통합한 계산사회과학 기반 정책 지원 체계. 정책 생애주기 전반의 지능화를 목표.
             </p>
             <p className="text-xs text-gray-400">진행 중</p>
-          </div>
+          </Link>
         </div>
 
         <div className="pt-2 flex flex-col gap-2">
@@ -296,6 +296,37 @@ export default function Home() {
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             SAPD Framework 상세 보기
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
+      {/* 최근 칼럼 */}
+      <section className="space-y-8 pt-12 border-t border-gray-200">
+        <header>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">Recent Writing</h2>
+          <p className="text-2xl font-semibold text-gray-900">최근 칼럼</p>
+        </header>
+
+        <div className="grid sm:grid-cols-2 gap-5">
+          <Link href="/writing/sapd-palantir-convergence" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
+            <p className="text-xs font-mono text-gray-400">2026-03-01</p>
+            <h3 className="font-bold text-gray-900 text-base leading-snug">SAPD Framework와 팔란티어 플랫폼의 구조적 동형성 분석</h3>
+            <p className="text-sm text-gray-600 line-clamp-2">공공 의사결정 프레임워크(SAPD)와 팔란티어의 실시간 운영 플랫폼이 공유하는 구조적 동형성을 체계적으로 분석한 비교 보고서.</p>
+          </Link>
+          <Link href="/writing/intro" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
+            <p className="text-xs font-mono text-gray-400">2026-02-25</p>
+            <h3 className="font-bold text-gray-900 text-base leading-snug">상태 기반 적응형 정책 개론</h3>
+            <p className="text-sm text-gray-600 line-clamp-2">전략기획론의 역사적 논쟁과 증거 기반 정책의 구조적 한계를 비판적으로 검토하고, 상태 기반 적응형 정책의 이론적 기초를 체계적으로 제시합니다.</p>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            href="/writing"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            전체 칼럼 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

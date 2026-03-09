@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import {
   getAllArchiveItems,
@@ -195,6 +195,25 @@ export default async function ArchiveDetailPage({
           )}
         </div>
       )}
+
+      {/* 관련 콘텐츠 교차 링크 */}
+      <nav className="border-t border-gray-200 pt-8 space-y-4">
+        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">관련 콘텐츠</h2>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/research" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+            연구 프로젝트
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+          <Link href="/writing" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+            칼럼 및 인사이트
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+          <Link href="/framework" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+            SAPD Framework
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+      </nav>
     </article>
   );
 }
