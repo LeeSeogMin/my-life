@@ -1,16 +1,80 @@
 import { Calendar, Briefcase, Code } from "lucide-react";
 
+const SITE_URL = "https://my-life-six-pi.vercel.app";
+
 export const metadata = {
     title: "연구 — 주요 연구·개발 프로젝트",
     description: "이석민의 AI 기반 정책 분석, 국제관계 예측 파이프라인, 정책 의사결정 지원 시스템 등 주요 연구·개발 프로젝트 소개.",
+    alternates: {
+        canonical: `${SITE_URL}/research`,
+    },
     openGraph: {
         title: "연구 — 이석민 | 정책 × AI",
         description: "AI 기반 정책 분석, 국제관계 예측, 정책 의사결정 지원 시스템 등 연구·개발 프로젝트.",
+        url: `${SITE_URL}/research`,
+    },
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "연구 — 이석민 | 정책 × AI",
+    description: "이석민의 AI 기반 정책 분석, 국제관계 예측 파이프라인, 정책 의사결정 지원 시스템 등 주요 연구·개발 프로젝트 소개.",
+    url: `${SITE_URL}/research`,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    mainEntity: {
+        "@type": "ItemList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                item: {
+                    "@type": "ResearchProject",
+                    name: "AI 기반 국제관계 통합 분석 파이프라인",
+                    description: "동아시아 국제관계의 변동이 국내에 미치는 영향을 과학적으로 분석하기 위해 AI 기반 통합 파이프라인 및 DSLM 방법론을 탐구합니다.",
+                    member: { "@id": `${SITE_URL}/#person` },
+                    keywords: ["Forecasting", "International Relations", "DSLM", "LLM Router", "Causal Inference"],
+                },
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                item: {
+                    "@type": "ResearchProject",
+                    name: "지능형 정책 의사결정 지원 시스템",
+                    description: "인공지능, 강화학습, 디지털 트윈 등 최신 방법론을 통합한 계산사회과학 기반의 정책 지원 체계를 구축합니다.",
+                    member: { "@id": `${SITE_URL}/#person` },
+                    keywords: ["Decision Support", "Digital Twin", "Causal ML", "Agent-based Simulation"],
+                },
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                item: {
+                    "@type": "ResearchProject",
+                    name: "AI를 활용한 시니어 정신건강 진단 앱 개발",
+                    description: "한신대학교 소프트웨어중심대학사업단 프로젝트의 일환으로 시니어의 정신건강을 선제적으로 진단하고 관리할 수 있는 AI 기반 소프트웨어를 개발.",
+                    member: { "@id": `${SITE_URL}/#person` },
+                    funder: {
+                        "@type": "Organization",
+                        name: "한신대학교 소프트웨어중심대학사업단",
+                    },
+                    startDate: "2025-05",
+                    endDate: "2025-09",
+                    keywords: ["Applied AI", "Public Health", "UI/UX for Seniors"],
+                },
+            },
+        ],
     },
 };
 
 export default function ResearchPage() {
     return (
+        <>
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="space-y-16">
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b-2 border-gray-900 pb-4 inline-block">Research</h1>
@@ -118,5 +182,6 @@ export default function ResearchPage() {
                 </p>
             </div>
         </div>
+        </>
     );
 }

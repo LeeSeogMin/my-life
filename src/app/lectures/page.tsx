@@ -1,9 +1,15 @@
+const SITE_URL = "https://my-life-six-pi.vercel.app";
+
 export const metadata = {
     title: "강의 — 딥러닝, 데이터, 정책분석",
     description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+    alternates: {
+        canonical: `${SITE_URL}/lectures`,
+    },
     openGraph: {
         title: "강의 — 이석민 | 정책 × AI",
         description: "딥러닝, 데이터분석, 정책분석, 웹프로그래밍 등 학부 강의 안내.",
+        url: `${SITE_URL}/lectures`,
     },
 };
 
@@ -29,7 +35,41 @@ export default function LecturesPage() {
         }
     ];
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "강의 — 이석민 | 정책 × AI",
+        description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+        url: `${SITE_URL}/lectures`,
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        mainEntity: {
+            "@type": "ItemList",
+            itemListElement: semesters.flatMap((semester, si) =>
+                semester.courses.map((course, ci) => ({
+                    "@type": "ListItem",
+                    position: si * 4 + ci + 1,
+                    item: {
+                        "@type": "Course",
+                        name: course.title,
+                        description: course.desc,
+                        provider: {
+                            "@type": "Organization",
+                            name: "한신대학교 공공인재빅데이터융합학",
+                        },
+                        instructor: { "@id": `${SITE_URL}/#person` },
+                        inLanguage: "ko-KR",
+                    },
+                }))
+            ),
+        },
+    };
+
     return (
+        <>
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="space-y-12">
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">강의 코너 (Lectures)</h1>
@@ -65,5 +105,6 @@ export default function LecturesPage() {
                 ))}
             </div>
         </div>
+        </>
     );
 }
