@@ -90,7 +90,15 @@
       "WebFetch(domain:guide.ncloud-docs.com)",
       "Bash(/c/Users/user/AppData/Local/Programs/Python/Python312/python.exe:*)",
       "WebFetch(domain:ai.google.dev)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(ls -la /Users/callii/Documents/my-life/.env*)",
+      "Bash(ls /Users/callii/Documents/my-life/env*)",
+      "Bash(cat /Users/callii/Documents/my-life/next.config.*)",
+      "Bash(vercel env ls)",
+      "Bash(vercel login)",
+      "Bash(vercel link)",
+      "Bash(vercel link --yes)",
+      "Bash(vercel env pull --yes .env.vercel.tmp)"
     ]
   },
   "enableAllProjectMcpServers": true,
