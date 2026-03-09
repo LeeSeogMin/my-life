@@ -143,6 +143,22 @@ export default function ResearchPage() {
                 </div>
             </section>
 
+            {/* 공동 연구 제안 */}
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 space-y-3">
+                <h3 className="text-lg font-bold text-gray-900">함께 연구할 파트너를 찾습니다</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                    위 연구 주제에 관심이 있는 <strong className="text-gray-800">연구자, 공공기관, 지방자치단체</strong>와의 공동 연구 및 협력을 환영합니다.
+                    데이터 기반 정책 분석, AI 활용 의사결정 시스템 구축 등 실질적 문제 해결을 함께 모색하고자 합니다.
+                </p>
+                <p className="text-sm text-gray-700">
+                    관심 있으신 분은{" "}
+                    <a href="mailto:newmind68@hs.ac.kr" className="font-semibold text-blue-600 hover:underline">
+                        newmind68@hs.ac.kr
+                    </a>
+                    로 편하게 연락 주십시오.
+                </p>
+            </div>
+
             {/* Applied AI & Development Project (Key Projects) - Third Priority */}
             <section className="space-y-6 pt-12 border-t border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
