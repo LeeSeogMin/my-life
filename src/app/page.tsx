@@ -37,7 +37,7 @@ export default function Home() {
 
         {/* 한 줄 소개 + 학문적 여정 */}
         <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl">
-          인문사회과학적 문제의식에서 출발하여, 데이터사이언스와 인공지능 기술을 활용한 AI 기반 정책 분석과 데이터 기반 사회과학 연구를 수행하는 융합 연구자. 정책 기획·평가, 인과추론, 공공 의사결정 시스템을 연구하고 직접 설계·개발합니다.
+          &ldquo;공공 의사결정은 어떻게 더 나은 시스템이 될 수 있는가&rdquo; &mdash; 인문사회과학적 문제의식에서 출발하여 정책이론과 데이터사이언스 방법론을 연구하고, 그 연구결과를 실제 작동하는 AI 기반 정책 분석 시스템으로 직접 설계·개발합니다.
         </p>
 
         {/* 학력 — 3단계 융합 궤적 (카드박스 + 화살표) */}
@@ -82,6 +82,8 @@ export default function Home() {
           <p className="text-2xl font-semibold text-gray-900">전문 영역</p>
         </header>
 
+        {/* Research */}
+        <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase">Research</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             {
@@ -97,16 +99,50 @@ export default function Home() {
               keywords: ["NLP", "geoAI", "강화학습"],
             },
             {
-              icon: <Code2 className="w-5 h-5" />,
-              title: "AI 시스템 설계·개발",
-              desc: "정책 의사결정 지원 시스템, AI 파이프라인, 웹 기반 분석 플랫폼 설계 및 구현",
-              keywords: ["LLMOps", "파이프라인", "웹 개발"],
-            },
-            {
               icon: <BarChart3 className="w-5 h-5" />,
               title: "데이터사이언스",
               desc: "계량경제학·인과추론·머신러닝·딥러닝을 결합한 정책 데이터 분석. 인과 데이터사이언스, 데이터사이언스 방법론 저서 발간",
               keywords: ["계량경제학", "인과추론", "ML/DL"],
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3"
+            >
+              <div className="flex items-center gap-3">
+                <div className="text-blue-500">{item.icon}</div>
+                <h3 className="font-semibold text-gray-900 text-base">{item.title}</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {item.keywords.map((kw) => (
+                  <span
+                    key={kw}
+                    className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded"
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-3 py-2">
+          <div className="flex-1 border-t border-gray-200" />
+          <p className="text-sm text-gray-500 font-medium">위의 연구를 아래와 같이 직접 설계하고 구현합니다</p>
+          <div className="flex-1 border-t border-gray-200" />
+        </div>
+
+        {/* Implementation */}
+        <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase">Implementation</p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            {
+              icon: <Code2 className="w-5 h-5" />,
+              title: "AI 시스템 설계·개발",
+              desc: "정책 의사결정 지원 시스템, AI 파이프라인, 웹 기반 분석 플랫폼 설계 및 구현",
+              keywords: ["LLMOps", "파이프라인", "웹 개발"],
             },
             {
               icon: <GraduationCap className="w-5 h-5" />,
@@ -154,11 +190,18 @@ export default function Home() {
 
         <div className="max-w-3xl space-y-4">
           <p className="text-gray-700 leading-relaxed">
-            기존 증거 기반 정책(Evidence-based Policy)이 사후 평가와 정적 구조에 머무르는 한계를 넘어,
-            정책을 일회적 개입이 아니라 <strong className="text-gray-900">실시간 상태(State) 데이터를 통해 지속적으로 적응하는
-            시스템</strong>으로 진화시킨다. 이 패러다임을 <strong className="text-gray-900">상태 기반 적응형 정책(State-based Adaptive Policy)</strong>이라 부르며,
-            이를 구현하기 위한 설계 아키텍처로 SAPD Framework를 제시하고 있다.
-            이 프레임워크를 기반으로 <strong className="text-gray-900">공공 의사결정 지원 시스템, AI 분석 파이프라인</strong> 등을 직접 설계·개발하고 있다.
+            기존 증거 기반 정책(Evidence-based Policy)은 사후 평가와 정적 구조에 머물러,
+            변화하는 현실에 적응하지 못하는 구조적 한계를 안고 있다.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            이 한계를 넘기 위해, 정책을 일회적 개입이 아니라{" "}
+            <strong className="text-gray-900">실시간 상태(State) 데이터에 기반해 지속적으로 적응하는 시스템</strong>으로
+            재설계하는 패러다임, <strong className="text-gray-900">상태 기반 적응형 정책(State-based Adaptive Policy)</strong>을
+            연구하고 있다. 이를 위한 설계 아키텍처가 SAPD Framework이다.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            <strong className="text-gray-900">이론은 구현될 때 비로소 검증된다.</strong>{" "}
+            SAPD Framework에 기반하여 공공 의사결정 지원 시스템, AI 분석 파이프라인 등을 설계하고 개발하고 있다.
           </p>
         </div>
 
