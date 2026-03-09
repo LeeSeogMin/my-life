@@ -10,6 +10,7 @@ export interface Book {
   publishDate: string;
   url: string;
   description: string;
+  tableOfContents: string;
 }
 
 export interface Publication {
@@ -21,6 +22,7 @@ export interface Publication {
   year: string;
   filename: string;
   description: string;
+  abstract: string;
 }
 
 export type ArchiveItem =

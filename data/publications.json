@@ -7,7 +7,8 @@
         "volume_issue": "Under Review",
         "year": "2026",
         "filename": "",
-        "description": ""
+        "description": "",
+        "abstract": ""
     },
     {
         "id": "J-006",
@@ -17,17 +18,19 @@
         "volume_issue": "Under Review",
         "year": "2026",
         "filename": "",
-        "description": ""
+        "description": "",
+        "abstract": ""
     },
     {
         "id": "J-001",
         "title": "국민청원 텍스트의 언어적 특성이 정책의제화에 미치는 영향: 기계학습 기반 예측 및 인과분석",
         "author": "이석민 (Seog-Min Lee)",
-        "journal": "융합사회연구소",
-        "volume_issue": "Vol.19, No. 4",
+        "journal": "융합사회와 공공정책",
+        "volume_issue": "Vol.19, No. 4, pp. 338-361",
         "year": "2026",
         "filename": "융합사회연구소.pdf",
-        "description": "청와대 국민청원 427,903건(2017–2019)을 대상으로 12개 언어적 특성(텍스트 길이, 분노 점수, 구체성 등)이 정책의제화에 미치는 영향을 분석한 연구. Random Forest 기반 예측 모형(AUC-ROC 0.91)과 성향점수매칭(PSM) 인과분석을 결합하여, 텍스트의 구조적 특성이 청원의 정책 반영 여부에 유의미한 인과적 효과를 가짐을 실증하였다."
+        "description": "청와대 국민청원 427,903건(2017–2019)을 대상으로 12개 언어적 특성(텍스트 길이, 분노 점수, 구체성 등)이 정책의제화에 미치는 영향을 분석한 연구. Random Forest 기반 예측 모형(AUC-ROC 0.91)과 성향점수매칭(PSM) 인과분석을 결합하여, 텍스트의 구조적 특성이 청원의 정책 반영 여부에 유의미한 인과적 효과를 가짐을 실증하였다.",
+        "abstract": "This study analyzes 427,903 petitions from the Blue House National Petition platform (2017-2019) to examine the impact of linguistic features on policy agenda-setting. Twelve linguistic features were extracted, and machine learning models combined with Propensity Score Matching (PSM) were applied. The Random Forest model achieved an AUC-ROC of 0.91. PSM revealed that text length (ATT=+0.31%p), anger score (ATT=+0.21%p), and specificity score (ATT=+0.13%p) had significant causal effects (all p<0.001), while sentiment polarity showed no significant effect. Interaction term logistic regression confirmed significant synergy effects: anger × specificity (OR=2.126), anger × length (OR=1.605), and specificity × length (OR=1.678), all p<0.001. These findings suggest that policy agenda-setting is driven by expression intensity and specificity rather than emotional direction."
     },
     {
         "id": "J-002",
@@ -37,17 +40,19 @@
         "volume_issue": "제36권 제4호",
         "year": "2026",
         "filename": "한국사회와행정연구소.pdf",
-        "description": "고용보험 월별 산업별 데이터(2016–2019, 12개 산업, N=576)를 활용하여 최저임금 인상과 일자리안정자금의 결합 효과를 노출강도 기반 이중차분법(Exposure-based DID)으로 분석한 연구. Wild cluster bootstrap 기법을 적용하여 소표본 군집 문제를 보정하고, 두 정책의 상호작용이 산업별로 이질적인 고용 효과를 가짐을 실증하였다."
+        "description": "고용보험 월별 산업별 데이터(2016–2019, 12개 산업, N=576)를 활용하여 최저임금 인상과 일자리안정자금의 결합 효과를 노출강도 기반 이중차분법(Exposure-based DID)으로 분석한 연구. Wild cluster bootstrap 기법을 적용하여 소표본 군집 문제를 보정하고, 두 정책의 상호작용이 산업별로 이질적인 고용 효과를 가짐을 실증하였다.",
+        "abstract": "한국은 2018-2019년 최저임금을 누적 29.1% 인상하면서 동시에 일자리안정자금(5.7조원)을 지원하였으며, 두 정책이 동시에 시행되어 개별 효과 분리가 불가능하므로 본 연구는 두 정책의 결합 효과를 추정한다. 고용보험 DB의 2016-2019년 12개 산업 월별 패널(N=576)에 노출강도 기반 이중차분법을 적용하고, 소표본 편의 보정을 위해 군집 부트스트랩(wild cluster bootstrap) 추론을 사용하였다. 분석 결과, 평균처치효과(ATT)는 -0.05%p로 통계적으로 유의하지 않았으나, 소표본(N=12)에서의 검정력 한계를 고려할 때 이 비유의성이 효과의 부재를 의미하는 것인지 작은 효과의 미검출인지 구분할 수 없다. 산업별 시간추세와 거시수요를 통제한 확장 모형에서도 이 결론은 유지되었다. 본 연구는 최저임금 인상과 일자리안정자금의 결합 효과가 대규모 고용 감소와 통계적으로 유의한 연관성을 보이지 않았음을 발견하였으나, 중소 규모(1-5%p)의 효과에 대해서는 본 연구의 검정력으로 판별할 수 없다."
     },
     {
         "id": "J-003",
         "title": "Variable-Dependent Cultural Alignment in LLM Survey Simulation: Comparing Indigenous and Global Models",
         "author": "이석민 (Seog-Min Lee)",
         "journal": "International Journal of Internet, Broadcasting and Communication",
-        "volume_issue": "Vol.18 No.1",
+        "volume_issue": "Vol.18 No.1, pp. 407-416",
         "year": "2026",
         "filename": "IJIBC.pdf",
-        "description": "한국종합사회조사(KGSS 2023)의 문화적 변수를 기준으로, 글로벌 모델(GPT-5.2)과 한국 토착 모델(CLOVA HCX-007)의 설문 시뮬레이션 정합성을 비교한 연구. Jensen-Shannon 발산과 Kolmogorov-Smirnov 검정을 적용하여, LLM의 문화적 정렬이 변수에 따라 이질적으로 나타나며 토착 모델의 우위가 특정 영역에 한정됨을 밝혔다."
+        "description": "한국종합사회조사(KGSS 2023)의 문화적 변수를 기준으로, 글로벌 모델(GPT-5.2)과 한국 토착 모델(CLOVA HCX-007)의 설문 시뮬레이션 정합성을 비교한 연구. Jensen-Shannon 발산과 Kolmogorov-Smirnov 검정을 적용하여, LLM의 문화적 정렬이 변수에 따라 이질적으로 나타나며 토착 모델의 우위가 특정 영역에 한정됨을 밝혔다.",
+        "abstract": "Large language models (LLMs) are increasingly used to simulate survey responses ('silicon sampling'), yet whether locally trained ('indigenous') models better reproduce local public opinion remains untested. We compare a global model (GPT-5.2) with a Korean indigenous model (CLOVA HCX-007) using marginal distributions from the Korean General Social Survey (KGSS) 2023 as benchmarks. We evaluate six culturally salient variables spanning institutional trust, national pride, inter-Korean attitudes, and political orientation, quantifying alignment via Jensen-Shannon (JS) divergence and Kolmogorov-Smirnov (KS) tests. Our results show that CLOVA yields mixed results (average JS=0.096; 2/6 variables improved): gains on UNIFI (+54.1%) and CONLEGIS (+35.8%), but comparable or worse performance on four other variables. Neither model achieves distributional equivalence with KGSS benchmarks (KS tests: all p<0.05). We recommend variable-level pilot evaluation before substantive use of silicon sampling."
     },
     {
         "id": "J-008",
@@ -57,26 +62,29 @@
         "volume_issue": "제35권 제4호, pp. 29-50",
         "year": "2025",
         "filename": "",
-        "description": "LDA와 LLM 기반 토픽 모델(BERTopic, CTE, GNN, VAE)의 성능을 토픽 구별도(명확, 유사, 혼합)와 데이터셋 규모(500~100,000건)에 따라 체계적으로 비교한 연구. LDA는 대규모 데이터에서 견고한 확장성을, CTE는 명확한 토픽 구별 조건에서 우수한 의미 포착력을 보였다. 기존 일관성·퍼플렉시티 지표의 한계를 극복하기 위해 임베딩 기반 토픽 유사도 및 최적 매칭 기반 유사도라는 새로운 평가 지표를 제안하였다."
+        "description": "LDA와 LLM 기반 토픽 모델(BERTopic, CTE, GNN, VAE)의 성능을 토픽 구별도(명확, 유사, 혼합)와 데이터셋 규모(500~100,000건)에 따라 체계적으로 비교한 연구. LDA는 대규모 데이터에서 견고한 확장성을, CTE는 명확한 토픽 구별 조건에서 우수한 의미 포착력을 보였다. 기존 일관성·퍼플렉시티 지표의 한계를 극복하기 위해 임베딩 기반 토픽 유사도 및 최적 매칭 기반 유사도라는 새로운 평가 지표를 제안하였다.",
+        "abstract": "본 연구는 토픽 모델링 기법들의 성능을 비교 분석하고자 한다. 구체적으로 잠재 디리클레 할당(LDA)과 같은 전통적인 통계 기반 방법과 대규모 언어 모델(LLM) 기반의 최신 접근법들을 비교한다. LDA와 함께 BERTopic, 문맥 기반 토픽 임베딩(CTE), 그래프 신경망(GNN), 변분 오토인코더(VAE)를 포함하는 다양한 LLM 기반 모델들을 체계적으로 비교 분석하였으며, 토픽 구별도(명확, 유사, 혼합) 및 데이터셋 규모(500개에서 100,000개 문서)에 따른 각 모델의 성능을 평가하였다. 연구 결과, LDA는 대규모 데이터셋에서 견고한 성능과 확장성을 보이는 반면, CTE와 같은 문맥 기반 방법은 특히 토픽 구별도가 명확한 데이터셋에서 미묘한 의미 정보를 포착하는 데 뛰어난 성능을 나타냈다. 또한, 본 연구에서는 기존에 사용되던 일관성(coherence) 및 퍼플렉시티(perplexity) 지표의 한계를 극복하기 위하여, 임베딩 기반 토픽 유사도와 최적 매칭 기반 유사도라는 새로운 평가 지표를 사용하였다."
     },
     {
         "id": "J-004",
         "title": "AMICE: 이중 강건 인과 추론 파이프라인 (고차원 관찰 데이터 분석을 중심으로)",
         "author": "이석민 (Seog-Min Lee)",
-        "journal": "KIPS Transactions on Software and Data Engineering (소프트웨어 및 데이터 공학, 제15권 제2호)",
-        "volume_issue": "",
-        "year": "2025",
+        "journal": "KIPS Transactions on Software and Data Engineering (소프트웨어 및 데이터 공학)",
+        "volume_issue": "제15권 제2호, pp. 130-138",
+        "year": "2026",
         "filename": "kips.pdf",
-        "description": "다중대입(MICE)과 증강역확률가중(AIPW) 추정량을 결합한 이중 강건(doubly robust) 인과 추론 파이프라인을 제안한 연구. 한국 제조업 디지털 전환 데이터(n=31,572, p=281)에 적용하여, 디지털 전환이 총요소생산성(TFP)을 평균 3.9% 향상시킴을 실증하였다. 고차원 관찰 데이터에서의 결측치 처리와 인과 추론을 체계적으로 통합하는 방법론을 제시한다."
+        "description": "다중대입(MICE)과 증강역확률가중(AIPW) 추정량을 결합한 이중 강건(doubly robust) 인과 추론 파이프라인을 제안한 연구. 한국 제조업 디지털 전환 데이터(n=31,572, p=281)에 적용하여, 디지털 전환이 총요소생산성(TFP)을 평균 3.9% 향상시킴을 실증하였다. 고차원 관찰 데이터에서의 결측치 처리와 인과 추론을 체계적으로 통합하는 방법론을 제시한다.",
+        "abstract": "Causal inference in high-dimensional observational data requires addressing the dual challenges of missing data and model misspecification. We developed a pipeline that systematically integrates Multiple Imputation by Chained Equations (MICE) with the doubly robust Augmented Inverse Probability Weighting (AIPW) estimator to evaluate the productivity effects of digital transformation using data from the Korean Business Activity Survey (n=31,572, p=281, 2019-2023). By employing a MICE strategy that excludes the treatment variable, we increased the sample size by 76% (from 17,897 to 31,572), while K=5 cross-validation in AIPW estimation mitigated the risk of model misspecification. Our findings indicate that digital transformation yields an average total factor productivity (TFP) increase of 3.9%. This effect was particularly pronounced in the pre-pandemic period (+5.3%) and in the electronics (+8.6%) and chemical (+13.5%) industries. Robustness was confirmed through additional tests, including placebo tests and subsample analyses."
     },
     {
         "id": "J-005",
         "title": "Semantic-based Evaluation Framework for Topic Models: Integrated Deep Learning and LLM Validation",
         "author": "이석민 (Seog-Min Lee)",
         "journal": "Journal of Information Processing Systems (JIPS, SCOPUS)",
-        "volume_issue": "",
+        "volume_issue": "Vol. 22, No. 1, pp. 34-48",
         "year": "2026",
         "filename": "JIPS_11page.pdf",
-        "description": "신경 토픽 모델의 평가를 위한 의미 기반 프레임워크를 제안한 연구. 딥러닝 임베딩과 LLM 앙상블(Claude, GPT-4.1, Grok)을 통합한 검증 체계를 구축하여, 기존 NPMI 대비 7.62배 향상된 일관성 판별력(Cohen's d = 2.96)을 달성하였다. 토픽 모델 평가에서 인간 판단과의 정렬 문제를 해결하는 새로운 방법론을 제시한다."
+        "description": "신경 토픽 모델의 평가를 위한 의미 기반 프레임워크를 제안한 연구. 딥러닝 임베딩과 LLM 앙상블(Claude, GPT-4.1, Grok)을 통합한 검증 체계를 구축하여, 기존 NPMI 대비 7.62배 향상된 일관성 판별력(Cohen's d = 2.96)을 달성하였다. 토픽 모델 평가에서 인간 판단과의 정렬 문제를 해결하는 새로운 방법론을 제시한다.",
+        "abstract": "Topic modeling has evolved from statistical methods such as latent Dirichlet allocation (LDA) to neural hybrid models including BERTopic, which utilize BERT embeddings. However, traditional statistical evaluation metrics overlook the semantic richness of these neural representations, limiting model assessment capabilities. This paper introduces semantic-based evaluation metrics that leverage deep learning embeddings and validates them through both statistical comparison and large language model (LLM)-based assessment. Analysis across 9,608 synthetic documents with 45 topics and a stratified sample of 1,000 documents from 20 Newsgroups shows that semantic metrics achieve improved discrimination compared to statistical baselines. Specifically, semantic coherence shows a 38.1% discriminative range versus 5.0% for statistical measures, representing a 7.62x improvement. LLM assessments demonstrate inter-model agreement through a weighted three-model ensemble (mean pairwise Spearman ρ=0.937) and positive correlation with semantic metrics on public datasets (ρ=0.632-0.671)."
     }
 ]

@@ -139,6 +139,21 @@ export default async function ArchiveDetailPage({
               <p>{item.description}</p>
             </div>
           )}
+          {item.tableOfContents && (
+            <section className="space-y-4">
+              <h2 className="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2">목차</h2>
+              <div className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                {item.tableOfContents.split("\n").map((line, i) => {
+                  const isChapter = line.startsWith("제") && (line.includes("장") || line.includes("부") || line.includes("편"));
+                  return (
+                    <p key={i} className={isChapter ? "font-semibold text-gray-900 mt-3" : "pl-4 text-gray-600"}>
+                      {line}
+                    </p>
+                  );
+                })}
+              </div>
+            </section>
+          )}
           {item.url && (
             <a
               href={item.url}
@@ -171,6 +186,12 @@ export default async function ArchiveDetailPage({
             <div className="prose prose-gray max-w-none">
               <p>{item.description}</p>
             </div>
+          )}
+          {item.abstract && (
+            <section className="space-y-3">
+              <h2 className="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2">초록 (Abstract)</h2>
+              <p className="text-sm text-gray-700 leading-relaxed">{item.abstract}</p>
+            </section>
           )}
         </div>
       )}
