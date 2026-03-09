@@ -1,5 +1,6 @@
 import { ArrowRight, BookOpen, BarChart3, Brain, Code2, GraduationCap, Mic } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -292,10 +293,13 @@ export default function Home() {
 
         {/* SAPD 적응형 의사결정 루프 다이어그램 */}
         <div className="pt-6 flex justify-center">
-          <img
+          <Image
             src="/sapd-loop.png"
             alt="SAPD Adaptive Decision Loop — State(t) → Decision(t) = f(State(t)) → System Response → State(t+1) 순환 피드백 루프"
-            className="w-full max-w-lg"
+            width={800}
+            height={800}
+            className="w-full max-w-lg h-auto"
+            priority
           />
         </div>
 
