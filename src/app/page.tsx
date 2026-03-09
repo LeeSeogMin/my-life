@@ -195,7 +195,7 @@ export default function Home() {
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 space-y-2">
           <h3 className="text-base font-bold text-gray-900">함께 연구할 파트너를 찾습니다</h3>
           <p className="text-sm text-gray-600 leading-relaxed">
-            위 연구 주제에 관심이 있는 <strong className="text-gray-800">연구자, 공공기관, 지방자치단체</strong>와의 공동 연구·협력을 환영합니다.
+            아래의 연구 주제에 관심이 있는 <strong className="text-gray-800">연구자, 공공기관, 지방자치단체</strong>와의 공동 연구·협력을 환영합니다.
             데이터 기반 정책 분석, AI 활용 의사결정 시스템 구축 등 실질적 문제 해결을 함께 모색하고자 합니다.
           </p>
           <p className="text-sm text-gray-700">
