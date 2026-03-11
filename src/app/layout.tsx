@@ -162,12 +162,11 @@ export default function RootLayout({
             <div className="flex items-center gap-6">
               <nav className="flex gap-6 text-base font-semibold text-gray-700">
                 <Link href="/" className="hover:text-black transition-colors">홈</Link>
-                <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
-                <Link href="/research" className="hover:text-black transition-colors">연구</Link>
+                <Link href="/framework" className="hover:text-black transition-colors">SAPD Framework</Link>
+                <Link href="/projects" className="hover:text-black transition-colors">프로젝트</Link>
                 <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
-                <Link href="/archive" className="hover:text-black transition-colors">저서/논문</Link>
-                <Link href="/lectures" className="hover:text-black transition-colors">강의</Link>
-                <Link href="/community" className="hover:text-black transition-colors">커뮤니티</Link>
+                <Link href="/about" className="hover:text-black transition-colors">About</Link>
+                <Link href="/contact" className="hover:text-black transition-colors">Contact</Link>
               </nav>
               <AuthButton />
             </div>
@@ -180,9 +179,15 @@ export default function RootLayout({
 
         <footer className="border-t border-gray-200 bg-white py-10 mt-auto">
           <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
+            <nav className="flex justify-center gap-6 mb-4 text-gray-400">
+              <Link href="/research" className="hover:text-gray-600 transition-colors">연구</Link>
+              <Link href="/archive" className="hover:text-gray-600 transition-colors">저서/논문</Link>
+              <Link href="/lectures" className="hover:text-gray-600 transition-colors">강의</Link>
+              <Link href="/community" className="hover:text-gray-600 transition-colors">커뮤니티</Link>
+            </nav>
             <p>© {new Date().getFullYear()} Seog-Min Lee. All rights reserved.</p>
             <p className="mt-2 text-gray-400">
-              공공 전략 및 정책 의사결정 시스템 연구자 (한신대학교 공공인재빅데이터융합학) |{' '}
+              한신대학교 공공인재빅데이터융합학 |{' '}
               <a href="mailto:newmind68@hs.ac.kr" className="hover:text-blue-600 transition-colors">
                 newmind68@hs.ac.kr
               </a>

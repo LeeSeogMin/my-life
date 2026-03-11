@@ -239,6 +239,55 @@ export default function FrameworkPage() {
                 </div>
             </section>
 
+            {/* SAPD Validation Module (실무층) — Placeholder */}
+            <section className="space-y-6">
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">SAPD Validation Module (실무층)</h2>
+                <p className="text-gray-600 leading-relaxed max-w-3xl">
+                    SAPD의 이론적 아키텍처를 실무에서 적용하기 위한 검증 도구 모듈입니다.
+                    공공 AI 시스템의 타당성을 구조적으로 검토하는 체크리스트, 진단 도구, 평가 루브릭을 제공합니다.
+                </p>
+                <div className="grid sm:grid-cols-3 gap-4">
+                    {[
+                        {
+                            title: "공공 AI 검증 체크리스트",
+                            desc: "공공영역 AI 시스템의 입력 데이터, 모델 구조, 출력 검증을 위한 단계별 체크리스트.",
+                        },
+                        {
+                            title: "설명가능성 진단 도구",
+                            desc: "AI 의사결정의 설명가능성 수준을 진단하고, 개선 방향을 제시하는 구조화된 진단 프레임.",
+                        },
+                        {
+                            title: "감사 가능성 평가 루브릭",
+                            desc: "정책 AI의 감사 가능성(auditability)을 평가하기 위한 다차원 루브릭 체계.",
+                        },
+                    ].map((item, idx) => (
+                        <div key={idx} className="p-5 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300 space-y-2">
+                            <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">Coming Soon</span>
+                            <p className="text-sm font-bold text-gray-900">{item.title}</p>
+                            <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* How to Use — Placeholder */}
+            <section className="space-y-6">
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">How to Use</h2>
+                <div className="p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300 text-center space-y-3">
+                    <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">Coming Soon</span>
+                    <p className="text-sm text-gray-600">SAPD Framework를 실무에서 적용하는 단계별 가이드를 준비하고 있습니다.</p>
+                </div>
+            </section>
+
+            {/* 적용 사례 — Placeholder */}
+            <section className="space-y-6">
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">적용 사례</h2>
+                <div className="p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300 text-center space-y-3">
+                    <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">Coming Soon</span>
+                    <p className="text-sm text-gray-600">SAPD Framework의 실제 적용 사례를 정리하여 공개할 예정입니다.</p>
+                </div>
+            </section>
+
             {/* 관련 콘텐츠 교차 링크 */}
             <nav className="border-t border-gray-200 pt-8 space-y-4">
                 <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">관련 콘텐츠</h2>
@@ -251,8 +300,12 @@ export default function FrameworkPage() {
                         SAPD와 팔란티어의 구조적 동형성
                         <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
+                    <Link href="/projects" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+                        프로젝트
+                        <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
                     <Link href="/research" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
-                        연구 프로젝트
+                        학술 연구
                         <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                     <Link href="/archive" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">

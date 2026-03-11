@@ -1,4 +1,4 @@
-import { Calendar, Briefcase, Code, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const SITE_URL = "https://my-life-six-pi.vercel.app";
@@ -112,62 +112,6 @@ export default function ResearchPage() {
                 </div>
             </section>
 
-            {/* 연구·개발 프로젝트 (통합) */}
-            <section className="space-y-6 pt-12 border-t border-gray-100">
-                <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                    <Briefcase className="w-6 h-6 text-indigo-600" />
-                    연구·개발 프로젝트
-                </h2>
-                <div className="grid gap-6 md:grid-cols-2">
-                    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-                        <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full">진행 중</span>
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900">AI 기반 국제관계 통합 분석 파이프라인</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            동아시아 국제관계의 변동이 국내에 미치는 영향을 과학적으로 분석하기 위해 AI 기반 통합 파이프라인 및 DSLM(Domain Specific Language Model) 방법론을 탐구합니다. LLM Router 패턴과 인과 추론 모듈을 결합하여 합리적인 국가 전략 대응 방안을 도출하는 데 주력하고 있습니다.
-                        </p>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                            <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">Forecasting</span>
-                            <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">International Relations</span>
-                            <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">연구·개발</span>
-                        </div>
-                    </div>
-
-                    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-                        <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full">진행 중</span>
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900">지능형 정책 의사결정 지원 시스템</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            인공지능, 강화학습, 디지털 트윈 등 최신 방법론을 통합한 계산사회과학(Computational Social Science) 기반의 정책 지원 체계를 구축합니다. Causal ML을 통한 정책 인과효과 추정과 에이전트 기반 시뮬레이션을 통해 정책 생애주기 전반을 지능화합니다.
-                        </p>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                            <span className="text-[10px] font-bold bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded uppercase">Decision Support</span>
-                            <span className="text-[10px] font-bold bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded uppercase">Digital Twin</span>
-                            <span className="text-[10px] font-bold bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded uppercase">연구·개발</span>
-                        </div>
-                    </div>
-
-                    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3 md:col-span-2">
-                        <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-bold bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">완료</span>
-                            <span className="text-xs text-gray-400 font-mono">2025. 05 – 2025. 09</span>
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900">AI를 활용한 시니어 정신건강 진단 앱 개발</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            한신대학교 소프트웨어중심대학사업단 프로젝트의 일환으로, 학부생들과 함께 시니어의 정신건강을 선제적으로 진단하고 관리할 수 있는 AI 기반 소프트웨어를 개발하였습니다.
-                            실제 사회적 문제를 해결하기 위한 기술적 구현과 정책적 효용성을 동시에 검토한 연구 사례입니다.
-                        </p>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                            <span className="text-[10px] font-bold bg-blue-50 text-blue-600 px-2 py-0.5 rounded uppercase">Applied AI</span>
-                            <span className="text-[10px] font-bold bg-blue-50 text-blue-600 px-2 py-0.5 rounded uppercase">Public Health</span>
-                            <span className="text-[10px] font-bold bg-blue-50 text-blue-600 px-2 py-0.5 rounded uppercase">개발</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* 관련 저서·논문·칼럼 교차 링크 */}
             <section className="space-y-6 pt-12 border-t border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
@@ -193,6 +137,10 @@ export default function ResearchPage() {
                     <Link href="/writing/sapd-palantir-convergence" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-blue-500">칼럼</span>
                         <p className="text-sm font-semibold text-gray-900">SAPD와 팔란티어의 구조적 동형성</p>
+                    </Link>
+                    <Link href="/projects" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-500">프로젝트</span>
+                        <p className="text-sm font-semibold text-gray-900">프로토타입 및 연구·개발</p>
                     </Link>
                     <Link href="/archive" className="p-4 bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors flex items-center justify-center gap-2">
                         <span className="text-sm font-medium text-gray-600">전체 저서·논문 보기</span>
