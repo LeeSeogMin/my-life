@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Database, Cpu, Activity, RefreshCw, Shield, Eye, Users } from "lucide-react";
+import { ArrowDown, ArrowRight, Database, Cpu, Activity, RefreshCw, Shield, Eye, Users, CheckCircle2, Search, ClipboardCheck } from "lucide-react";
 import Link from "next/link";
 
 const SITE_URL = "https://my-life-six-pi.vercel.app";
@@ -239,34 +239,244 @@ export default function FrameworkPage() {
                 </div>
             </section>
 
-            {/* SAPD Validation Module (실무층) — Placeholder */}
-            <section className="space-y-6">
-                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">SAPD Validation Module (실무층)</h2>
-                <p className="text-gray-600 leading-relaxed max-w-3xl">
-                    SAPD의 이론적 아키텍처를 실무에서 적용하기 위한 검증 도구 모듈입니다.
-                    공공 AI 시스템의 타당성을 구조적으로 검토하는 체크리스트, 진단 도구, 평가 루브릭을 제공합니다.
-                </p>
-                <div className="grid sm:grid-cols-3 gap-4">
-                    {[
-                        {
-                            title: "공공 AI 검증 체크리스트",
-                            desc: "공공영역 AI 시스템의 입력 데이터, 모델 구조, 출력 검증을 위한 단계별 체크리스트.",
-                        },
-                        {
-                            title: "설명가능성 진단 도구",
-                            desc: "AI 의사결정의 설명가능성 수준을 진단하고, 개선 방향을 제시하는 구조화된 진단 프레임.",
-                        },
-                        {
-                            title: "감사 가능성 평가 루브릭",
-                            desc: "정책 AI의 감사 가능성(auditability)을 평가하기 위한 다차원 루브릭 체계.",
-                        },
-                    ].map((item, idx) => (
-                        <div key={idx} className="p-5 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300 space-y-2">
-                            <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">Coming Soon</span>
-                            <p className="text-sm font-bold text-gray-900">{item.title}</p>
-                            <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+            {/* SAPD Validation Module (실무층) */}
+            <section className="space-y-8">
+                <div className="space-y-4">
+                    <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">SAPD Validation Module (실무층)</h2>
+                    <p className="text-gray-600 leading-relaxed max-w-3xl">
+                        SAPD의 이론적 아키텍처를 실무에서 적용하기 위한 검증 도구 모듈이다.
+                        공공 AI 시스템의 타당성을 구조적으로 검토하는 체크리스트, 진단 도구, 평가 루브릭을 제공한다.
+                        EU AI Act, NIST AI RMF, 캐나다 AIA, 한국 인공지능 기본법 등 국제 주요 프레임워크를 비교 분석하여 SAPD의 적응형 루프에 통합하는 형태로 설계하고 있다.
+                    </p>
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 border border-blue-200 rounded-lg">
+                        <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+                        <span className="text-xs font-semibold text-blue-700">연구 진행 중 — Draft v0.1</span>
+                    </div>
+                </div>
+
+                {/* Tool 1: 공공 AI 검증 체크리스트 */}
+                <div className="p-6 bg-white border border-gray-200 rounded-xl space-y-5">
+                    <div className="flex items-start gap-3">
+                        <div className="p-2 bg-emerald-50 rounded-lg text-emerald-600 mt-0.5">
+                            <CheckCircle2 className="w-5 h-5" />
                         </div>
-                    ))}
+                        <div>
+                            <h3 className="text-lg font-bold text-gray-900">공공 AI 검증 체크리스트</h3>
+                            <p className="text-sm text-gray-500 mt-1">공공영역 AI 시스템의 생애주기 전반을 3단계 × 7개 도메인으로 구조화한 검증 체계</p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
+                        <div className="flex flex-wrap gap-1.5">
+                            {["Canada AIA", "EU AI Act", "NIST AI RMF", "한국 인공지능 기본법", "UK ATRS", "Singapore MAIGF"].map((fw) => (
+                                <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">3단계 검증 프로세스</p>
+                        <div className="grid sm:grid-cols-3 gap-3">
+                            <div className="p-3 bg-blue-50/50 rounded-lg border border-blue-100 space-y-1.5">
+                                <p className="text-xs font-bold text-blue-700">Phase 1 · 사전 검증</p>
+                                <p className="text-[11px] text-gray-600 leading-relaxed">도입 목적 정당성, 영향 평가, 데이터 거버넌스 적합성을 시스템 구축 이전에 검증</p>
+                            </div>
+                            <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100 space-y-1.5">
+                                <p className="text-xs font-bold text-emerald-700">Phase 2 · 운영 중 검증</p>
+                                <p className="text-[11px] text-gray-600 leading-relaxed">모델 성능 모니터링, 편향 드리프트 감시, 이해관계자 피드백 루프를 실시간 운영</p>
+                            </div>
+                            <div className="p-3 bg-purple-50/50 rounded-lg border border-purple-100 space-y-1.5">
+                                <p className="text-xs font-bold text-purple-700">Phase 3 · 사후 검증</p>
+                                <p className="text-[11px] text-gray-600 leading-relaxed">결과 감사, 정책 환류, 시스템 퇴역·전환 판단 기준 적용</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">7개 검증 도메인</p>
+                        <div className="grid sm:grid-cols-2 gap-2">
+                            {[
+                                { domain: "목적 정당성", desc: "공공 가치 부합성, 비례성 원칙, 대안 분석" },
+                                { domain: "데이터 거버넌스", desc: "출처 추적성, 대표성, 개인정보 보호, 데이터 품질" },
+                                { domain: "모델 구조", desc: "알고리즘 선택 근거, 공정성 제약, 성능 임계값" },
+                                { domain: "출력 검증", desc: "결과 타당성, 오류 허용 범위, 이의제기 경로" },
+                                { domain: "설명가능성", desc: "의사결정 논리 추적, 이해관계자별 설명 수준" },
+                                { domain: "운영 안전성", desc: "장애 대응, 인간 개입 절차, 모니터링 체계" },
+                                { domain: "민주적 통제", desc: "시민 참여, 의회 감독, 정보 공개 범위" },
+                            ].map((item) => (
+                                <div key={item.domain} className="flex items-start gap-2 p-2.5 bg-gray-50 rounded-lg">
+                                    <span className="text-[10px] font-bold text-gray-900 bg-gray-200 px-1.5 py-0.5 rounded whitespace-nowrap mt-0.5">{item.domain}</span>
+                                    <p className="text-[11px] text-gray-600 leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                        <p className="text-[11px] text-amber-800 leading-relaxed">
+                            <strong>SAPD 연동:</strong> 기존 프레임워크들이 정적 체크리스트에 머무는 반면, SAPD 검증 체크리스트는 Phase 2의 실시간 모니터링 항목이 적응형 의사결정 루프의 State(t) 관찰과 직접 연동되어, 검증 결과가 자동으로 정책 조정을 트리거하는 구조를 지향한다.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Tool 2: 설명가능성 진단 도구 */}
+                <div className="p-6 bg-white border border-gray-200 rounded-xl space-y-5">
+                    <div className="flex items-start gap-3">
+                        <div className="p-2 bg-blue-50 rounded-lg text-blue-600 mt-0.5">
+                            <Search className="w-5 h-5" />
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-bold text-gray-900">설명가능성 진단 도구</h3>
+                            <p className="text-sm text-gray-500 mt-1">AI 의사결정의 설명가능성 수준을 5개 차원 × 4단계 척도로 진단하는 구조화된 프레임</p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
+                        <div className="flex flex-wrap gap-1.5">
+                            {["DARPA XAI", "EU AI Act Art.13", "OECD AI Principles", "IEEE 7001", "NIST AI 100-1", "Doshi-Velez & Kim Taxonomy"].map((fw) => (
+                                <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">5개 진단 차원 (각 4개 진단 항목)</p>
+                        <div className="space-y-3">
+                            {[
+                                {
+                                    dim: "기술적 투명성",
+                                    color: "blue",
+                                    items: ["모델 아키텍처 문서화 수준", "입출력 관계 추적 가능성", "특성 기여도(feature attribution) 제공 여부", "불확실성 정량화 수준"],
+                                },
+                                {
+                                    dim: "의사결정 추적성",
+                                    color: "indigo",
+                                    items: ["개별 결정의 근거 재구성 가능성", "반사실적(counterfactual) 설명 생성 능력", "결정 경로의 로깅·감사 체계", "시간에 따른 결정 패턴 추적"],
+                                },
+                                {
+                                    dim: "이해관계자 적합성",
+                                    color: "violet",
+                                    items: ["정책결정자용 요약 설명 품질", "피영향자용 이해 가능한 설명 제공", "기술 감사자용 상세 설명 지원", "일반 시민용 접근 가능한 설명"],
+                                },
+                                {
+                                    dim: "맥락적 적절성",
+                                    color: "purple",
+                                    items: ["도메인 특수성 반영 정도", "문화·사회적 맥락 고려", "법적 요구사항 충족 수준", "윤리적 함의 설명 포함"],
+                                },
+                                {
+                                    dim: "동태적 설명력",
+                                    color: "fuchsia",
+                                    items: ["시간 경과에 따른 설명 일관성", "모델 업데이트 시 설명 변화 추적", "환경 변화에 대한 설명 적응", "설명 품질의 지속적 모니터링"],
+                                },
+                            ].map((d) => (
+                                <div key={d.dim} className="p-3 bg-gray-50 rounded-lg space-y-2">
+                                    <p className="text-xs font-bold text-gray-900">{d.dim}</p>
+                                    <div className="grid sm:grid-cols-2 gap-1.5">
+                                        {d.items.map((item) => (
+                                            <p key={item} className="text-[11px] text-gray-600 flex items-start gap-1.5">
+                                                <span className="text-gray-300 mt-0.5">—</span> {item}
+                                            </p>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">4단계 진단 척도</p>
+                        <div className="grid grid-cols-4 gap-2">
+                            {[
+                                { level: "Level 1", label: "불투명", color: "bg-red-50 text-red-700 border-red-100" },
+                                { level: "Level 2", label: "부분적", color: "bg-amber-50 text-amber-700 border-amber-100" },
+                                { level: "Level 3", label: "구조적", color: "bg-blue-50 text-blue-700 border-blue-100" },
+                                { level: "Level 4", label: "적응적", color: "bg-emerald-50 text-emerald-700 border-emerald-100" },
+                            ].map((l) => (
+                                <div key={l.level} className={`p-2 rounded-lg border text-center ${l.color}`}>
+                                    <p className="text-[10px] font-bold">{l.level}</p>
+                                    <p className="text-xs font-semibold">{l.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                        <p className="text-[11px] text-amber-800 leading-relaxed">
+                            <strong>SAPD 연동:</strong> Level 4 &apos;적응적 설명가능성&apos;은 SAPD 고유의 기여로, 설명이 State(t)의 변화에 따라 동태적으로 갱신되는 구조를 요구한다. 이는 정적 설명서(static documentation)에 머무는 기존 XAI 접근을 넘어서는 설계이다.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Tool 3: 감사 가능성 평가 루브릭 */}
+                <div className="p-6 bg-white border border-gray-200 rounded-xl space-y-5">
+                    <div className="flex items-start gap-3">
+                        <div className="p-2 bg-purple-50 rounded-lg text-purple-600 mt-0.5">
+                            <ClipboardCheck className="w-5 h-5" />
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-bold text-gray-900">감사 가능성 평가 루브릭</h3>
+                            <p className="text-sm text-gray-500 mt-1">정책 AI 시스템의 감사 가능성을 10개 차원 × 5단계 성숙도로 평가하는 다차원 루브릭</p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
+                        <div className="flex flex-wrap gap-1.5">
+                            {["GAO AI Accountability", "IIA AI Auditing", "ISACA/COBIT", "EDPB Guidelines", "SMACTR (Raji et al.)", "Mokander et al. Three-layered Audit"].map((fw) => (
+                                <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">10개 평가 차원</p>
+                        <div className="grid sm:grid-cols-2 gap-2">
+                            {[
+                                { dim: "거버넌스 구조", desc: "AI 시스템 관리 체계, 역할·책임 명확성, 의사결정 권한 배분" },
+                                { dim: "데이터 추적성", desc: "데이터 출처·변환 이력, 계보(lineage) 관리, 품질 검증 기록" },
+                                { dim: "모델 문서화", desc: "아키텍처·하이퍼파라미터·학습 이력의 체계적 문서화 수준" },
+                                { dim: "테스트·검증", desc: "성능·공정성·강건성 테스트 체계, 적대적(adversarial) 검증" },
+                                { dim: "변경 관리", desc: "모델 버저닝, 변경 승인 절차, 롤백 체계, 영향 평가" },
+                                { dim: "접근 통제", desc: "시스템 접근 권한, 로그 관리, 권한 분리(separation of duties)" },
+                                { dim: "사고 대응", desc: "이상 탐지, 긴급 중단(kill switch), 사고 보고·분석 체계" },
+                                { dim: "이해관계자 소통", desc: "감사 결과 공개, 이의제기 절차, 시민 참여 메커니즘" },
+                                { dim: "법적 준거", desc: "관할권별 규제 요건 매핑, 준수 증적(evidence) 관리" },
+                                { dim: "지속적 모니터링", desc: "실시간 성능·편향 감시, 드리프트 탐지, 자동 알림 체계" },
+                            ].map((item) => (
+                                <div key={item.dim} className="flex items-start gap-2 p-2.5 bg-gray-50 rounded-lg">
+                                    <span className="text-[10px] font-bold text-gray-900 bg-gray-200 px-1.5 py-0.5 rounded whitespace-nowrap mt-0.5">{item.dim}</span>
+                                    <p className="text-[11px] text-gray-600 leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="space-y-3">
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">5단계 성숙도 척도</p>
+                        <div className="grid grid-cols-5 gap-1.5">
+                            {[
+                                { level: "1", label: "초기", color: "bg-red-50 text-red-700 border-red-100" },
+                                { level: "2", label: "반복", color: "bg-orange-50 text-orange-700 border-orange-100" },
+                                { level: "3", label: "정의", color: "bg-amber-50 text-amber-700 border-amber-100" },
+                                { level: "4", label: "관리", color: "bg-blue-50 text-blue-700 border-blue-100" },
+                                { level: "5", label: "최적화", color: "bg-emerald-50 text-emerald-700 border-emerald-100" },
+                            ].map((l) => (
+                                <div key={l.level} className={`p-2 rounded-lg border text-center ${l.color}`}>
+                                    <p className="text-[10px] font-bold">Level {l.level}</p>
+                                    <p className="text-[11px] font-semibold">{l.label}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-[11px] text-gray-500">CMMI/COBIT 성숙도 모델을 AI 감사 맥락에 적응. 각 차원별 Level 1(비공식적·임시적)에서 Level 5(자동화·자기최적화)까지의 구체적 기준을 정의한다.</p>
+                    </div>
+
+                    <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                        <p className="text-[11px] text-amber-800 leading-relaxed">
+                            <strong>SAPD 연동:</strong> &apos;지속적 모니터링&apos; 차원은 SAPD Layer 5(평가 및 적응형 피드백)와 직접 연결된다. Level 5 성숙도에서는 감사 결과가 State(t+1)로 자동 환류되어, 감사가 일회적 이벤트가 아닌 적응형 루프의 구성 요소로 작동한다. 또한 LLM 기반 시스템의 특수성(환각, 프롬프트 취약성, 출력 비결정성)을 반영한 하위 차원을 별도 설계 중이다.
+                        </p>
+                    </div>
                 </div>
             </section>
 

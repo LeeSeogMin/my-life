@@ -1,4 +1,4 @@
-import { ArrowRight, BarChart3, Brain, Code2 } from "lucide-react";
+import { ArrowRight, BarChart3, Brain, Code2, Target, TrendingUp } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,12 +17,12 @@ export default function Home() {
         <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학</p>
 
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug max-w-2xl mb-6">
-          공공·정책 AI의 설계와 검토
+          정책 기획·분석에서 AI 설계·검증까지
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
-          정책 데이터를 AI로 해석하는 것을 넘어,
-          그 결과가 타당하고 설명 가능하며 실무에서 검토 가능한지 연구하고 설계합니다.
+          인문사회과학적 문제의식에서 출발하여, 데이터사이언스와 인공지능을 활용한 정책 분석·기획·평가를 수행합니다.
+          정책 데이터를 AI로 해석하는 것을 넘어, 그 결과가 타당하고 설명 가능하며 실무에서 검토 가능한지 연구하고 설계합니다.
         </p>
 
         {/* CTA 3개 */}
@@ -48,13 +48,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What I Do — 3개 카드 */}
+      {/* What I Do — 5개 카드: 기반 학문 2 + AI 응용 3 */}
       <section className="space-y-8 pt-12 border-t border-gray-200">
         <header>
           <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">What I Do</h2>
           <p className="text-2xl font-semibold text-gray-900">전문 영역</p>
         </header>
 
+        {/* 기반 학문 — 2개 카드 */}
+        <div className="grid sm:grid-cols-2 gap-5">
+          <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
+            <div className="flex items-center gap-3">
+              <div className="text-blue-500"><Target className="w-5 h-5" /></div>
+              <h3 className="font-semibold text-gray-900 text-base">정책 기획·분석·평가</h3>
+            </div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              정책 문제 구조화, 전략 설계, 성과 논리 모델링, 데이터 기반 정책 효과 분석 및 평가 체계를 구축합니다.
+              AI 시대에도 정책의 목적과 구조를 설계하는 것은 인간 고유의 판단 영역입니다.
+            </p>
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {["정책분석", "전략기획", "성과평가", "정책설계"].map((kw) => (
+                <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
+            <div className="flex items-center gap-3">
+              <div className="text-blue-500"><TrendingUp className="w-5 h-5" /></div>
+              <h3 className="font-semibold text-gray-900 text-base">데이터사이언스·인과추론</h3>
+            </div>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              계량경제학, 인과추론, 머신러닝·딥러닝을 결합한 정책 데이터 분석.
+              예측 모델링과 인과 효과 추정을 통해 정책 의사결정의 과학적 기반을 구축합니다.
+            </p>
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {["인과추론", "예측 모델링", "계량경제학", "ML/DL"].map((kw) => (
+                <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* AI 응용 — 3개 카드 */}
         <div className="grid sm:grid-cols-3 gap-5">
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
@@ -75,7 +111,7 @@ export default function Home() {
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-blue-500"><BarChart3 className="w-5 h-5" /></div>
-              <h3 className="font-semibold text-gray-900 text-base">공공 AI 평가 프레임워크</h3>
+              <h3 className="font-semibold text-gray-900 text-base">공공 AI 평가·검증 프레임워크</h3>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
               생성형 AI와 데이터 기반 시스템이 공공영역에서 어떤 한계와 위험을 가지는지,
