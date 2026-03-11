@@ -55,9 +55,9 @@ export default function FrameworkPage() {
                         <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2">기존 패러다임</p>
                         <p className="text-sm font-bold text-gray-700">증거 기반 정책 (EBP)</p>
                         <div className="flex flex-wrap gap-1.5 mt-2">
-                            <span className="text-[10px] bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">사후 평가</span>
-                            <span className="text-[10px] bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">이산적 스냅샷</span>
-                            <span className="text-[10px] bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">분절적 피드백</span>
+                            <span className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">사후 평가</span>
+                            <span className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">이산적 스냅샷</span>
+                            <span className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">분절적 피드백</span>
                         </div>
                     </div>
                     <div className="flex-shrink-0 text-gray-400">
@@ -68,9 +68,9 @@ export default function FrameworkPage() {
                         <p className="text-xs font-semibold text-gray-900 uppercase tracking-widest mb-2">SAPD</p>
                         <p className="text-sm font-bold text-gray-900">상태 기반 적응형 정책</p>
                         <div className="flex flex-wrap gap-1.5 mt-2">
-                            <span className="text-[10px] bg-gray-900 text-white px-2 py-0.5 rounded-full">실시간 상태 관찰</span>
-                            <span className="text-[10px] bg-gray-900 text-white px-2 py-0.5 rounded-full">연속적 학습</span>
-                            <span className="text-[10px] bg-gray-900 text-white px-2 py-0.5 rounded-full">적응형 피드백</span>
+                            <span className="text-xs bg-gray-900 text-white px-2 py-0.5 rounded-full">실시간 상태 관찰</span>
+                            <span className="text-xs bg-gray-900 text-white px-2 py-0.5 rounded-full">연속적 학습</span>
+                            <span className="text-xs bg-gray-900 text-white px-2 py-0.5 rounded-full">적응형 피드백</span>
                         </div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@ export default function FrameworkPage() {
                         <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
                         <div className="flex flex-wrap gap-1.5">
                             {["Canada AIA", "EU AI Act", "NIST AI RMF", "한국 인공지능 기본법", "UK ATRS", "Singapore MAIGF"].map((fw) => (
-                                <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                                <span key={fw} className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
                             ))}
                         </div>
                     </div>
@@ -280,15 +280,15 @@ export default function FrameworkPage() {
                         <div className="grid sm:grid-cols-3 gap-3">
                             <div className="p-3 bg-blue-50/50 rounded-lg border border-blue-100 space-y-1.5">
                                 <p className="text-xs font-bold text-blue-700">Phase 1 · 사전 검증</p>
-                                <p className="text-[11px] text-gray-600 leading-relaxed">도입 목적 정당성, 영향 평가, 데이터 거버넌스 적합성을 시스템 구축 이전에 검증</p>
+                                <p className="text-sm text-gray-600 leading-relaxed">도입 목적 정당성, 영향 평가, 데이터 거버넌스 적합성을 시스템 구축 이전에 검증</p>
                             </div>
                             <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100 space-y-1.5">
                                 <p className="text-xs font-bold text-emerald-700">Phase 2 · 운영 중 검증</p>
-                                <p className="text-[11px] text-gray-600 leading-relaxed">모델 성능 모니터링, 편향 드리프트 감시, 이해관계자 피드백 루프를 실시간 운영</p>
+                                <p className="text-sm text-gray-600 leading-relaxed">모델 성능 모니터링, 편향 드리프트 감시, 이해관계자 피드백 루프를 실시간 운영</p>
                             </div>
                             <div className="p-3 bg-purple-50/50 rounded-lg border border-purple-100 space-y-1.5">
                                 <p className="text-xs font-bold text-purple-700">Phase 3 · 사후 검증</p>
-                                <p className="text-[11px] text-gray-600 leading-relaxed">결과 감사, 정책 환류, 시스템 퇴역·전환 판단 기준 적용</p>
+                                <p className="text-sm text-gray-600 leading-relaxed">결과 감사, 정책 환류, 시스템 퇴역·전환 판단 기준 적용</p>
                             </div>
                         </div>
                     </div>
@@ -306,15 +306,15 @@ export default function FrameworkPage() {
                                 { domain: "민주적 통제", desc: "시민 참여, 의회 감독, 정보 공개 범위" },
                             ].map((item) => (
                                 <div key={item.domain} className="flex items-start gap-2 p-2.5 bg-gray-50 rounded-lg">
-                                    <span className="text-[10px] font-bold text-gray-900 bg-gray-200 px-1.5 py-0.5 rounded whitespace-nowrap mt-0.5">{item.domain}</span>
-                                    <p className="text-[11px] text-gray-600 leading-relaxed">{item.desc}</p>
+                                    <span className="text-xs font-bold text-gray-900 bg-gray-200 px-1.5 py-0.5 rounded whitespace-nowrap mt-0.5">{item.domain}</span>
+                                    <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
                     <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                        <p className="text-[11px] text-amber-800 leading-relaxed">
+                        <p className="text-sm text-amber-800 leading-relaxed">
                             <strong>SAPD 연동:</strong> 기존 프레임워크들이 정적 체크리스트에 머무는 반면, SAPD 검증 체크리스트는 Phase 2의 실시간 모니터링 항목이 적응형 의사결정 루프의 State(t) 관찰과 직접 연동되어, 검증 결과가 자동으로 정책 조정을 트리거하는 구조를 지향한다.
                         </p>
                     </div>
@@ -336,7 +336,7 @@ export default function FrameworkPage() {
                         <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
                         <div className="flex flex-wrap gap-1.5">
                             {["DARPA XAI", "EU AI Act Art.13", "OECD AI Principles", "IEEE 7001", "NIST AI 100-1", "Doshi-Velez & Kim Taxonomy"].map((fw) => (
-                                <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                                <span key={fw} className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
                             ))}
                         </div>
                     </div>
@@ -375,7 +375,7 @@ export default function FrameworkPage() {
                                     <p className="text-xs font-bold text-gray-900">{d.dim}</p>
                                     <div className="grid sm:grid-cols-2 gap-1.5">
                                         {d.items.map((item) => (
-                                            <p key={item} className="text-[11px] text-gray-600 flex items-start gap-1.5">
+                                            <p key={item} className="text-sm text-gray-600 flex items-start gap-1.5">
                                                 <span className="text-gray-300 mt-0.5">—</span> {item}
                                             </p>
                                         ))}
@@ -395,7 +395,7 @@ export default function FrameworkPage() {
                                 { level: "Level 4", label: "적응적", color: "bg-emerald-50 text-emerald-700 border-emerald-100" },
                             ].map((l) => (
                                 <div key={l.level} className={`p-2 rounded-lg border text-center ${l.color}`}>
-                                    <p className="text-[10px] font-bold">{l.level}</p>
+                                    <p className="text-xs font-bold">{l.level}</p>
                                     <p className="text-xs font-semibold">{l.label}</p>
                                 </div>
                             ))}
@@ -403,7 +403,7 @@ export default function FrameworkPage() {
                     </div>
 
                     <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                        <p className="text-[11px] text-amber-800 leading-relaxed">
+                        <p className="text-sm text-amber-800 leading-relaxed">
                             <strong>SAPD 연동:</strong> Level 4 &apos;적응적 설명가능성&apos;은 SAPD 고유의 기여로, 설명이 State(t)의 변화에 따라 동태적으로 갱신되는 구조를 요구한다. 이는 정적 설명서(static documentation)에 머무는 기존 XAI 접근을 넘어서는 설계이다.
                         </p>
                     </div>
@@ -425,7 +425,7 @@ export default function FrameworkPage() {
                         <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
                         <div className="flex flex-wrap gap-1.5">
                             {["GAO AI Accountability", "IIA AI Auditing", "ISACA/COBIT", "EDPB Guidelines", "SMACTR (Raji et al.)", "Mokander et al. Three-layered Audit"].map((fw) => (
-                                <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                                <span key={fw} className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
                             ))}
                         </div>
                     </div>
@@ -446,8 +446,8 @@ export default function FrameworkPage() {
                                 { dim: "지속적 모니터링", desc: "실시간 성능·편향 감시, 드리프트 탐지, 자동 알림 체계" },
                             ].map((item) => (
                                 <div key={item.dim} className="flex items-start gap-2 p-2.5 bg-gray-50 rounded-lg">
-                                    <span className="text-[10px] font-bold text-gray-900 bg-gray-200 px-1.5 py-0.5 rounded whitespace-nowrap mt-0.5">{item.dim}</span>
-                                    <p className="text-[11px] text-gray-600 leading-relaxed">{item.desc}</p>
+                                    <span className="text-xs font-bold text-gray-900 bg-gray-200 px-1.5 py-0.5 rounded whitespace-nowrap mt-0.5">{item.dim}</span>
+                                    <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -464,16 +464,16 @@ export default function FrameworkPage() {
                                 { level: "5", label: "최적화", color: "bg-emerald-50 text-emerald-700 border-emerald-100" },
                             ].map((l) => (
                                 <div key={l.level} className={`p-2 rounded-lg border text-center ${l.color}`}>
-                                    <p className="text-[10px] font-bold">Level {l.level}</p>
-                                    <p className="text-[11px] font-semibold">{l.label}</p>
+                                    <p className="text-xs font-bold">Level {l.level}</p>
+                                    <p className="text-sm font-semibold">{l.label}</p>
                                 </div>
                             ))}
                         </div>
-                        <p className="text-[11px] text-gray-500">CMMI/COBIT 성숙도 모델을 AI 감사 맥락에 적응. 각 차원별 Level 1(비공식적·임시적)에서 Level 5(자동화·자기최적화)까지의 구체적 기준을 정의한다.</p>
+                        <p className="text-sm text-gray-500">CMMI/COBIT 성숙도 모델을 AI 감사 맥락에 적응. 각 차원별 Level 1(비공식적·임시적)에서 Level 5(자동화·자기최적화)까지의 구체적 기준을 정의한다.</p>
                     </div>
 
                     <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                        <p className="text-[11px] text-amber-800 leading-relaxed">
+                        <p className="text-sm text-amber-800 leading-relaxed">
                             <strong>SAPD 연동:</strong> &apos;지속적 모니터링&apos; 차원은 SAPD Layer 5(평가 및 적응형 피드백)와 직접 연결된다. Level 5 성숙도에서는 감사 결과가 State(t+1)로 자동 환류되어, 감사가 일회적 이벤트가 아닌 적응형 루프의 구성 요소로 작동한다. 또한 LLM 기반 시스템의 특수성(환각, 프롬프트 취약성, 출력 비결정성)을 반영한 하위 차원을 별도 설계 중이다.
                         </p>
                     </div>
@@ -501,7 +501,7 @@ export default function FrameworkPage() {
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">참조 프레임워크</p>
                     <div className="flex flex-wrap gap-1.5">
                         {["NIST AI RMF Playbook", "EU AI Act Implementation", "OECD OPSI Playbook", "DAPP (Haasnoot et al.)", "Adaptive Management (USGS)", "CFIR/RE-AIM", "UK Policy Lab", "UK Gov DMA"].map((fw) => (
-                            <span key={fw} className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
+                            <span key={fw} className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">{fw}</span>
                         ))}
                     </div>
                 </div>
@@ -560,17 +560,17 @@ export default function FrameworkPage() {
                         ].map((p) => (
                             <div key={p.phase} className="p-4 bg-white border border-gray-200 rounded-xl space-y-3">
                                 <div className="flex items-center gap-3">
-                                    <span className={`text-[10px] font-bold bg-${p.color}-100 text-${p.color}-700 px-2 py-0.5 rounded-full`}>{p.phase}</span>
+                                    <span className={`text-xs font-bold bg-${p.color}-100 text-${p.color}-700 px-2 py-0.5 rounded-full`}>{p.phase}</span>
                                     <h4 className="text-sm font-bold text-gray-900">{p.title}</h4>
-                                    <span className="text-[10px] text-gray-400 font-medium ml-auto">{p.layer}</span>
+                                    <span className="text-xs text-gray-400 font-medium ml-auto">{p.layer}</span>
                                 </div>
-                                <p className="text-[11px] text-gray-600 leading-relaxed">{p.desc}</p>
+                                <p className="text-sm text-gray-600 leading-relaxed">{p.desc}</p>
                                 <div className="flex flex-wrap gap-1.5">
                                     {p.deliverables.map((d) => (
-                                        <span key={d} className="text-[10px] font-medium text-gray-500 bg-gray-50 border border-gray-200 px-2 py-0.5 rounded">{d}</span>
+                                        <span key={d} className="text-xs font-medium text-gray-500 bg-gray-50 border border-gray-200 px-2 py-0.5 rounded">{d}</span>
                                     ))}
                                 </div>
-                                <p className="text-[10px] text-gray-400"><strong>참조:</strong> {p.ref}</p>
+                                <p className="text-xs text-gray-400"><strong>참조:</strong> {p.ref}</p>
                             </div>
                         ))}
                     </div>
@@ -579,7 +579,7 @@ export default function FrameworkPage() {
                 {/* 조직 성숙도별 진입점 */}
                 <div className="space-y-4">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">조직 성숙도별 진입점</p>
-                    <p className="text-[11px] text-gray-500 max-w-3xl">
+                    <p className="text-sm text-gray-500 max-w-3xl">
                         NIST AI RMF Tiers, UK Government DMA, Digital Twin 성숙도 모델을 참조하여
                         조직의 현재 역량 수준에 따라 차별화된 진입점을 설계한다.
                         모든 프레임워크가 공통적으로 강조하는 원칙: <strong className="text-gray-700">모놀리식이 아닌 모듈식 도입.</strong>
@@ -593,9 +593,9 @@ export default function FrameworkPage() {
                             { level: "Level 5 · 적응적", entry: "생태계 확장·교차 도메인 통합", scope: "조직 전체", start: "Phase 5", color: "emerald" },
                         ].map((l) => (
                             <div key={l.level} className={`p-3 bg-${l.color}-50/50 rounded-lg border border-${l.color}-100 space-y-1.5`}>
-                                <p className={`text-[11px] font-bold text-${l.color}-700`}>{l.level}</p>
-                                <p className="text-[11px] text-gray-700 font-medium">{l.entry}</p>
-                                <p className="text-[10px] text-gray-500">{l.scope} · {l.start}부터</p>
+                                <p className={`text-sm font-bold text-${l.color}-700`}>{l.level}</p>
+                                <p className="text-sm text-gray-700 font-medium">{l.entry}</p>
+                                <p className="text-xs text-gray-500">{l.scope} · {l.start}부터</p>
                             </div>
                         ))}
                     </div>
@@ -615,18 +615,18 @@ export default function FrameworkPage() {
                         ].map((item) => (
                             <div key={item.mode} className="p-3 bg-gray-50 rounded-lg space-y-1.5">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-[10px] font-bold text-red-600 bg-red-50 px-1.5 py-0.5 rounded">{item.mode}</span>
-                                    <span className="text-[10px] text-gray-400">{item.src}</span>
+                                    <span className="text-xs font-bold text-red-600 bg-red-50 px-1.5 py-0.5 rounded">{item.mode}</span>
+                                    <span className="text-xs text-gray-400">{item.src}</span>
                                 </div>
-                                <p className="text-[10px] text-gray-500">{item.risk}</p>
-                                <p className="text-[11px] text-gray-700">→ {item.counter}</p>
+                                <p className="text-xs text-gray-500">{item.risk}</p>
+                                <p className="text-sm text-gray-700">→ {item.counter}</p>
                             </div>
                         ))}
                     </div>
                 </div>
 
                 <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                    <p className="text-[11px] text-amber-800 leading-relaxed">
+                    <p className="text-sm text-amber-800 leading-relaxed">
                         <strong>설계 원칙:</strong> 검토된 7개 프레임워크 전체가 공통적으로 강조하는 핵심 원칙 — &apos;가이드는 모놀리식이 아닌 모듈식이어야 한다.&apos;
                         모든 성공적 이행 프레임워크는 조직이 현재 역량 수준에서 진입하여 점진적으로 발전하도록 허용하며, 첫날부터 포괄적 도입을 요구하지 않는다.
                         SAPD How to Use 가이드는 NIST의 자발적·프로필 기반 접근, EU AI Act의 단계적 시간 구조, 적응적 관리의 반복 학습 순환을 통합하는 하이브리드 구조를 지향한다.
@@ -655,8 +655,8 @@ export default function FrameworkPage() {
                         <div className="flex items-start justify-between gap-3">
                             <div>
                                 <div className="flex items-center gap-2 mb-1.5">
-                                    <span className="text-[10px] font-bold bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">기후·환경</span>
-                                    <span className="text-[10px] font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">네덜란드</span>
+                                    <span className="text-xs font-bold bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">기후·환경</span>
+                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">네덜란드</span>
                                 </div>
                                 <h4 className="text-base font-bold text-gray-900">네덜란드 Delta Programme — Dynamic Adaptive Policy Pathways</h4>
                             </div>
@@ -668,23 +668,23 @@ export default function FrameworkPage() {
                         </p>
                         <div className="grid sm:grid-cols-2 gap-2">
                             <div className="p-2.5 bg-blue-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-blue-700 mb-1">State(t) 관찰</p>
-                                <p className="text-[11px] text-gray-600">Signal Group(KNMI·Deltares·PBL 등) 8개 지표 연간 모니터링</p>
+                                <p className="text-xs font-bold text-blue-700 mb-1">State(t) 관찰</p>
+                                <p className="text-sm text-gray-600">Signal Group(KNMI·Deltares·PBL 등) 8개 지표 연간 모니터링</p>
                             </div>
                             <div className="p-2.5 bg-slate-50 rounded-lg">
-                                <p className="text-[10px] font-bold text-slate-700 mb-1">Decision Function</p>
-                                <p className="text-[11px] text-gray-600">적응 경로 맵 — 티핑포인트 도달 시 사전 정의된 경로 전환 규칙</p>
+                                <p className="text-xs font-bold text-slate-700 mb-1">Decision Function</p>
+                                <p className="text-sm text-gray-600">적응 경로 맵 — 티핑포인트 도달 시 사전 정의된 경로 전환 규칙</p>
                             </div>
                             <div className="p-2.5 bg-emerald-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-emerald-700 mb-1">System Response</p>
-                                <p className="text-[11px] text-gray-600">인프라 업그레이드(219km 제방 완료, 887km 계획), 정책 경로 전환</p>
+                                <p className="text-xs font-bold text-emerald-700 mb-1">System Response</p>
+                                <p className="text-sm text-gray-600">인프라 업그레이드(219km 제방 완료, 887km 계획), 정책 경로 전환</p>
                             </div>
                             <div className="p-2.5 bg-purple-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-purple-700 mb-1">Feedback Loop</p>
-                                <p className="text-[11px] text-gray-600">연간 Signal Group 보고 → Delta Programme 개정 → 다음 관찰 주기</p>
+                                <p className="text-xs font-bold text-purple-700 mb-1">Feedback Loop</p>
+                                <p className="text-sm text-gray-600">연간 Signal Group 보고 → Delta Programme 개정 → 다음 관찰 주기</p>
                             </div>
                         </div>
-                        <p className="text-[10px] text-gray-400">한계: 연간 보고 주기(진정한 실시간 아님), 정치적 압력에 의한 경로 전환 지연 가능성</p>
+                        <p className="text-xs text-gray-400">한계: 연간 보고 주기(진정한 실시간 아님), 정치적 압력에 의한 경로 전환 지연 가능성</p>
                     </div>
 
                     {/* Case 2: Singapore */}
@@ -692,8 +692,8 @@ export default function FrameworkPage() {
                         <div className="flex items-start justify-between gap-3">
                             <div>
                                 <div className="flex items-center gap-2 mb-1.5">
-                                    <span className="text-[10px] font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">스마트시티</span>
-                                    <span className="text-[10px] font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">싱가포르</span>
+                                    <span className="text-xs font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">스마트시티</span>
+                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">싱가포르</span>
                                 </div>
                                 <h4 className="text-base font-bold text-gray-900">싱가포르 Smart Nation — Virtual Singapore Digital Twin</h4>
                             </div>
@@ -705,23 +705,23 @@ export default function FrameworkPage() {
                         </p>
                         <div className="grid sm:grid-cols-2 gap-2">
                             <div className="p-2.5 bg-blue-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-blue-700 mb-1">State(t) 관찰</p>
-                                <p className="text-[11px] text-gray-600">수천 개 IoT 센서 + 디지털 트윈 연속적 도시 상태 관측</p>
+                                <p className="text-xs font-bold text-blue-700 mb-1">State(t) 관찰</p>
+                                <p className="text-sm text-gray-600">수천 개 IoT 센서 + 디지털 트윈 연속적 도시 상태 관측</p>
                             </div>
                             <div className="p-2.5 bg-slate-50 rounded-lg">
-                                <p className="text-[10px] font-bold text-slate-700 mb-1">Decision Function</p>
-                                <p className="text-[11px] text-gray-600">시뮬레이션 엔진 — 정책 옵션을 디지털 트윈에서 사전 테스트</p>
+                                <p className="text-xs font-bold text-slate-700 mb-1">Decision Function</p>
+                                <p className="text-sm text-gray-600">시뮬레이션 엔진 — 정책 옵션을 디지털 트윈에서 사전 테스트</p>
                             </div>
                             <div className="p-2.5 bg-emerald-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-emerald-700 mb-1">System Response</p>
-                                <p className="text-[11px] text-gray-600">정책 실행 + 실시간 모니터링으로 효과 추적</p>
+                                <p className="text-xs font-bold text-emerald-700 mb-1">System Response</p>
+                                <p className="text-sm text-gray-600">정책 실행 + 실시간 모니터링으로 효과 추적</p>
                             </div>
                             <div className="p-2.5 bg-purple-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-purple-700 mb-1">Feedback Loop</p>
-                                <p className="text-[11px] text-gray-600">연속적 센서 데이터 → 디지털 트윈 갱신 → 정책 정교화</p>
+                                <p className="text-xs font-bold text-purple-700 mb-1">Feedback Loop</p>
+                                <p className="text-sm text-gray-600">연속적 센서 데이터 → 디지털 트윈 갱신 → 정책 정교화</p>
                             </div>
                         </div>
-                        <p className="text-[10px] text-gray-400">한계: 소규모 도시국가의 높은 중앙집중성 — 연방국가·대규모 국가로의 확장성 질문, 감시 프라이버시 우려</p>
+                        <p className="text-xs text-gray-400">한계: 소규모 도시국가의 높은 중앙집중성 — 연방국가·대규모 국가로의 확장성 질문, 감시 프라이버시 우려</p>
                     </div>
 
                     {/* Case 3: UK NHS/Palantir */}
@@ -729,9 +729,9 @@ export default function FrameworkPage() {
                         <div className="flex items-start justify-between gap-3">
                             <div>
                                 <div className="flex items-center gap-2 mb-1.5">
-                                    <span className="text-[10px] font-bold bg-red-100 text-red-700 px-2 py-0.5 rounded-full">공공보건</span>
-                                    <span className="text-[10px] font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">영국</span>
-                                    <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">경고 사례</span>
+                                    <span className="text-xs font-bold bg-red-100 text-red-700 px-2 py-0.5 rounded-full">공공보건</span>
+                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">영국</span>
+                                    <span className="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">경고 사례</span>
                                 </div>
                                 <h4 className="text-base font-bold text-gray-900">영국 NHS COVID-19 Data Store — Palantir Foundry</h4>
                             </div>
@@ -743,24 +743,24 @@ export default function FrameworkPage() {
                         </p>
                         <div className="grid sm:grid-cols-2 gap-2">
                             <div className="p-2.5 bg-blue-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-blue-700 mb-1">State(t) 관찰</p>
-                                <p className="text-[11px] text-gray-600">8,650 사용자의 실시간 대시보드 — 감염률·병상·백신 공급 통합</p>
+                                <p className="text-xs font-bold text-blue-700 mb-1">State(t) 관찰</p>
+                                <p className="text-sm text-gray-600">8,650 사용자의 실시간 대시보드 — 감염률·병상·백신 공급 통합</p>
                             </div>
                             <div className="p-2.5 bg-slate-50 rounded-lg">
-                                <p className="text-[10px] font-bold text-slate-700 mb-1">Decision Function</p>
-                                <p className="text-[11px] text-gray-600">Palantir 분석 모델 + 인간 의사결정자의 대시보드 기반 판단</p>
+                                <p className="text-xs font-bold text-slate-700 mb-1">Decision Function</p>
+                                <p className="text-sm text-gray-600">Palantir 분석 모델 + 인간 의사결정자의 대시보드 기반 판단</p>
                             </div>
                             <div className="p-2.5 bg-emerald-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-emerald-700 mb-1">System Response</p>
-                                <p className="text-[11px] text-gray-600">자원 재배분, 백신 배포 조정, 정책 업데이트</p>
+                                <p className="text-xs font-bold text-emerald-700 mb-1">System Response</p>
+                                <p className="text-sm text-gray-600">자원 재배분, 백신 배포 조정, 정책 업데이트</p>
                             </div>
                             <div className="p-2.5 bg-purple-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-purple-700 mb-1">Feedback Loop</p>
-                                <p className="text-[11px] text-gray-600">연속적 데이터 수집 → 대시보드 갱신 → 정책 조정</p>
+                                <p className="text-xs font-bold text-purple-700 mb-1">Feedback Loop</p>
+                                <p className="text-sm text-gray-600">연속적 데이터 수집 → 대시보드 갱신 → 정책 조정</p>
                             </div>
                         </div>
                         <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
-                            <p className="text-[11px] text-red-800 leading-relaxed">
+                            <p className="text-sm text-red-800 leading-relaxed">
                                 <strong>SAPD 교훈:</strong> 독점 알고리즘에 의한 투명성 결여, 계약 미공개, 재식별 가능한 건강 데이터의 프라이버시 위험,
                                 의회·시민의 알고리즘 감독 불가. SAPD Layer 3의 &apos;감사 가능성(auditability)&apos; 요건이 왜 필수적인지를
                                 역설적으로 증명하는 사례이다.
@@ -773,8 +773,8 @@ export default function FrameworkPage() {
                         <div className="flex items-start justify-between gap-3">
                             <div>
                                 <div className="flex items-center gap-2 mb-1.5">
-                                    <span className="text-[10px] font-bold bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full">디지털 거버넌스</span>
-                                    <span className="text-[10px] font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">에스토니아</span>
+                                    <span className="text-xs font-bold bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full">디지털 거버넌스</span>
+                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">에스토니아</span>
                                 </div>
                                 <h4 className="text-base font-bold text-gray-900">에스토니아 X-Road — 선제적 거버넌스(Proactive Governance)</h4>
                             </div>
@@ -786,23 +786,23 @@ export default function FrameworkPage() {
                         </p>
                         <div className="grid sm:grid-cols-2 gap-2">
                             <div className="p-2.5 bg-blue-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-blue-700 mb-1">State(t) 관찰</p>
-                                <p className="text-[11px] text-gray-600">X-Road로 연결된 전 정부 레지스트리의 분산형 실시간 데이터</p>
+                                <p className="text-xs font-bold text-blue-700 mb-1">State(t) 관찰</p>
+                                <p className="text-sm text-gray-600">X-Road로 연결된 전 정부 레지스트리의 분산형 실시간 데이터</p>
                             </div>
                             <div className="p-2.5 bg-slate-50 rounded-lg">
-                                <p className="text-[10px] font-bold text-slate-700 mb-1">Decision Function</p>
-                                <p className="text-[11px] text-gray-600">생애 사건 기반 선제적 서비스 트리거 — 규칙 기반 자동 개시</p>
+                                <p className="text-xs font-bold text-slate-700 mb-1">Decision Function</p>
+                                <p className="text-sm text-gray-600">생애 사건 기반 선제적 서비스 트리거 — 규칙 기반 자동 개시</p>
                             </div>
                             <div className="p-2.5 bg-emerald-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-emerald-700 mb-1">System Response</p>
-                                <p className="text-[11px] text-gray-600">자동 급여 개시, 사전 작성된 신청서 제공, 서비스 전달</p>
+                                <p className="text-xs font-bold text-emerald-700 mb-1">System Response</p>
+                                <p className="text-sm text-gray-600">자동 급여 개시, 사전 작성된 신청서 제공, 서비스 전달</p>
                             </div>
                             <div className="p-2.5 bg-purple-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-purple-700 mb-1">Feedback Loop</p>
-                                <p className="text-[11px] text-gray-600">생애 사건 → 자동 감지 → 선제적 서비스 → 레지스트리 갱신</p>
+                                <p className="text-xs font-bold text-purple-700 mb-1">Feedback Loop</p>
+                                <p className="text-sm text-gray-600">생애 사건 → 자동 감지 → 선제적 서비스 → 레지스트리 갱신</p>
                             </div>
                         </div>
-                        <p className="text-[10px] text-gray-400">한계: 소규모 인구(130만)·높은 디지털 리터러시 전제, 사전 정의된 트리거 외 신규 상황 대응력 제한</p>
+                        <p className="text-xs text-gray-400">한계: 소규모 인구(130만)·높은 디지털 리터러시 전제, 사전 정의된 트리거 외 신규 상황 대응력 제한</p>
                     </div>
 
                     {/* Case 5: Korea */}
@@ -810,8 +810,8 @@ export default function FrameworkPage() {
                         <div className="flex items-start justify-between gap-3">
                             <div>
                                 <div className="flex items-center gap-2 mb-1.5">
-                                    <span className="text-[10px] font-bold bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">공공 AI</span>
-                                    <span className="text-[10px] font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">한국</span>
+                                    <span className="text-xs font-bold bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">공공 AI</span>
+                                    <span className="text-xs font-bold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">한국</span>
                                 </div>
                                 <h4 className="text-base font-bold text-gray-900">한국 디지털플랫폼정부 — 서울시 스마트시티·공공 AI 전환</h4>
                             </div>
@@ -823,23 +823,23 @@ export default function FrameworkPage() {
                         </p>
                         <div className="grid sm:grid-cols-2 gap-2">
                             <div className="p-2.5 bg-blue-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-blue-700 mb-1">State(t) 관찰</p>
-                                <p className="text-[11px] text-gray-600">IoT·CCTV·민원 빅데이터 → 도시 상태 실시간 관측</p>
+                                <p className="text-xs font-bold text-blue-700 mb-1">State(t) 관찰</p>
+                                <p className="text-sm text-gray-600">IoT·CCTV·민원 빅데이터 → 도시 상태 실시간 관측</p>
                             </div>
                             <div className="p-2.5 bg-slate-50 rounded-lg">
-                                <p className="text-[10px] font-bold text-slate-700 mb-1">Decision Function</p>
-                                <p className="text-[11px] text-gray-600">AI 분석 모델(객체인식, NLP, 예측) + 인간 의사결정</p>
+                                <p className="text-xs font-bold text-slate-700 mb-1">Decision Function</p>
+                                <p className="text-sm text-gray-600">AI 분석 모델(객체인식, NLP, 예측) + 인간 의사결정</p>
                             </div>
                             <div className="p-2.5 bg-emerald-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-emerald-700 mb-1">System Response</p>
-                                <p className="text-[11px] text-gray-600">안전 경보, 교통 조정, 정책 반영, 복지 서비스 연결</p>
+                                <p className="text-xs font-bold text-emerald-700 mb-1">System Response</p>
+                                <p className="text-sm text-gray-600">안전 경보, 교통 조정, 정책 반영, 복지 서비스 연결</p>
                             </div>
                             <div className="p-2.5 bg-purple-50/50 rounded-lg">
-                                <p className="text-[10px] font-bold text-purple-700 mb-1">Feedback Loop</p>
-                                <p className="text-[11px] text-gray-600">센서 → AI 분석 → 정책 반영 → 효과 측정 → 모델 개선</p>
+                                <p className="text-xs font-bold text-purple-700 mb-1">Feedback Loop</p>
+                                <p className="text-sm text-gray-600">센서 → AI 분석 → 정책 반영 → 효과 측정 → 모델 개선</p>
                             </div>
                         </div>
-                        <p className="text-[10px] text-gray-400">한계: 다수 사업이 실증 단계에 머무름, 부처·지자체 간 분절, 진정한 적응형 거버넌스를 위한 제도적 역량과 기술 인프라 간 격차</p>
+                        <p className="text-xs text-gray-400">한계: 다수 사업이 실증 단계에 머무름, 부처·지자체 간 분절, 진정한 적응형 거버넌스를 위한 제도적 역량과 기술 인프라 간 격차</p>
                     </div>
                 </div>
 
@@ -850,7 +850,7 @@ export default function FrameworkPage() {
                         <div className="grid grid-cols-5 gap-px bg-gray-200 rounded-lg overflow-hidden text-center min-w-[600px]">
                             {/* Header */}
                             {["사례", "State 관찰", "피드백 속도", "자율성 수준", "SAPD 시사점"].map((h) => (
-                                <div key={h} className="bg-gray-800 text-white text-[10px] font-bold p-2">{h}</div>
+                                <div key={h} className="bg-gray-800 text-white text-xs font-bold p-2">{h}</div>
                             ))}
                             {/* Rows */}
                             {[
@@ -861,7 +861,7 @@ export default function FrameworkPage() {
                                 ["한국 공공AI", "연속적 (IoT/CCTV)", "혼합", "AI 지원 인간", "급속 확장 중·실증 단계"],
                             ].map((row, i) => (
                                 row.map((cell, j) => (
-                                    <div key={`${i}-${j}`} className={`bg-white text-[10px] p-2 ${j === 0 ? "font-semibold text-gray-900" : "text-gray-600"}`}>{cell}</div>
+                                    <div key={`${i}-${j}`} className={`bg-white text-xs p-2 ${j === 0 ? "font-semibold text-gray-900" : "text-gray-600"}`}>{cell}</div>
                                 ))
                             ))}
                         </div>
@@ -869,7 +869,7 @@ export default function FrameworkPage() {
                 </div>
 
                 <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                    <p className="text-[11px] text-amber-800 leading-relaxed">
+                    <p className="text-sm text-amber-800 leading-relaxed">
                         <strong>핵심 통찰:</strong> 현재까지 완전한 SAPD 자율성을 달성한 시스템은 존재하지 않으며,
                         가장 선진적 사례에서도 인간이 의사결정 루프 안에 위치한다.
                         SAPD는 인간의 판단을 대체하는 것이 아니라 증강하는 프레임워크로 포지셔닝되어야 한다.
