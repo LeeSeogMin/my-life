@@ -60,3 +60,16 @@ Personal academic portfolio and community site for Professor 이석민 (Seog-Min
 - Community uses Supabase RLS (Row Level Security); migration SQL files are at project root
 - The `@` path alias maps to `src/` (configured in tsconfig.json)
 - Site language is Korean (`lang="ko"`); content is primarily in Korean
+
+## Auto Memory
+
+매 세션에서 다음 사항을 자동으로 메모리에 저장하라:
+
+1. **세션 시작 시**: 메모리 디렉토리(`~/.claude/projects/-Users-callii-Documents-my-life/memory/MEMORY.md`)를 읽고 이전 컨텍스트를 파악하라
+2. **작업 중 자동 저장 대상**:
+   - 사용자의 역할, 선호도, 작업 스타일에 대해 새로 알게 된 것 → `user` 타입
+   - 사용자가 수정을 요청하거나 피드백을 준 내용 → `feedback` 타입
+   - 프로젝트의 진행 상황, 목표, 마감일 등 → `project` 타입
+   - 외부 시스템 참조 정보 (URL, 도구, 서비스) → `reference` 타입
+3. **세션 종료 시**: 해당 세션에서 수행한 주요 작업을 `project` 타입으로 요약 저장하라
+4. **중복 방지**: 저장 전 기존 메모리를 확인하고, 이미 있는 내용은 업데이트하라
