@@ -172,41 +172,16 @@ export default function Home() {
           </p>
         </div>
 
-        {/* SAPD 구조: 이론층 + 실무층 */}
-        <div className="pt-6 space-y-6">
-          <div className="flex justify-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/sapd-loop.svg"
-              alt="SAPD Adaptive Decision Loop — State(t) → Decision(t) = f(State(t)) → System Response → State(t+1) 순환 피드백 루프"
-              width={800}
-              height={800}
-              className="w-full max-w-2xl h-auto"
-            />
-          </div>
-
-          {/* Validation Module 구조 카드 */}
-          <div className="max-w-2xl mx-auto">
-            <div className="border border-gray-200 rounded-lg overflow-hidden">
-              <div className="bg-gray-50 px-5 py-3 border-b border-gray-200">
-                <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase">SAPD Framework 구조</p>
-              </div>
-              <div className="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
-                <div className="p-5 space-y-2">
-                  <p className="text-sm font-semibold text-gray-900">이론층 — Adaptive Policy Design</p>
-                  <p className="text-xs text-gray-500 leading-relaxed">
-                    상태 기반 적응형 정책 설계. 실시간 데이터에 기반한 정책 의사결정 순환 구조.
-                  </p>
-                </div>
-                <div className="p-5 space-y-2">
-                  <p className="text-sm font-semibold text-gray-900">실무층 — Validation Module</p>
-                  <p className="text-xs text-gray-500 leading-relaxed">
-                    AI 분석 결과의 타당성 검증, 시스템 설계의 검증 가능성 평가, 설명가능성 진단 체크리스트.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* SAPD Framework 통합 다이어그램: 이론층 + 실무층 */}
+        <div className="pt-6 flex justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/sapd-framework.svg"
+            alt="SAPD Framework 통합 구조 — 이론층(State → Decision → System Response 순환 루프)과 실무층(Validation Module: 분석 결과 타당성 검증, 시스템 설계 타당성 검증, 설명가능성 진단)"
+            width={720}
+            height={520}
+            className="w-full max-w-3xl h-auto"
+          />
         </div>
 
         <div className="pt-2">
