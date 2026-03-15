@@ -80,7 +80,8 @@ export default function ResearchPage() {
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b-2 border-gray-900 pb-4 inline-block">Research</h1>
                 <p className="text-xl text-gray-600 font-light">
-                    공공 의사결정 체계와 관련된 학술 연구 및 데이터 기반의 실제적 응용 모델(Applied AI)을 탐구합니다.
+                    데이터분석과 AI를 활용한 정책 기획·분석·평가 시스템을 설계하고,
+                    분석 결과의 타당성과 시스템 자체의 검증 가능성을 함께 연구합니다.
                 </p>
             </header>
 
@@ -107,6 +108,22 @@ export default function ResearchPage() {
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
                             정책 수명 주기 전반에 걸친 패턴 탐지, 생성적 전략 도입 및 실시간 최적화 모델 적용 연구를 수행합니다.
+                        </p>
+                    </div>
+                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
+                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
+                            SAPD Framework — 이론층
+                        </h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            정책을 실시간 상태 데이터에 기반해 지속적으로 적응하는 시스템으로 재설계하는 상태 기반 적응형 정책(State-based Adaptive Policy) 패러다임을 연구합니다.
+                        </p>
+                    </div>
+                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
+                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
+                            SAPD Validation Module — 실무층
+                        </h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            AI 기반 분석·평가 결과의 타당성 검증과 설계 시스템 자체의 검증 가능성을 평가하는 실무 프레임워크를 설계합니다. 설명가능성 진단, 검토 체크리스트, 평가 루브릭을 포함합니다.
                         </p>
                     </div>
                 </div>

@@ -48,7 +48,8 @@ export default function ProjectsPage() {
                     <h2 className="text-2xl font-bold text-gray-900">Working Prototypes</h2>
                 </div>
                 <p className="text-gray-600 text-sm max-w-3xl">
-                    정책분석용 생성형 AI를 실제 작동하는 도구로 구현합니다. 단순 요약이 아니라 정책 쟁점 구조화와 분석 질문 검토에 초점을 맞춥니다.
+                    정책분석용 생성형 AI를 실제 작동하는 도구로 구현합니다. 단순 요약이 아니라 정책 쟁점 구조화와 분석 질문 검토에 초점을 맞추며,
+                    각 프로토타입은 SAPD Validation Module의 검증 기준(분석 결과 타당성, 설명가능성, 추적 가능성)을 내장하여 설계합니다.
                 </p>
                 <div className="grid gap-6 md:grid-cols-3">
                     {[
