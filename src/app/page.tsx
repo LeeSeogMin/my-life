@@ -17,12 +17,12 @@ export default function Home() {
         <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학</p>
 
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug max-w-2xl mb-6">
-          문제를 정의하고, AI 시스템을 설계·검증하고, 데이터 파이프라인으로 구현합니다
+          정책을 분석·평가하고, AI 시스템을 설계·검증하고, 데이터 파이프라인으로 구현합니다
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
-          인과추론과 도메인 지식으로 정책 문제를 구조화하고,
-          AI 기반 분석·평가 시스템의 타당성을 검증하며,
+          정책 분석·평가를 직접 수행하면서, 인과추론으로 개입의 효과를 검증합니다.
+          AI 기반 분석·평가 시스템의 타당성을 검증하고,
           재현 가능한 데이터 파이프라인으로 구현합니다.
           이 세 축을 하나로 연결하는 설계 아키텍처가 SAPD Framework입니다.
         </p>
@@ -62,15 +62,15 @@ export default function Home() {
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-blue-500"><Target className="w-5 h-5" /></div>
-              <h3 className="font-semibold text-gray-900 text-base">문제 정의 · 인과추론</h3>
+              <h3 className="font-semibold text-gray-900 text-base">정책 분석·평가 · 인과추론</h3>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              정책 문제를 구조화하고, 인과추론과 실험설계로
-              &lsquo;왜 일어났는가&rsquo;, &lsquo;어떤 개입이 효과가 있는가&rsquo;를 분석합니다.
-              도메인 지식 없이 모델만 돌리는 것과 본질적으로 다릅니다.
+              정책 문제를 구조화하고 분석·평가를 직접 수행합니다.
+              인과추론과 실험설계로 &lsquo;왜 일어났는가&rsquo;, &lsquo;어떤 개입이 효과가 있는가&rsquo;를 분석하며,
+              정부·공공기관의 성과평가 체계를 설계합니다.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {["인과추론", "실험설계", "정책분석", "도메인 지식"].map((kw) => (
+              {["정책분석", "성과평가", "인과추론", "실험설계"].map((kw) => (
                 <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
               ))}
             </div>
