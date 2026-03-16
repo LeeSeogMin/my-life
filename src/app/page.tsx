@@ -18,14 +18,14 @@ export default function Home() {
 
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6 text-center flex items-center justify-center gap-4 flex-wrap">
           <span>정책 분석·평가</span>
-          <span className="w-px h-5 border-l border-dashed border-blue-400" />
+          <span className="w-px h-5 border-l border-dashed border-blue-600" />
           <span>AI 시스템 설계·검증</span>
-          <span className="w-px h-5 border-l border-dashed border-blue-400" />
+          <span className="w-px h-5 border-l border-dashed border-blue-600" />
           <span>데이터 파이프라인 구축</span>
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
-          정책 분석·평가를 직접 수행하면서, 인과추론으로 개입의 효과를 검증합니다.
+          정책 분석·평가를 수행하면서, 인과추론으로 개입의 효과를 검증합니다.
           AI 기반 분석·평가 시스템의 타당성을 검증하고,
           재현 가능한 데이터 파이프라인을 구축합니다.
           이 세 축을 하나로 연결하는 설계 아키텍처가 SAPD Framework입니다.
