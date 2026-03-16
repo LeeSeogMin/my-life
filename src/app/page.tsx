@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학</p>
 
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug max-w-2xl mb-6">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6">
           정책 분석·평가 → AI 시스템 설계·검증 → 데이터 파이프라인 구축
         </h2>
 
