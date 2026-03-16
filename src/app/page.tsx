@@ -17,13 +17,13 @@ export default function Home() {
         <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학</p>
 
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug max-w-2xl mb-6">
-          정책을 분석·평가하고, AI 시스템을 설계·검증하고, 데이터 파이프라인으로 구현합니다
+          정책을 분석·평가하고, AI 시스템을 설계·검증하고, 데이터 파이프라인을 구축합니다
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
           정책 분석·평가를 직접 수행하면서, 인과추론으로 개입의 효과를 검증합니다.
           AI 기반 분석·평가 시스템의 타당성을 검증하고,
-          재현 가능한 데이터 파이프라인으로 구현합니다.
+          재현 가능한 데이터 파이프라인을 구축합니다.
           이 세 축을 하나로 연결하는 설계 아키텍처가 SAPD Framework입니다.
         </p>
 
@@ -96,12 +96,12 @@ export default function Home() {
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-blue-500"><Code2 className="w-5 h-5" /></div>
-              <h3 className="font-semibold text-gray-900 text-base">데이터 파이프라인 · 구현</h3>
+              <h3 className="font-semibold text-gray-900 text-base">데이터 파이프라인 · 구축</h3>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
               이론은 구현될 때 비로소 검증됩니다.
               데이터 수집부터 변환, 분석, 시각화까지 재현 가능한 파이프라인을 설계하고,
-              실제 작동하는 프로토타입으로 구현합니다.
+              실제 작동하는 프로토타입으로 구축합니다.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">
               {["파이프라인", "프로토타입", "데이터 엔지니어링", "운영 최적화"].map((kw) => (
@@ -118,8 +118,8 @@ export default function Home() {
             <h3 className="font-semibold text-gray-900 text-base">SAPD Framework — 세 축의 통합 아키텍처</h3>
           </div>
           <p className="text-sm text-gray-600 leading-relaxed max-w-2xl mb-6">
-            문제 정의에서 출발하여, AI 시스템으로 설계·검증하고,
-            데이터 파이프라인으로 구현하는 과정을
+            정책 분석·평가에서 출발하여, AI 시스템으로 설계·검증하고,
+            데이터 파이프라인으로 구축하는 과정을
             실시간 상태 기반 피드백 루프로 연결합니다.
             세 축이 독립적으로 작동하지 않고 순환하도록 설계하는 것이 SAPD의 핵심입니다.
           </p>
@@ -172,7 +172,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">프로젝트</span>
               <div className="flex gap-1.5">
-                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">구현</span>
+                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">구축</span>
                 <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">도메인 특화</span>
               </div>
             </div>
