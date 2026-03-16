@@ -16,8 +16,12 @@ export default function Home() {
         </div>
         <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학</p>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6 text-center">
-          정책 분석·평가 | AI 시스템 설계·검증 | 데이터 파이프라인 구축
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6 text-center flex items-center justify-center gap-4 flex-wrap">
+          <span>정책 분석·평가</span>
+          <span className="w-px h-5 border-l border-dashed border-gray-300" />
+          <span>AI 시스템 설계·검증</span>
+          <span className="w-px h-5 border-l border-dashed border-gray-300" />
+          <span>데이터 파이프라인 구축</span>
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
@@ -40,12 +44,6 @@ export default function Home() {
             className="px-5 py-2.5 bg-white text-gray-700 text-sm font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
           >
             프로젝트 보기
-          </Link>
-          <Link
-            href="/contact"
-            className="px-5 py-2.5 bg-white text-gray-700 text-sm font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
-          >
-            협업 문의
           </Link>
         </div>
       </section>

@@ -164,7 +164,6 @@ export default function RootLayout({
                 <Link href="/projects" className="hover:text-black transition-colors">프로젝트</Link>
                 <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
                 <Link href="/about" className="hover:text-black transition-colors">About</Link>
-                <Link href="/contact" className="hover:text-black transition-colors">Contact</Link>
                 <Link href="/community" className="hover:text-black transition-colors">커뮤니티</Link>
               </nav>
               <AuthButton />
