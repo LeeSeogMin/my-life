@@ -14,7 +14,7 @@ export default function Home() {
             Seog-Min Lee
           </span>
         </div>
-        <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학</p>
+        <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학과 교수</p>
 
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6 text-center flex items-center justify-center gap-4 flex-wrap">
           <span>정책 분석·평가</span>
@@ -25,10 +25,10 @@ export default function Home() {
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
-          정책 분석·평가를 수행하면서, 인과추론으로 개입의 효과를 검증합니다.
-          AI 기반 분석·평가 시스템의 타당성을 검증하고,
-          재현 가능한 데이터 파이프라인을 구축합니다.
-          이 세 축을 하나로 연결하는 설계 아키텍처가 SAPD Framework입니다.
+          AI가 내놓은 분석을 그대로 믿지 않습니다.
+          정책 현장에서 실제로 작동하는 AI를 만들려면,
+          분석의 타당성을 검증하고 재현 가능한 구조로 설계해야 합니다.
+          그 설계 원리가 SAPD Framework입니다.
         </p>
 
         {/* CTA 3개 */}
@@ -52,7 +52,7 @@ export default function Home() {
       <section className="space-y-8 pt-12 border-t border-gray-200">
         <header>
           <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">What I Do</h2>
-          <p className="text-2xl font-semibold text-gray-900">세 가지 축</p>
+          <p className="text-2xl font-semibold text-gray-900">공공 AI가 내놓은 분석은 신뢰할 수 있는가?</p>
         </header>
 
         {/* 3축 카드 */}
@@ -62,8 +62,9 @@ export default function Home() {
               <div className="text-blue-500"><Target className="w-5 h-5" /></div>
               <h3 className="font-semibold text-gray-900 text-base">정책 분석·평가 · 인과추론</h3>
             </div>
+            <p className="text-xs text-gray-400 -mt-1">무엇이 올바른 분석인가</p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              정책 문제를 구조화하고 분석·평가를 직접 수행합니다.
+              정책 문제를 구조화하고 분석·평가를 수행합니다.
               인과추론과 실험설계로 &lsquo;왜 일어났는가&rsquo;, &lsquo;어떤 개입이 효과가 있는가&rsquo;를 분석하며,
               정부·공공기관의 성과평가 체계를 설계합니다.
             </p>
@@ -79,10 +80,11 @@ export default function Home() {
               <div className="text-blue-500"><BarChart3 className="w-5 h-5" /></div>
               <h3 className="font-semibold text-gray-900 text-base">AI 시스템 설계 · 검증</h3>
             </div>
+            <p className="text-xs text-gray-400 -mt-1">AI는 그것을 하고 있는가</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               AI가 내놓은 분석을 그대로 쓰지 않습니다.
-              설명가능성, 재현가능성, 설계 타당성을 검증하는 프레임워크를 설계합니다.
-              SAPD Validation Module이 이 축의 핵심입니다.
+              설명가능성, 재현가능성, 설계 타당성을 검증하는 체계를 연구합니다.
+              현재 SAPD Validation Module의 평가 루브릭과 검증 프로토콜을 설계 중입니다.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">
               {["설명가능성", "검증 프레임워크", "AI 거버넌스", "평가 루브릭"].map((kw) => (
@@ -96,6 +98,7 @@ export default function Home() {
               <div className="text-blue-500"><Code2 className="w-5 h-5" /></div>
               <h3 className="font-semibold text-gray-900 text-base">데이터 파이프라인 · 구축</h3>
             </div>
+            <p className="text-xs text-gray-400 -mt-1">어떻게 작동하게 만드는가</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               이론은 구현될 때 비로소 검증됩니다.
               데이터 수집부터 변환, 분석, 시각화까지 재현 가능한 파이프라인을 설계하고,
