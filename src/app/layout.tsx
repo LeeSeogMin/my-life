@@ -160,7 +160,7 @@ export default function RootLayout({
             <div className="flex items-center gap-6">
               <nav className="flex gap-6 text-base font-semibold text-gray-700">
                 <Link href="/" className="hover:text-black transition-colors">홈</Link>
-                <Link href="/framework" className="hover:text-black transition-colors">SAPD Framework</Link>
+                <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
                 <Link href="/projects" className="hover:text-black transition-colors">프로젝트</Link>
                 <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
                 <Link href="/about" className="hover:text-black transition-colors">About</Link>
