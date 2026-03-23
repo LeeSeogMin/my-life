@@ -5,7 +5,7 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "연구 — 주요 연구·개발 프로젝트",
-    description: "이석민의 AI 기반 정책 분석, 계산사회과학 기반 정책 의사결정 지원 시스템, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트 소개.",
+    description: "이석민의 SAPD Framework 기반 실시간 정책 의사결정 시스템 연구. AI 정책 분석, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트 소개.",
     alternates: {
         canonical: `${SITE_URL}/research`,
     },
@@ -20,7 +20,7 @@ const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "연구 — 이석민 | 정책 × AI",
-    description: "이석민의 AI 기반 정책 분석, 계산사회과학 기반 정책 의사결정 지원, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트.",
+    description: "이석민의 SAPD Framework 기반 실시간 정책 의사결정 시스템 연구. AI 정책 분석, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트.",
     url: `${SITE_URL}/research`,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     mainEntity: {
@@ -80,9 +80,8 @@ export default function ResearchPage() {
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b-2 border-gray-900 pb-4 inline-block">Research</h1>
                 <p className="text-xl text-gray-600 font-light">
-                    데이터분석과 AI를 활용한 정책 기획·분석·평가 시스템을 설계하고,
-                    계산사회과학 방법론으로 정책 의사결정을 지능화하며,
-                    분석 결과의 타당성과 시스템 자체의 검증 가능성을 함께 연구합니다.
+                    SAPD(State-based Adaptive Policy Design)를 중심으로,
+                    실시간 데이터 기반 정책 의사결정 시스템의 이론·방법론·검증 체계를 연구합니다.
                 </p>
             </header>
 
@@ -97,23 +96,6 @@ export default function ResearchPage() {
                 <div className="grid gap-6 md:grid-cols-2">
                     <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
                         <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            공공 의사결정 아키텍처
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            알고리즘 거버넌스 및 스마트시티 도메인 내부의 구조적 경계, 권한 체계, 그리고 적응형 피드백 루프 작동 방식을 분석합니다.
-                        </p>
-                    </div>
-                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
-                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            계산사회과학 기반 의사결정 지원
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            강화학습, 디지털 트윈, Causal ML, 에이전트 기반 시뮬레이션 등 계산사회과학 방법론을 통합하여
-                            정책 생애주기 전반의 의사결정을 데이터 기반으로 지능화하는 시스템을 연구합니다.
-                        </p>
-                    </div>
-                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
-                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
                             SAPD Framework — 이론층
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
@@ -126,6 +108,23 @@ export default function ResearchPage() {
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
                             AI 기반 분석·평가 결과의 타당성 검증과 설계 시스템 자체의 검증 가능성을 평가하는 실무 프레임워크를 설계합니다. 설명가능성 진단, 검토 체크리스트, 평가 루브릭을 포함합니다.
+                        </p>
+                    </div>
+                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
+                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
+                            공공 의사결정 아키텍처
+                        </h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            알고리즘 거버넌스 및 스마트시티 도메인 내부의 구조적 경계, 권한 체계, 그리고 적응형 피드백 루프 작동 방식을 분석합니다. SAPD의 이론적 토대를 구성하는 기반 연구입니다.
+                        </p>
+                    </div>
+                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
+                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
+                            SAPD 방법론 엔진
+                        </h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            강화학습, 디지털 트윈, Causal ML, 에이전트 기반 시뮬레이션 등 다학제 계산 방법론을 통합하여
+                            SAPD의 Decision(t) 단계에서 최적 정책 대응을 도출하는 방법론적 기반을 연구합니다.
                         </p>
                     </div>
                 </div>
