@@ -236,6 +236,21 @@ export default function FrameworkPage() {
                         <p className="text-sm font-bold text-gray-900">몬테카를로 시뮬레이션</p>
                         <p className="text-xs text-gray-500 leading-relaxed">확률적 변동 하에서 정책 결정의 기대 성과와 최악의 시나리오를 정량적으로 산출한다.</p>
                     </div>
+                    <div className="p-5 bg-white border border-gray-200 rounded-xl space-y-2 hover:border-gray-300 transition-colors">
+                        <p className="text-xs font-bold text-amber-500 uppercase tracking-wider">Decision(t) 최적 전략 탐색</p>
+                        <p className="text-sm font-bold text-gray-900">강화학습</p>
+                        <p className="text-xs text-gray-500 leading-relaxed">상태-행동 공간에서 최적 정책 전략을 탐색하고, 환경 피드백을 통해 적응적으로 의사결정을 개선한다.</p>
+                    </div>
+                    <div className="p-5 bg-white border border-gray-200 rounded-xl space-y-2 hover:border-gray-300 transition-colors">
+                        <p className="text-xs font-bold text-cyan-500 uppercase tracking-wider">State(t) 가상 복제</p>
+                        <p className="text-sm font-bold text-gray-900">디지털 트윈</p>
+                        <p className="text-xs text-gray-500 leading-relaxed">정책 환경의 가상 복제본을 구축하여 개입 시나리오를 사전 시뮬레이션하고 결과를 예측한다.</p>
+                    </div>
+                    <div className="p-5 bg-white border border-gray-200 rounded-xl space-y-2 hover:border-gray-300 transition-colors">
+                        <p className="text-xs font-bold text-rose-500 uppercase tracking-wider">System Response 창발</p>
+                        <p className="text-sm font-bold text-gray-900">에이전트 기반 시뮬레이션</p>
+                        <p className="text-xs text-gray-500 leading-relaxed">이질적 행위자들의 상호작용을 모델링하여 정책 개입의 창발적 시스템 반응을 예측한다.</p>
+                    </div>
                 </div>
             </section>
 

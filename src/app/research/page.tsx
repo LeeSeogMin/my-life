@@ -5,7 +5,7 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "연구 — 주요 연구·개발 프로젝트",
-    description: "이석민의 AI 기반 정책 분석, 국제관계 예측 파이프라인, 정책 의사결정 지원 시스템 등 주요 연구·개발 프로젝트 소개.",
+    description: "이석민의 AI 기반 정책 분석, 계산사회과학 기반 정책 의사결정 지원 시스템, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트 소개.",
     alternates: {
         canonical: `${SITE_URL}/research`,
     },
@@ -20,7 +20,7 @@ const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "연구 — 이석민 | 정책 × AI",
-    description: "이석민의 AI 기반 정책 분석, 국제관계 예측 파이프라인, 정책 의사결정 지원 시스템 등 주요 연구·개발 프로젝트 소개.",
+    description: "이석민의 AI 기반 정책 분석, 계산사회과학 기반 정책 의사결정 지원, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트.",
     url: `${SITE_URL}/research`,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     mainEntity: {
@@ -81,6 +81,7 @@ export default function ResearchPage() {
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b-2 border-gray-900 pb-4 inline-block">Research</h1>
                 <p className="text-xl text-gray-600 font-light">
                     데이터분석과 AI를 활용한 정책 기획·분석·평가 시스템을 설계하고,
+                    계산사회과학 방법론으로 정책 의사결정을 지능화하며,
                     분석 결과의 타당성과 시스템 자체의 검증 가능성을 함께 연구합니다.
                 </p>
             </header>
@@ -104,10 +105,11 @@ export default function ResearchPage() {
                     </div>
                     <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
                         <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            AI 지원 의사결정 구조
+                            계산사회과학 기반 의사결정 지원
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            정책 수명 주기 전반에 걸친 패턴 탐지, 생성적 전략 도입 및 실시간 최적화 모델 적용 연구를 수행합니다.
+                            강화학습, 디지털 트윈, Causal ML, 에이전트 기반 시뮬레이션 등 계산사회과학 방법론을 통합하여
+                            정책 생애주기 전반의 의사결정을 데이터 기반으로 지능화하는 시스템을 연구합니다.
                         </p>
                     </div>
                     <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">

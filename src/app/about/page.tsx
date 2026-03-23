@@ -5,13 +5,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "About — 이석민",
-    description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 공공영역에서 신뢰 가능한 AI 활용 방식을 연구하고 설계하는 연구자.",
+    description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 공공영역에서 신뢰 가능한 AI 활용과 계산사회과학 기반 정책 의사결정 지원을 연구하는 연구자.",
     alternates: {
         canonical: `${SITE_URL}/about`,
     },
     openGraph: {
         title: "About — 이석민 | 정책 × AI",
-        description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 공공영역에서 신뢰 가능한 AI 활용 방식을 연구하고 설계합니다.",
+        description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 공공영역에서 신뢰 가능한 AI 활용과 계산사회과학 기반 정책 의사결정 지원을 연구합니다.",
         url: `${SITE_URL}/about`,
     },
 };
@@ -36,6 +36,10 @@ export default function AboutPage() {
                     <p>
                         사회과학적 문제의식에서 출발하여 방법론을 확장하고, 다시 그 방법론을 실제 작동하는 시스템으로 구현하는 것 —
                         이론과 실천의 순환이 제 연구의 핵심 원리입니다.
+                    </p>
+                    <p>
+                        계산사회과학의 시뮬레이션, 강화학습, 인과추론 방법론을 통해
+                        정책 의사결정 과정 자체를 데이터 기반으로 지능화하는 것이 또 다른 축입니다.
                     </p>
                     <p>
                         &ldquo;공공 의사결정은 어떻게 더 나은 시스템이 될 수 있는가&rdquo;라는 질문이
@@ -77,7 +81,7 @@ export default function AboutPage() {
                     <div className="flex-1 w-full p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
                         <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-2">기술 융합</p>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                            데이터사이언스 + 인공지능개발/응용
+                            데이터사이언스 + AI개발/응용 + 계산사회과학
                         </p>
                     </div>
                 </div>
