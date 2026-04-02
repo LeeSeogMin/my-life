@@ -56,6 +56,13 @@ export default function WritingsPage() {
                                 {conf.description && (
                                     <p className="text-sm text-gray-600 leading-relaxed mt-3">{conf.description}</p>
                                 )}
+                                {conf.filename && (
+                                    <div className="mt-3">
+                                        <a href={`/proceedings/${conf.filename}`} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-medium text-sm hover:underline">
+                                            발표자료 보기 &rarr;
+                                        </a>
+                                    </div>
+                                )}
                             </article>
                         ))}
                     </div>

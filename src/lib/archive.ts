@@ -33,6 +33,7 @@ export interface Conference {
   date: string;
   location: string;
   description: string;
+  filename: string;
 }
 
 export type ArchiveItem =
