@@ -89,6 +89,16 @@ export default function WritingsPage() {
                                 {pub.description && (
                                     <p className="text-sm text-gray-600 leading-relaxed mt-3">{pub.description}</p>
                                 )}
+                                <div className="flex items-center gap-4 mt-3">
+                                    <Link href={`/archive/${pub.id}`} className="text-blue-600 font-medium text-sm hover:underline">
+                                        상세 보기 &rarr;
+                                    </Link>
+                                    {pub.filename && (
+                                        <a href={`/journal/${pub.filename}`} target="_blank" rel="noopener noreferrer" className="text-gray-500 font-medium text-sm hover:underline inline-flex items-center gap-1">
+                                            PDF 보기 &rarr;
+                                        </a>
+                                    )}
+                                </div>
                             </article>
                         ))}
                     </div>

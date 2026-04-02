@@ -227,6 +227,17 @@ export default async function ArchiveDetailPage({
               <p className="text-sm text-gray-700 leading-relaxed">{item.abstract}</p>
             </section>
           )}
+          {item.filename && (
+            <a
+              href={`/journal/${item.filename}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"
+            >
+              <ExternalLink className="w-4 h-4" />
+              PDF 보기
+            </a>
+          )}
         </div>
       )}
 
