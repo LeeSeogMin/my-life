@@ -160,7 +160,7 @@ export default function ResearchPage() {
                         <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-500">프로젝트</span>
                         <p className="text-sm font-semibold text-gray-900">프로토타입 및 연구·개발</p>
                     </Link>
-                    <Link href="/archive" className="p-4 bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors flex items-center justify-center gap-2">
+                    <Link href="/writings" className="p-4 bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors flex items-center justify-center gap-2">
                         <span className="text-sm font-medium text-gray-600">전체 저서·논문 보기</span>
                         <ArrowRight className="w-4 h-4 text-gray-400" />
                     </Link>

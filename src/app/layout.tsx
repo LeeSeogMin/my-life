@@ -162,7 +162,7 @@ export default function RootLayout({
                 <Link href="/" className="hover:text-black transition-colors">홈</Link>
                 <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
                 <Link href="/projects" className="hover:text-black transition-colors">프로젝트</Link>
-                <Link href="/writing" className="hover:text-black transition-colors">칼럼</Link>
+                <Link href="/writings" className="hover:text-black transition-colors">글과 연구</Link>
                 <Link href="/about" className="hover:text-black transition-colors">About</Link>
                 <Link href="/community" className="hover:text-black transition-colors">커뮤니티</Link>
               </nav>
@@ -179,7 +179,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
             <nav className="flex justify-center gap-6 mb-4 text-gray-400">
               <Link href="/research" className="hover:text-gray-600 transition-colors">연구</Link>
-              <Link href="/archive" className="hover:text-gray-600 transition-colors">저서/논문</Link>
+              <Link href="/writings" className="hover:text-gray-600 transition-colors">글과 연구</Link>
               <Link href="/lectures" className="hover:text-gray-600 transition-colors">강의</Link>
               <Link href="/community" className="hover:text-gray-600 transition-colors">커뮤니티</Link>
             </nav>

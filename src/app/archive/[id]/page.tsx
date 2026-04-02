@@ -40,8 +40,25 @@ export async function generateMetadata({
     };
   }
 
+  if (item.type === "publication") {
+    const desc =
+      item.description || `${item.title} — ${item.journal} (${item.year})`;
+    return {
+      title: item.title,
+      description: desc,
+      openGraph: {
+        title: `${item.title} — 이석민 | 정책 × AI`,
+        description: desc,
+        type: "article",
+        url: `${SITE_URL}/archive/${item.id}`,
+      },
+      alternates: { canonical: `${SITE_URL}/archive/${item.id}` },
+    };
+  }
+
+  // conference
   const desc =
-    item.description || `${item.title} — ${item.journal} (${item.year})`;
+    item.description || `${item.title} — ${item.conference} (${item.date})`;
   return {
     title: item.title,
     description: desc,
@@ -72,14 +89,29 @@ function buildJsonLd(item: ArchiveItem) {
     };
   }
 
+  if (item.type === "publication") {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      headline: item.title,
+      author: personRef,
+      isPartOf: { "@type": "Periodical", name: item.journal },
+      ...(item.volume_issue && { volumeNumber: item.volume_issue }),
+      datePublished: item.year,
+      description: item.description,
+      inLanguage: "ko",
+      url: `${SITE_URL}/archive/${item.id}`,
+    };
+  }
+
+  // conference
   return {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     headline: item.title,
     author: personRef,
-    isPartOf: { "@type": "Periodical", name: item.journal },
-    ...(item.volume_issue && { volumeNumber: item.volume_issue }),
-    datePublished: item.year,
+    isPartOf: { "@type": "Event", name: item.conference },
+    datePublished: item.date,
     description: item.description,
     inLanguage: "ko",
     url: `${SITE_URL}/archive/${item.id}`,
@@ -105,16 +137,16 @@ export default async function ArchiveDetailPage({
       />
 
       <Link
-        href="/archive"
+        href="/writings"
         className="inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-gray-800 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" />
-        목록으로 돌아가기
+        글과 연구로 돌아가기
       </Link>
 
       <header className="space-y-4 border-b border-gray-200 pb-8">
         <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-md bg-gray-900 text-white">
-          {item.type === "book" ? "저서" : "논문"}
+          {item.type === "book" ? "저서" : item.type === "publication" ? "논문" : "학술대회"}
         </span>
         <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 leading-tight">
           {item.title}
@@ -124,7 +156,7 @@ export default async function ArchiveDetailPage({
         )}
       </header>
 
-      {item.type === "book" ? (
+      {item.type === "book" && (
         <div className="space-y-6">
           <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-3 text-sm">
             <dt className="font-semibold text-gray-500">저자</dt>
@@ -166,7 +198,9 @@ export default async function ArchiveDetailPage({
             </a>
           )}
         </div>
-      ) : (
+      )}
+
+      {item.type === "publication" && (
         <div className="space-y-6">
           <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-3 text-sm">
             <dt className="font-semibold text-gray-500">저자</dt>
@@ -196,6 +230,30 @@ export default async function ArchiveDetailPage({
         </div>
       )}
 
+      {item.type === "conference" && (
+        <div className="space-y-6">
+          <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-3 text-sm">
+            <dt className="font-semibold text-gray-500">저자</dt>
+            <dd className="text-gray-900">{item.author}</dd>
+            <dt className="font-semibold text-gray-500">학술대회</dt>
+            <dd className="text-gray-900">{item.conference}</dd>
+            <dt className="font-semibold text-gray-500">발표일</dt>
+            <dd className="text-gray-900">{item.date}</dd>
+            {item.location && (
+              <>
+                <dt className="font-semibold text-gray-500">장소</dt>
+                <dd className="text-gray-900">{item.location}</dd>
+              </>
+            )}
+          </dl>
+          {item.description && (
+            <div className="prose prose-gray max-w-none">
+              <p>{item.description}</p>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* 관련 콘텐츠 교차 링크 */}
       <nav className="border-t border-gray-200 pt-8 space-y-4">
         <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-widest">관련 콘텐츠</h2>
@@ -204,8 +262,8 @@ export default async function ArchiveDetailPage({
             연구 프로젝트
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
-          <Link href="/writing" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
-            칼럼 및 인사이트
+          <Link href="/writings" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+            글과 연구
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link href="/framework" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">

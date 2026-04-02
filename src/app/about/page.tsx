@@ -137,7 +137,7 @@ export default function AboutPage() {
                     </Link>
                 </div>
                 <Link
-                    href="/archive"
+                    href="/writings"
                     className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                 >
                     전체 저서·논문 보기

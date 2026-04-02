@@ -220,7 +220,7 @@ export default function Home() {
             <p className="text-xs text-gray-400">2025. 05 – 2025. 09</p>
           </Link>
 
-          <Link href="/writing/sapd-palantir-convergence" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
+          <Link href="/writings/columns/sapd-palantir-convergence" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">칼럼</span>
               <div className="flex gap-1.5">
@@ -232,7 +232,7 @@ export default function Home() {
             <p className="text-xs font-mono text-gray-400">2026-03-01</p>
           </Link>
 
-          <Link href="/writing/intro" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
+          <Link href="/writings/columns/intro" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">칼럼</span>
               <div className="flex gap-1.5">
@@ -254,10 +254,10 @@ export default function Home() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            href="/writing"
+            href="/writings"
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
-            전체 칼럼 보기
+            글과 연구 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

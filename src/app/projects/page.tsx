@@ -159,7 +159,7 @@ export default function ProjectsPage() {
                         학술 연구
                         <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
-                    <Link href="/archive" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+                    <Link href="/writings" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
                         저서 및 논문
                         <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
