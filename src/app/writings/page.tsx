@@ -25,18 +25,19 @@ export default function WritingsPage() {
 
     return (
         <div className="space-y-16">
-            <header className="space-y-6 text-center">
+            <header className="text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">글과 연구</h1>
-                <nav className="flex justify-center flex-wrap gap-3">
-                    <a href="#conferences" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학술대회</a>
-                    <a href="#journals" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학회지</a>
-                    <a href="#books" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">저서</a>
-                    <a href="#columns" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">칼럼</a>
-                </nav>
             </header>
 
+            <nav className="sticky top-[57px] z-[5] -mx-6 px-6 py-3 bg-gray-50/95 backdrop-blur-sm border-b border-gray-200 flex justify-center flex-wrap gap-3">
+                <a href="#conferences" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학술대회</a>
+                <a href="#journals" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학회지</a>
+                <a href="#books" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">저서</a>
+                <a href="#columns" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">칼럼</a>
+            </nav>
+
             {/* 학술대회 */}
-            <section id="conferences" className="space-y-8 scroll-mt-24">
+            <section id="conferences" className="space-y-8 scroll-mt-28">
                 <h2 className="text-2xl font-bold flex items-center gap-3 border-b border-gray-200 pb-2">
                     <span className="bg-gray-900 text-white px-3 py-1 text-sm rounded-md tracking-wider uppercase">
                         학술대회 (Conferences)
@@ -66,7 +67,7 @@ export default function WritingsPage() {
             </section>
 
             {/* 학회지 */}
-            <section id="journals" className="space-y-8 scroll-mt-24">
+            <section id="journals" className="space-y-8 scroll-mt-28">
                 <h2 className="text-2xl font-bold flex items-center gap-3 border-b border-gray-200 pb-2">
                     <span className="bg-gray-900 text-white px-3 py-1 text-sm rounded-md tracking-wider uppercase">
                         학회지 (Journals)
@@ -99,7 +100,7 @@ export default function WritingsPage() {
             </section>
 
             {/* 저서 */}
-            <section id="books" className="space-y-8 scroll-mt-24">
+            <section id="books" className="space-y-8 scroll-mt-28">
                 <h2 className="text-2xl font-bold flex items-center gap-3 border-b border-gray-200 pb-2">
                     <span className="bg-gray-900 text-white px-3 py-1 text-sm rounded-md tracking-wider uppercase">
                         저서 (Books)
@@ -141,7 +142,7 @@ export default function WritingsPage() {
             </section>
 
             {/* 칼럼 */}
-            <section id="columns" className="space-y-8 scroll-mt-24">
+            <section id="columns" className="space-y-8 scroll-mt-28">
                 <h2 className="text-2xl font-bold flex items-center gap-3 border-b border-gray-200 pb-2">
                     <span className="bg-gray-900 text-white px-3 py-1 text-sm rounded-md tracking-wider uppercase">
                         칼럼 (Columns)
