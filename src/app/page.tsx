@@ -6,15 +6,27 @@ export default function Home() {
     <div className="space-y-20 pb-12">
       {/* Hero — SAPD 중심 포지셔닝 */}
       <section className="pt-16 lg:pt-20 pb-4">
-        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-6">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
-            이석민
-          </h1>
-          <span className="text-lg text-gray-500 font-medium">
-            Seog-Min Lee
-          </span>
+        <div className="flex items-center gap-6 mb-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/profile.jpg"
+            alt="이석민 교수 프로필 사진"
+            width={96}
+            height={96}
+            className="w-24 h-24 rounded-full object-cover border-2 border-gray-200 flex-shrink-0"
+          />
+          <div>
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
+                이석민
+              </h1>
+              <span className="text-lg text-gray-500 font-medium">
+                Seog-Min Lee
+              </span>
+            </div>
+            <p className="text-sm text-gray-400 mt-1">한신대학교 공공인재빅데이터융합학과 교수</p>
+          </div>
         </div>
-        <p className="text-sm text-gray-400 mb-6">한신대학교 공공인재빅데이터융합학과 교수</p>
 
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6">
           실시간 데이터 기반 정책 의사결정 시스템을 설계합니다

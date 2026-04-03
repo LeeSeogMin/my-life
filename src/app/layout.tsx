@@ -100,6 +100,7 @@ const jsonLd = {
       name: "이석민",
       alternateName: "Seog-Min Lee",
       url: SITE_URL,
+      image: `${SITE_URL}/profile.jpg`,
       email: "newmind68@hs.ac.kr",
       jobTitle: "교수",
       worksFor: {
