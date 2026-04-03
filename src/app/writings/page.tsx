@@ -5,14 +5,14 @@ import { getAllPosts } from "@/lib/mdx";
 const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
-    title: "글과 연구 — 학술대회·학회지·저서·칼럼",
-    description: "이석민의 학술대회 발표, 학회지 논문, 저서, 칼럼 모음. 정책분석, AI, 데이터 기반 공공 의사결정 관련 학술 자료.",
+    title: "글과 연구 — 학술대회·저널·저서·칼럼",
+    description: "이석민의 학술대회 발표, 저널 논문, 저서, 칼럼 모음. 정책분석, AI, 데이터 기반 공공 의사결정 관련 학술 자료.",
     alternates: {
         canonical: `${SITE_URL}/writings`,
     },
     openGraph: {
-        title: "글과 연구 — 이석민 | 정책 × AI",
-        description: "학술대회 발표, 학회지 논문, 저서, 칼럼 등 학술 자료 모음.",
+        title: "글과 연구 — 이석민 교수 | 한신대학교",
+        description: "학술대회 발표, 저널 논문, 저서, 칼럼 등 학술 자료 모음.",
         url: `${SITE_URL}/writings`,
     },
 };
@@ -31,7 +31,7 @@ export default function WritingsPage() {
 
             <nav className="sticky top-[57px] z-[5] -mx-6 px-6 py-3 bg-gray-50/95 backdrop-blur-sm border-b border-gray-200 flex justify-center flex-wrap gap-3">
                 <a href="#conferences" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학술대회</a>
-                <a href="#journals" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학회지</a>
+                <a href="#journals" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">저널</a>
                 <a href="#books" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">저서</a>
                 <a href="#columns" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">칼럼</a>
             </nav>
@@ -77,7 +77,7 @@ export default function WritingsPage() {
             <section id="journals" className="space-y-8 scroll-mt-28">
                 <h2 className="text-2xl font-bold flex items-center gap-3 border-b border-gray-200 pb-2">
                     <span className="bg-gray-900 text-white px-3 py-1 text-sm rounded-md tracking-wider uppercase">
-                        학회지 (Journals)
+                        저널 (Journals)
                     </span>
                 </h2>
                 {publications.length > 0 ? (
@@ -111,7 +111,7 @@ export default function WritingsPage() {
                     </div>
                 ) : (
                     <div className="bg-gray-50 border border-gray-200 rounded-md p-8 text-center">
-                        <p className="text-gray-500 font-medium">학회지 논문 목록이 준비 중입니다.</p>
+                        <p className="text-gray-500 font-medium">저널 논문 목록이 준비 중입니다.</p>
                     </div>
                 )}
             </section>
