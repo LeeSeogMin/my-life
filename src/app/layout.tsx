@@ -131,6 +131,9 @@ const jsonLd = {
       description:
         "정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, 정책분석용 생성형 AI를 설계하고 공공영역 AI의 설명가능성과 검토 가능성을 연구하는 융합 연구자.",
       sameAs: [
+        "https://scholar.google.com/citations?user=P1uz0l8AAAAJ&hl=ko",
+        "https://orcid.org/0009-0009-0754-8523",
+        "https://www.researchgate.net/profile/Seog-Min-Lee",
         "https://app.rndcircle.io/lab/a5671ecb-4a41-4135-8d4d-9084bec8dca5",
         "https://www.hs.ac.kr/kor/10504/subview.do?enc=Zm5jdDF8QEB8JTJGaHNQcm9mJTJGa29yJTJGMzE1JTJGMjAyMDAwMzQlMkZhcnRjbFZpZXcuZG8lM0Y%3D",
       ],
