@@ -7,15 +7,15 @@ import AuthButton from "@/components/auth/AuthButton";
 const inter = Inter({ subsets: ["latin"] });
 
 const SITE_URL = "https://my-life-six-pi.vercel.app";
-const SITE_NAME = "이석민 | 정책 × AI";
+const SITE_NAME = "이석민 교수 | 한신대학교";
 const SITE_DESCRIPTION =
-  "이석민 — 한신대학교 공공인재빅데이터융합학 교수. 정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, 정책분석용 생성형 AI를 설계하고, 공공영역 AI의 설명가능성과 검토 가능성을 연구합니다.";
+  "이석민 교수 — 한신대학교 공공인재빅데이터융합학과. 정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, 정책분석용 생성형 AI를 설계하고, 공공영역 AI의 설명가능성과 검토 가능성을 연구합니다.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "이석민 | 정책 × AI — 한신대학교",
-    template: "%s | 이석민 · 정책 × AI",
+    default: "이석민 교수 | 한신대학교 공공인재빅데이터융합학 — 정책 × AI",
+    template: "%s | 이석민 교수 · 한신대학교",
   },
   description: SITE_DESCRIPTION,
   keywords: [
@@ -54,13 +54,22 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "이석민 | 정책 × AI — 한신대학교 공공인재빅데이터융합학",
+    title: "이석민 교수 | 한신대학교 공공인재빅데이터융합학 — 정책 × AI 연구",
     description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "이석민 교수 — 한신대학교 공공인재빅데이터융합학, 정책 × AI 연구",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "이석민 | 정책 × AI",
+    title: "이석민 교수 | 한신대학교 — 정책 × AI",
     description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}/og-image.png`],
   },
   alternates: {
     canonical: SITE_URL,
@@ -95,8 +104,13 @@ const jsonLd = {
       jobTitle: "교수",
       worksFor: {
         "@type": "Organization",
-        name: "한신대학교 공공인재빅데이터융합학",
-        url: "https://www.hs.ac.kr",
+        name: "한신대학교 공공인재빅데이터융합학과",
+        url: "https://www.hs.ac.kr/kor/10504/subview.do?enc=Zm5jdDF8QEB8JTJGaHNQcm9mJTJGa29yJTJGMzE1JTJGMjAyMDAwMzQlMkZhcnRjbFZpZXcuZG8lM0Y%3D",
+        parentOrganization: {
+          "@type": "CollegeOrUniversity",
+          name: "한신대학교",
+          url: "https://www.hs.ac.kr",
+        },
       },
       alumniOf: {
         "@type": "CollegeOrUniversity",
@@ -116,13 +130,16 @@ const jsonLd = {
       ],
       description:
         "정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, 정책분석용 생성형 AI를 설계하고 공공영역 AI의 설명가능성과 검토 가능성을 연구하는 융합 연구자.",
-      sameAs: [],
+      sameAs: [
+        "https://app.rndcircle.io/lab/a5671ecb-4a41-4135-8d4d-9084bec8dca5",
+        "https://www.hs.ac.kr/kor/10504/subview.do?enc=Zm5jdDF8QEB8JTJGaHNQcm9mJTJGa29yJTJGMzE1JTJGMjAyMDAwMzQlMkZhcnRjbFZpZXcuZG8lM0Y%3D",
+      ],
     },
     {
       "@type": "ProfilePage",
       "@id": `${SITE_URL}/#profilepage`,
       url: SITE_URL,
-      name: "이석민 | 정책 × AI",
+      name: "이석민 교수 | 한신대학교 — 정책 × AI",
       description: SITE_DESCRIPTION,
       mainEntity: { "@id": `${SITE_URL}/#person` },
     },
@@ -155,7 +172,7 @@ export default function RootLayout({
         <header className="border-b border-gray-200 bg-white sticky top-0 z-10 w-full">
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-600 transition-colors">
-              이석민 | 정책 × AI
+              이석민 교수 | 한신대학교
             </Link>
             <div className="flex items-center gap-6">
               <nav className="flex gap-6 text-base font-semibold text-gray-700">

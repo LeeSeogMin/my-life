@@ -5,7 +5,7 @@ export const metadata = {
     title: "칼럼 — 정책·AI 인사이트",
     description: "이석민의 정책, AI, 데이터, 공공 의사결정에 관한 칼럼과 에세이. 구조적 분석과 프레임워크 확장을 다루는 글.",
     openGraph: {
-        title: "칼럼 — 이석민 | 정책 × AI",
+        title: "칼럼 — 이석민 교수 | 한신대학교",
         description: "정책, AI, 데이터, 공공 의사결정에 관한 칼럼과 에세이.",
     },
 };

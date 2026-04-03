@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: '커뮤니티',
   description: '이석민 교수와 연구자, 수강생 간 소통 공간. 연구 토론과 강의 질의응답.',
   openGraph: {
-    title: '커뮤니티 — 이석민 | 정책 × AI',
+    title: '커뮤니티 — 이석민 교수 | 한신대학교',
     description: '연구자 간 소통과 수강생 질의응답 공간.',
   },
 };

@@ -5,7 +5,7 @@ export const metadata = {
     title: "저서/논문 — 출판물 및 학술 자료",
     description: "이석민의 저서, 학술 논문, 보고서 등 출판물 목록. 정책분석, AI, 데이터 기반 공공 의사결정 관련 학술 자료.",
     openGraph: {
-        title: "저서/논문 — 이석민 | 정책 × AI",
+        title: "저서/논문 — 이석민 교수 | 한신대학교",
         description: "정책분석, AI, 공공 의사결정 관련 저서 및 학술 논문 목록.",
     },
 };
