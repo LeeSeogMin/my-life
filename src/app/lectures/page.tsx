@@ -2,7 +2,7 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "강의 — 딥러닝, 데이터, 정책분석",
-    description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+    description: "이석민 교수의 학부 강의: 딥러닝 자연어 처리, 데이터 사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
     alternates: {
         canonical: `${SITE_URL}/lectures`,
     },
@@ -18,16 +18,18 @@ export default function LecturesPage() {
         {
             term: "1학기 (Semester 1)",
             courses: [
-                { title: "딥러닝자연어처리 (Deep Learning Natural Language Processing)", desc: "정책 신호 추출을 위한 최신 자연어 처리(NLP) 방법론 연구 및 적용." },
+                { title: "딥러닝 자연어 처리 (Deep Learning Natural Language Processing)", desc: "정책 신호 추출을 위한 최신 자연어 처리(NLP) 방법론 연구 및 적용." },
                 { title: "웹프로그래밍 (Web Programming)", desc: "공공 의사결정 시스템을 시각화하고 상호작용할 수 있는 웹 플랫폼 개발." },
                 { title: "정책분석과 기획 (Policy Analysis and Planning)", desc: "정책의 기초 구조 이해 및 전략적 기획 역량 강화." },
-                { title: "데이터사이언스 (Data Science)", desc: "계량경제학, 인과추론, 머신러닝, 딥러닝을 결합한 데이터 기반 의사결정 방법론." }
+                { title: "데이터 사이언스 (Data Science)", desc: "계량경제학, 인과추론, 머신러닝, 딥러닝을 결합한 데이터 기반 의사결정 방법론." },
+                { title: "데이터 분석과 시각화 (Data Analysis and Visualization)", desc: "데이터 탐색, 전처리, 시각화를 통한 효과적인 데이터 커뮤니케이션 역량 강화." }
             ]
         },
         {
             term: "2학기 (Semester 2)",
             courses: [
                 { title: "LLMOPs & 데이터 엔지니어링 (LLMOPs & Data Engineering)", desc: "상태 기반 적응형 정책을 위한 데이터 파이프라인 및 LLM 운영 구축." },
+                { title: "딥러닝 기초 (Deep Learning Fundamentals)", desc: "신경망의 기본 원리부터 CNN, RNN 등 핵심 아키텍처까지 딥러닝의 기초를 체계적으로 학습." },
                 { title: "딥러닝 영상데이터분석(geoAI) (Deep Learning Image Data Analysis)", desc: "딥러닝 패러다임을 활용한 위성/항공 등 공간 데이터(geoAI) 분석 전략." },
                 { title: "AI 에이전트 캡스톤 (AI Agent Capstone)", desc: "실제 정책 시나리오에 적용가능한 자율형 AI 에이전트 개발 실무 프로젝트." },
                 { title: "정책분석평가론 (Policy Analysis and Evaluation Theory)", desc: "지속적인 상태 평가와 적응형 피드백을 위한 정책 프레임워크 학습." }
@@ -39,7 +41,7 @@ export default function LecturesPage() {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         name: "강의 — 이석민 | 정책 × AI",
-        description: "이석민 교수의 학부 강의: 딥러닝자연어처리, 데이터사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+        description: "이석민 교수의 학부 강의: 딥러닝 자연어 처리, 데이터 사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
         url: `${SITE_URL}/lectures`,
         isPartOf: { "@id": `${SITE_URL}/#website` },
         mainEntity: {

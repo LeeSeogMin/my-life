@@ -96,9 +96,9 @@ export default function AboutPage() {
                 <div className="grid sm:grid-cols-2 gap-4 max-w-3xl">
                     {[
                         { area: "정책 분석·기획·평가", courses: "정책분석과 기획, 정책분석평가론" },
-                        { area: "딥러닝·AI", courses: "딥러닝자연어처리, 딥러닝 영상데이터분석(geoAI)" },
+                        { area: "딥러닝·AI", courses: "딥러닝 자연어 처리, 딥러닝 기초, 딥러닝 영상데이터분석(geoAI)" },
                         { area: "개발·엔지니어링", courses: "웹프로그래밍, LLMOPs & 데이터 엔지니어링, AI 에이전트 캡스톤" },
-                        { area: "데이터 분석", courses: "데이터분석과 시각화" },
+                        { area: "데이터 분석", courses: "데이터 사이언스, 데이터 분석과 시각화" },
                     ].map((item, idx) => (
                         <div key={idx} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
                             <div>
