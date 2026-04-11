@@ -29,8 +29,8 @@
         "volume_issue": "Under Review",
         "year": "2026",
         "filename": "",
-        "description": "",
-        "abstract": ""
+        "description": "BACI 제품수준 양자무역 데이터(4,649개 HS6 제품, 225개국, 2015-2024)를 활용하여 EU의 대러시아 제재 효과를 분석한 연구. Chupilkin et al.(2023) 제재 분류와 PPML 삼중차분법(triple-DID)을 결합하여, 제재가 연합국-러시아 간 제재 대상 제품 교역을 37.7-49.4% 감소시켰음을 추정. 산업역량재(-73.3%), 이중용도(-66.9%) 대 사치품(+21.5%)의 극명한 범주별 이질성을 발견. 제3국 우회 경로(UAE +331%, 아르메니아 +328%, 키르기스스탄 +161%)를 제품 수준에서 최초 정량화하고, 연합국→게이트웨이 수출 검증(+10.8%)으로 물리적 환적 증거를 제시.",
+        "abstract": "Using product-level bilateral trade data (BACI, 4,649 HS6 products, 225 countries, 2015–2024), we estimate the trade effects of EU sanctions on Russia by exploiting the staggered introduction of product-specific restrictions across EU sanctions packages. Combining the Chupilkin et al. (2023) sanctions classification with a PPML triple-difference-in-differences design, we find that sanctions reduced coalition–Russia trade in sanctioned products by 37.7% (PPML, intensive margin) to 49.4% (PPML, balanced panel including extensive margin). Effects vary sharply by product category: industrial capacity goods fell 73.3% and dual-use items 66.9%, while luxury goods increased 21.5%. Event-study estimates show clean aggregate pre-trends and progressive deepening from −33% at onset to −53% one year later. Third-country rerouting of sanctioned products concentrates in gateway countries; a coalition-to-gateway export test confirms that coalition members differentially increased sanctioned-product exports to intermediaries (+10.8%, p < 0.001), providing direct evidence of physical transshipment rather than demand substitution alone."
     },
     {
         "id": "J-001",
