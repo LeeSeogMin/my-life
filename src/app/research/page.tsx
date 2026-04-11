@@ -136,6 +136,11 @@ export default function ResearchPage() {
                     관련 저서·논문·칼럼
                 </h2>
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <Link href="/archive/J-009" className="p-4 bg-gray-50 rounded-lg border border-amber-200 hover:border-amber-400 transition-colors block space-y-1">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600">SSCI Q1 투고중</span>
+                        <p className="text-sm font-semibold text-gray-900">Measuring Adaptive Governance Without Accumulation Bias</p>
+                        <p className="text-xs text-gray-500">Policy Sciences (Springer Nature) · IF 3.7 · SJR Q1</p>
+                    </Link>
                     <Link href="/archive/B-006" className="p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors block space-y-1">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">저서</span>
                         <p className="text-sm font-semibold text-gray-900">인과 데이터 사이언스</p>

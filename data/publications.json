@@ -1,5 +1,16 @@
 [
     {
+        "id": "J-009",
+        "title": "Measuring Adaptive Governance Without Accumulation Bias: Multi-LLM Scoring Across Five Korean Administrations",
+        "author": "이석민 (Seog-Min Lee)",
+        "journal": "Policy Sciences (SSCI, Q1)",
+        "volume_issue": "Under Review",
+        "year": "2026",
+        "filename": "",
+        "description": "한국 5개 행정부(노무현~윤석열, 2003-2025)의 적응적 거버넌스 역량을 축적 편향(accumulation bias)을 통제한 다중 지표 설계로 비교한 연구. 5개 이질적 LLM을 보조 채점 도구로 활용하고, 블라인딩 침투 검증·모델 편향 분석 등 방법론적 투명성을 확보. 설계된 제도적 강건성(designed institutional robustness) 개념을 도입하여 적응적 거버넌스가 정권 교체를 넘어 지속되기 위한 제도적 조건을 제시. Springer Nature | IF 3.7 (2024) | 5-year IF 4.4 | SJR 1.217 | Q1 | h-index 78",
+        "abstract": "Comparative governance research faces a systematic measurement confound that we term accumulation bias: successor administrations inherit institutional stock from their predecessors, rendering stock-level indicators structurally favorable to later governments. This paper develops a multi-indicator, flow-based scoring design that separates institutional stock from each administration's independent contribution, implemented through a panel of five heterogeneous large language models across three primary scoring rounds with empirically tested blinding protocol. Applying this design to five completed Korean administrations (2003–2025), we find that administrations embedding policy learning infrastructure in legislation exhibit greater durability through political turnover than those relying on leader-contingent adaptation. The analysis clarifies accumulation bias as a measurement confound distinct from path dependence, specifies the reliability boundaries of multi-LLM-assisted scoring, and identifies designed institutional robustness as a condition under which adaptive governance survives political turnover."
+    },
+    {
         "id": "J-007",
         "title": "XAI-based Data Quality Diagnosis Framework for Machine Learning Pipelines",
         "author": "이석민 (Seog-Min Lee)",
@@ -14,7 +25,7 @@
         "id": "J-006",
         "title": "Sanctions Leakage Dynamics: Product-Level Evidence on Trade Restrictions and Third-Country Rerouting",
         "author": "이석민 (Seog-Min Lee)",
-        "journal": "Journal of International Economics (SSCI)",
+        "journal": "European Journal of Political Economy (SSCI, Q1)",
         "volume_issue": "Under Review",
         "year": "2026",
         "filename": "",
