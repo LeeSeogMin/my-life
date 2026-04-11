@@ -18,8 +18,8 @@
         "volume_issue": "Under Review",
         "year": "2026",
         "filename": "",
-        "description": "",
-        "abstract": ""
+        "description": "설명가능 AI(SHAP, LIME)를 활용하여 ML 파이프라인의 데이터 품질 문제를 진단하는 프레임워크를 제안한 연구. 정상 데이터와 오염 데이터 간 특성 중요도 분포 변화를 Jensen-Shannon 발산과 Spearman 상관으로 측정하여 결측값, 이상치, 분포 이동을 탐지. UCI Adult 데이터셋에서 RandomForest·XGBoost 분류기로 평가한 결과, SHAP은 이상치에 높은 민감도(JS divergence 0.169)를, LIME은 안정적 순위 상관을 보임. 품질 문제의 심각도와 FI 발산 간 단조 관계를 확인하여 MLOps 파이프라인에서의 데이터 품질 모니터링 방법론을 제시.",
+        "abstract": "Data quality is a critical determinant of machine learning (ML) model performance, yet traditional statistical methods for quality diagnosis provide limited interpretability. In this paper, we propose an XAI-based Data Quality Diagnosis Framework that leverages explainable artificial intelligence techniques, specifically SHAP and LIME, to diagnose data quality problems in ML pipelines. Our approach analyzes changes in feature importance distributions between clean and corrupted data to detect and characterize quality issues including missing values, outliers, and distribution shifts. We evaluate the framework on the UCI Adult dataset using RandomForest and XGBoost classifiers, measuring Feature Importance (FI) Divergence through Jensen-Shannon divergence and Spearman correlation metrics. Experimental results demonstrate that XAI techniques effectively detect quality problems, with SHAP showing higher sensitivity to outliers (JS divergence of 0.169) and LIME providing more stable rank correlations. The severity of quality issues exhibits a monotonic relationship with FI divergence, supporting the framework's diagnostic capability."
     },
     {
         "id": "J-006",
