@@ -16,6 +16,17 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Browser automation
+
+This project uses the Playwright CLI instead of project MCP servers.
+
+```bash
+npm run pw:install
+npm run pw:open -- http://localhost:3000
+npm run pw:codegen -- http://localhost:3000
+npm run pw:test
+```
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

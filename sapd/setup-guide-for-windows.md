@@ -69,20 +69,8 @@ npm install -g firebase-tools
 npm install -g pm2
 npm install -g playwright
 
-# MCP 서버
-npm install -g @modelcontextprotocol/server-filesystem
-npm install -g @21st-dev/magic
-npm install -g @andrebuzeli/advanced-memory-bank-mcp
-npm install -g @puchunjie/doc-tools-mcp
-npm install -g @upstash/context7-mcp
-npm install -g agent-browser
+# CLI 도구
 npm install -g edit-file-lines
-npm install -g linear-taskmaster-mcp
-npm install -g mcp-cli
-npm install -g mcp-sequentialthinking-tools
-npm install -g mcp-shrimp-task-manager
-npm install -g nascoder-perplexity-mcp
-npm install -g octagon-deep-research-mcp
 npm install -g opencode-ai
 
 # 문서 생성
@@ -120,29 +108,28 @@ pip install pillow lxml pyyaml python-dotenv tqdm regex magika
 
 ---
 
-## 5. Claude Desktop MCP 서버 (~/.claude/claude_desktop_config.json)
+## 5. Playwright CLI
 
-```json
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\USERNAME"]
-    },
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_TOKEN" }
-    },
-    "web": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch"]
-    }
-  }
-}
+이 프로젝트는 브라우저 자동화를 MCP 서버가 아니라 Playwright CLI로 실행한다.
+
+```bash
+# 프로젝트 로컬 설치
+npm install
+
+# 브라우저 바이너리 설치
+npm run pw:install
+
+# URL 열기
+npm run pw:open -- http://localhost:3000
+
+# 동작 기록 및 코드 생성
+npm run pw:codegen -- http://localhost:3000
+
+# 테스트 실행
+npm run pw:test
 ```
 
-> Windows에서는 경로를 `C:\Users\USERNAME`으로 변경
+전역 설치가 필요한 경우에는 `npm install -g playwright` 후 `playwright open <URL>` 형식으로 실행한다.
 
 ---
 
@@ -152,7 +139,6 @@ pip install pillow lxml pyyaml python-dotenv tqdm regex magika
 
 ```
 ~/.claude/skills/
-├── agent-browser/
 ├── algorithmic-art/
 ├── brand-guidelines/
 ├── canvas-design/
@@ -163,7 +149,6 @@ pip install pillow lxml pyyaml python-dotenv tqdm regex magika
 ├── frontend-design/
 ├── hwp/
 ├── internal-comms/
-├── mcp-builder/
 ├── md2pdf/
 ├── pdf/
 ├── pptx/
@@ -201,4 +186,4 @@ pip install pillow lxml pyyaml python-dotenv tqdm regex magika
 3. Python: Windows에서 `pip install --user` 대신 venv 사용 권장
 4. pyhwp: Windows에서 정상 작동 확인 필요 (OLE 파싱 의존)
 5. Homebrew 전용 패키지(brew로만 설치한 것)는 winget/choco로 대체
-6. SessionEnd 훅 (`cleanup-mcp.sh`) → Windows용 `.bat` 또는 `.ps1`로 변환 필요
+6. 브라우저 자동화는 MCP 설정 없이 `npm run pw:*` 또는 `npx playwright ...`로 실행
