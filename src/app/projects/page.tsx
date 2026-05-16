@@ -111,7 +111,7 @@ export default function ProjectsPage() {
                         <div className="flex items-center gap-2">
                             <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">기획·설계</span>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900">정부 정책 평가 AI — 인과분석 기반 효과성평가 자동화</h3>
+                        <h3 className="text-lg font-bold text-gray-900">인과분석 기반 정책평가 AI agent</h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
                             <strong className="text-gray-700">목적</strong>은 정부의 다양한 정책평가에서 효과성 판단이 전문가의 주관에 크게 의존하는 구조를 진단하고, 정책의 실제 효과를 과학적으로 추정하는 객관적 평가 체계로 전환하는 데 있다.
                         </p>
