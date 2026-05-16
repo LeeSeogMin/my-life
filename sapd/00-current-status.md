@@ -5,6 +5,16 @@
 
 ---
 
+> **Frame 정정 (2026-05-16)**: 본 문서는 my-life/sapd/ 가 doctrine publication interface 로 위치 부여되기 전의 옛 frame 위에서 작성된 작업 기록이다. 작업 기록 보존 차원에서 본문은 그대로 유지하되, 다음 어휘 매핑을 적용해 읽는다 (`/CONTEXT.md` 참조).
+>
+> - **"Validation Module" / "실무층 (Validation Module)"** → doctrine 어휘로는 **"Cross-layer Governance Overlay 운영화 인터페이스"** (paper §3.4.6, 5 번째 횡단 차원의 운영화 산출물 정리). my-life 안에서는 풀이판 명칭 "Validation Module" 을 보존하되 doctrine 매핑이 명문화됨 (project/sapd ADR-0001 · my-life ADR-0001).
+> - **"SAPD 5 계층 / SAPD Layer 4~5"** → doctrine 어휘로는 **"L1~L5 + Cross-layer Governance Overlay"** (paper §3.4 의 상태 정의·감지 네트워크·전환 판단·행위 포트폴리오·학습 환류 + 5 번째 횡단 차원).
+> - **"SAPD Framework — 이론(Adaptive Policy Design)과 실무(Validation Module)"** → doctrine 차원에서는 단일 frame (얇은 4 요소 + 5 번째 횡단 차원). my-life 는 publication interface 의 본질상 doctrine 풀어쓰기 + 운영화 산출물 정리 채널.
+>
+> doctrine 단일 진실원: `/Users/callii/Documents/project/sapd/paper/sapd.md` (이석민, 2026). 본 문서의 정합 갱신 의무는 sapd/CLAUDE.md 의 frame + my-life ADR-0001 의 양방향 흐름 정의 안에서 작동한다.
+
+---
+
 ## 1. 누구인가
 
 - **이석민 (Seog-Min Lee)**, 한신대학교 공공인재빅데이터융합학 교수

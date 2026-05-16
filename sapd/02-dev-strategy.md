@@ -4,6 +4,16 @@
 
 ---
 
+> **Frame 정정 (2026-05-16)**: 본 문서는 my-life/sapd/ 가 doctrine publication interface 로 위치 부여되기 전의 옛 frame 위에서 작성된 작업 기록이다. 본문 어휘는 다음과 같이 doctrine 매핑으로 읽는다 (`/CONTEXT.md` §2.3).
+>
+> - **"Validation Module"** → "Cross-layer Governance Overlay 운영화 인터페이스" (paper §3.4.6). 풀이판 명칭 보존.
+> - **"SAPD Layer 4~5 구현"** → "L4 행위 포트폴리오 · L5 학습 환류 의 운영화" (paper §3.4 L4 · L5).
+> - **"숙의 품질 평가 (Validation Module 연장)"** → "L3 전환 판단의 자동화 차등 + 5 번째 횡단 차원의 감사 가능성 평가" 의 운영화 도구.
+>
+> 본 문서의 MVP 기술 스택 분석 및 차별점 정리는 publication interface 의 내부 작업 메모로 보존된다. 단 "MVP 첫 번째 과제 = 국회 회의록 분석 + 질문 검토 AI" 는 my-life 자체의 개발 트랙이며 sapd-care · sapd-policy 와 동등한 의미의 도메인 인스턴스가 아니다 (my-life 는 publication interface · 운영화 산출물 정리 채널).
+
+---
+
 ## 첫 번째 과제: 국회 회의록 분석 + 질문 검토 AI
 
 ### MVP 기능 5개

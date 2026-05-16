@@ -76,44 +76,92 @@ export default function FrameworkPage() {
                 </div>
             </section>
 
-            {/* 5대 레이어 */}
+            {/* 5층 본체 + 5 번째 횡단 차원 */}
             <section className="space-y-6">
-                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">5대 레이어 아키텍처</h2>
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">5층 본체 + 5 번째 횡단 차원</h2>
                 <p className="text-gray-600 leading-relaxed max-w-3xl">
-                    EBP의 구조적 한계를 해결하기 위해 SAPD는 5단계의 구조적 아키텍처를 설계한다. 각 레이어는 순차적 절차가 아니라 동시적으로 작동하는 구조적 층위이며, 레이어 간 상호 참조가 연속적으로 이루어진다.
+                    SAPD는 적응적 정책 시스템을 사이버네틱스의 5 기능 분해 — <strong className="text-gray-700">정의 · 감지 · 판단 · 실행 · 학습</strong> — 으로 나누고, 이 5 층 본체를 횡단하는 통제 차원을 별도 명시한다. 5 층은 순차적 절차가 아니라 동시 작동하는 구조적 층위이며, 횡단 차원은 5 층 각각의 통제 장치를 통합한다. doctrine 단일 진실원: <code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded">paper/sapd.md §3.4</code> (이석민, 2026).
                 </p>
                 <div className="space-y-8 pl-4 border-l border-gray-200">
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
-                        <h3 className="text-lg font-bold text-gray-900">Layer 1: 문제 구조화 (Problem Structuring)</h3>
-                        <p className="text-gray-600 mt-1">시스템의 경계와 정책 문제를 정의한다. <strong className="text-gray-700">State(t)에 어떤 변수를 포함할 것인가는 순수한 기술적 선택이 아니라 규범적·정치적 판단이다.</strong> 특정 집단의 현실이 상태 공간에 포함되느냐 배제되느냐에 따라 정책 시스템의 인지 범위가 결정된다.</p>
-                        <p className="text-xs text-gray-400 mt-2">EBP 한계 해결: 무엇을 관찰할 것인가를 명시적으로 설계함으로써 데이터 비연속성의 근원을 구조적으로 해소</p>
+                        <h3 className="text-lg font-bold text-gray-900">L1: 상태 정의 (State Definition)</h3>
+                        <p className="text-gray-600 mt-1">정책 상태 공간 Ω = {`{S₁, S₂, ..., Sₙ}`} 을 정의한다. 각 상태는 관측 가능한 지표 묶음과 전이 조건으로 표현된다. <strong className="text-gray-700">&quot;누가 상태를 정의하는가&quot;는 기술적 문제가 아니라 권력의 문제</strong>이다 — 어떤 지표를 상태 변수에 넣느냐가 정책의 수혜자와 피해자를 가른다 (Schneider &amp; Ingram, 1990; Bowker &amp; Star, 1999).</p>
+                        <p className="text-xs text-gray-400 mt-2">최소 산출물: 상태 정의표 (상태별 식별 지표 · 임계값 · 전이 조건)</p>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
-                        <h3 className="text-lg font-bold text-gray-900">Layer 2: 전략 구조화 (Strategy Structuring)</h3>
-                        <p className="text-gray-600 mt-1">전략적 구조와 성과 생성 논리를 모델링한다. 효율성·형평성·자유·안전 등 <strong className="text-gray-700">경합하는 공공 가치 간의 가중치를 결정하는 민주적 심의</strong>가 이 단계에서 이루어진다.</p>
-                        <p className="text-xs text-gray-400 mt-2">EBP 한계 해결: 사후 평가에서 비로소 드러나던 가치 충돌을 설계 단계에서 사전적으로 구조화</p>
+                        <h3 className="text-lg font-bold text-gray-900">L2: 감지 네트워크 (Detection Network)</h3>
+                        <p className="text-gray-600 mt-1">L1 에서 정의한 상태 변수를 관측하는 감지 체계를 설계한다. <strong className="text-gray-700">상태 관찰과 상태 감시는 목적·범위·통제 방식에서 구분</strong>되어야 한다. 개인정보 보호법의 목적 제한·최소 수집 원칙이 L2 의 설계 제약에 포함된다.</p>
+                        <p className="text-xs text-gray-400 mt-2">최소 산출물: 관측 지표 카탈로그 (지표명·데이터 출처·관측 주기·정밀도·결측 처리 규칙)</p>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
-                        <h3 className="text-lg font-bold text-gray-900">Layer 3: 의사결정 아키텍처 (Decision Architecture)</h3>
-                        <p className="text-gray-600 mt-1">의사결정 노드, 권한, 기준을 설계한다. 핵심 요건은 <strong className="text-gray-700">의사결정 함수 f의 감사 가능성(auditability)</strong>이다 — f가 어떤 변수에 어떤 가중치를 부여하고 어떤 임계값에서 판단이 전환되는지가 시민과 의회에 의해 검증 가능해야 한다.</p>
-                        <p className="text-xs text-gray-400 mt-2">EBP 한계 해결: 정적 If-Then 규칙을 동태적 의사결정 함수 f(State(t))로 전환하여 실시간 적응 실현</p>
+                        <h3 className="text-lg font-bold text-gray-900">L3: 전환 판단 (Transition Decision)</h3>
+                        <p className="text-gray-600 mt-1">상태 전환을 누가 어떤 절차로 판단할지 정한다. <strong className="text-gray-700">자동 전환 · 반자동 전환 · 인간 숙의의 차등</strong>은 Lowi (1972) 정책 유형별로 다르게 적용되며, 시민의 권리·의무에 직접 영향을 미치는 처분은 행정기본법 §20 · GDPR §22 · EU AI Act 의 인간 감독 의무 안에서 작동한다. 자동화 편향 통제 + 의사결정 함수 f 의 감사 가능성이 핵심 요건.</p>
+                        <p className="text-xs text-gray-400 mt-2">최소 산출물: 전환 규칙표 (전환 조건·처리 방식·법적 성격·판단 주체·이의 제기 절차)</p>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
-                        <h3 className="text-lg font-bold text-gray-900">Layer 4: 데이터 통합 (Data Integration)</h3>
-                        <p className="text-gray-600 mt-1">실시간 데이터와 AI를 의사결정 시스템 내부로 통합한다. <strong className="text-gray-700">무엇이 측정되고 무엇이 측정되지 않는가는 측정 인프라의 정치경제학과 데이터 거버넌스 구조에 의해 결정</strong>된다는 점을 명시적으로 인식해야 한다.</p>
-                        <p className="text-xs text-gray-400 mt-2">EBP 한계 해결: 이산적 스냅샷을 실시간 상태 흐름(State Stream)으로 전환하여 데이터 비연속성 해소</p>
+                        <h3 className="text-lg font-bold text-gray-900">L4: 행위 포트폴리오 (Action Portfolio)</h3>
+                        <p className="text-gray-600 mt-1">각 상태에 미리 연결된 정책 대응 묶음을 설계한다. Ashby 의 필요다양성 법칙에 따라 <strong className="text-gray-700">정책 환경이 만들 수 있는 교란만큼 대응 포트폴리오가 다양</strong>해야 한다. 위기 발생 시 매번 새로 논의하는 방식이 아니라 어떤 상태에서 어떤 묶음이 작동하는지를 사전에 합의해 두는 방식.</p>
+                        <p className="text-xs text-gray-400 mt-2">최소 산출물: 대응 매트릭스 (행=상태, 열=정책 도구, 칸=강도·조합)</p>
                     </div>
                     <div className="pl-6 relative">
                         <div className="absolute top-1.5 -left-1.5 w-3 h-3 bg-gray-900 rounded-full" />
-                        <h3 className="text-lg font-bold text-gray-900">Layer 5: 평가 및 적응형 피드백 (Evaluation & Adaptive Feedback)</h3>
-                        <p className="text-gray-600 mt-1">사후 평가가 아닌 연속적 상태 관찰에 기반한 피드백 루프를 설계한다. <strong className="text-gray-700">시민의 경험, 민원, 참여 데이터를 상태 관찰의 정당한 데이터 스트림으로 편입</strong>시킴으로써, 피드백 루프 자체가 민주적 참여의 채널이 된다.</p>
-                        <p className="text-xs text-gray-400 mt-2">EBP 한계 해결: 분절적 피드백 루프를 연속적 순환 구조로 전환하여 피드백 주기를 환경 변화 속도에 부합시킴</p>
+                        <h3 className="text-lg font-bold text-gray-900">L5: 학습 환류 (Learning Loop)</h3>
+                        <p className="text-gray-600 mt-1">실행 결과를 다시 정책 설계에 반영한다. Argyris-Schon 의 조직학습 위에서 <strong className="text-gray-700">1 차 (θ 조정) · 2 차 (감지·전략 수정) · 3 차 (상태 정의 재구성) 적응 위계</strong>로 나뉜다. EBP 는 L5 의 한 구성요소 — 증거 축적·정책 평가·효과 분석은 1·2 차 적응의 입력이지만, 3 차 적응 (상태 정의 자체의 재구성) 은 증거를 쌓는 것이 아니라 무엇을 상태로 볼지 바꾸는 일.</p>
+                        <p className="text-xs text-gray-400 mt-2">최소 산출물: 수정 기록 (1·2·3 차 적응이 일어날 때마다 변경 시점·변경 층·근거·승인자·적용 범위)</p>
                     </div>
                 </div>
+
+                {/* 5 번째 횡단 차원 */}
+                <div className="mt-12 p-6 bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 rounded-xl space-y-3">
+                    <div className="flex items-center gap-2">
+                        <span className="text-xs font-bold text-slate-600 bg-white border border-slate-300 px-2 py-0.5 rounded uppercase tracking-wider">5 번째 차원</span>
+                        <h3 className="text-lg font-bold text-gray-900">Cross-layer Governance Overlay</h3>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed text-sm">
+                        L1 의 상태 정의 권력 문제, L3 의 자동 전환 적법성 · 자동화 편향 통제, L4 의 처분 자동화 한계 · 책임 주체 명시, L5 의 적응 드리프트 감시 · 감사 가능성을 <strong className="text-gray-900">5 층 본체를 횡단하는 통제 차원</strong>으로 묶는다. <strong className="text-gray-700">6 번째 층이 아니라 횡단 차원</strong>이다 — 5 층 각각의 통제 장치를 출처와 무관하게 통합한다.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed text-sm">
+                        네 통제 묶음: <strong className="text-gray-900">자동화 차등 운영화</strong> (Lowi 정책 유형별 + 행정기본법 §20) · <strong className="text-gray-900">감사 가능성 평가</strong> (10 차원 × 5 단계 성숙도) · <strong className="text-gray-900">법적 정박</strong> (헌법 §1② · GDPR §22 · EU AI Act · 한국 AI 기본법) · <strong className="text-gray-900">알고리즘적 무의사결정 가시화</strong> (Bachrach-Baratz · AI 매개 숙의).
+                    </p>
+                    <p className="text-xs text-slate-600 mt-3">
+                        본 차원의 운영화 산출물 (4 국 AI 거버넌스 구조 비교 + 10 차원 × 5 단계 감사 가능성 평가 + 6 개 참조 감사 체계) 은 아래 &quot;Cross-layer Governance Overlay 운영화 인터페이스 (Validation Module)&quot; 절에서 정리한다.
+                    </p>
+                </div>
+            </section>
+
+            {/* doctrine 위계 — SADD / SAPD / 3 instance */}
+            <section className="space-y-6">
+                <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">SAPD doctrine 위계 — SADD 의 도메인 패키지 + 3 인스턴스</h2>
+                <p className="text-gray-600 leading-relaxed max-w-3xl">
+                    SAPD 는 SADD (State-based Adaptive Decision Design — 범용 메타 frame) 의 <strong className="text-gray-700">공공정책 도메인 패키지</strong>이다. SAPD doctrine 컨테이너 아래 두 라이브 인스턴스 + 통합 facade 가 운영된다.
+                </p>
+                <div className="grid sm:grid-cols-3 gap-4">
+                    <div className="p-5 bg-white border border-gray-200 rounded-xl space-y-2">
+                        <p className="text-xs font-bold text-emerald-600 uppercase tracking-widest">micro · meso</p>
+                        <h3 className="text-base font-bold text-gray-900">sapd-care</h3>
+                        <p className="text-xs text-gray-500 leading-relaxed">한국 고령자 돌봄 행정 DSS. 노인장기요양보험법 §15 · 노인맞춤돌봄 4 구분 · 돌봄통합지원법 §11 · §10②. L3 규칙 엔진 + 인간 개입형 HITL.</p>
+                        <a href="https://sapd-care.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block text-xs font-mono text-blue-600 hover:text-blue-800 underline mt-1">sapd-care.vercel.app →</a>
+                    </div>
+                    <div className="p-5 bg-white border border-gray-200 rounded-xl space-y-2">
+                        <p className="text-xs font-bold text-blue-600 uppercase tracking-widest">macro</p>
+                        <h3 className="text-base font-bold text-gray-900">sapd-policy</h3>
+                        <p className="text-xs text-gray-500 leading-relaxed">거시 정책 분석. 의제화 (Kingdon multiple streams) · 인과추론 · 시스템 다이내믹스 · 시나리오 · MCDA · 디지털 트윈 · DID · 합성통제법.</p>
+                        <a href="https://sapd-policy.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block text-xs font-mono text-blue-600 hover:text-blue-800 underline mt-1">sapd-policy.vercel.app →</a>
+                    </div>
+                    <div className="p-5 bg-white border border-gray-200 rounded-xl space-y-2">
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">third facade</p>
+                        <h3 className="text-base font-bold text-gray-900">sapd-gateway</h3>
+                        <p className="text-xs text-gray-500 leading-relaxed">통합 포털 + audit-schema-contract. Phase D entry criteria (sapd-policy Phase 4 + sapd-care MVP + 변호사 자문 + NHIS 노출 해결) 미충족 상태에서 stub.</p>
+                        <span className="inline-block text-xs font-mono text-gray-400 mt-1">Phase D stub</span>
+                    </div>
+                </div>
+                <p className="text-xs text-gray-500 leading-relaxed max-w-3xl mt-4">
+                    본 페이지 (<code className="text-xs bg-gray-100 px-1 py-0.5 rounded">/framework</code>) 는 SAPD doctrine 의 <strong className="text-gray-700">외부 공개 인터페이스 (publication interface)</strong> 이며 위 3 인스턴스와는 동등 위치가 아니다. doctrine 단일 진실원·monorepo 컨테이너는 별 git repo (<code className="text-xs bg-gray-100 px-1 py-0.5 rounded">LeeSeogMin/sapd</code>) 에서 운영된다.
+                </p>
             </section>
 
             {/* 순환 피드백 루프 다이어그램 */}
@@ -254,14 +302,16 @@ export default function FrameworkPage() {
                 </div>
             </section>
 
-            {/* SAPD Validation Module (실무층) */}
+            {/* Cross-layer Governance Overlay 운영화 인터페이스 (Validation Module) */}
             <section className="space-y-8">
                 <div className="space-y-4">
-                    <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">SAPD Validation Module (실무층)</h2>
+                    <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">Cross-layer Governance Overlay 운영화 인터페이스</h2>
+                    <p className="text-xs text-gray-500 -mt-2">풀이판 명칭: SAPD Validation Module · doctrine 매핑: paper §3.4.6 Cross-layer Governance Overlay</p>
                     <p className="text-gray-600 leading-relaxed max-w-3xl">
-                        SAPD의 이론적 아키텍처를 실무에서 적용하기 위한 검증 도구 모듈이다.
-                        공공 AI 시스템의 타당성을 구조적으로 검토하는 체크리스트, 진단 도구, 평가 루브릭을 제공한다.
-                        EU AI Act, NIST AI RMF, 캐나다 AIA, 한국 인공지능 기본법 등 국제 주요 프레임워크를 비교 분석하여 SAPD의 적응형 루프에 통합하는 형태로 설계하고 있다.
+                        doctrine 의 5 번째 횡단 차원 (Cross-layer Governance Overlay) 의 <strong className="text-gray-700">운영화 산출물</strong>을 정리하는 인터페이스이다. 공공 AI 시스템의 자동화 차등 · 감사 가능성 · 법적 정박 · 무의사결정 가시화를 운영 도구로 옮긴 체크리스트 · 진단 도구 · 평가 루브릭.
+                    </p>
+                    <p className="text-gray-600 leading-relaxed max-w-3xl text-sm">
+                        EU AI Act · NIST AI RMF · 캐나다 AIA · 한국 인공지능 기본법 · UK ATRS · Singapore MAIGF 등 6 개 국제 프레임워크를 비교하여 SAPD 의 적응형 루프 안 통제 장치로 정리한다. 본 산출물은 doctrine 명제의 학술적 정당화 근거가 아니라 인스턴스 적용을 보조하는 운영화 자료이다 (project/sapd ADR-0001, 2026-05-16).
                     </p>
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 border border-blue-200 rounded-lg">
                         <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
@@ -654,7 +704,7 @@ export default function FrameworkPage() {
                 <div className="space-y-4">
                     <h2 className="text-2xl font-bold border-b border-gray-200 pb-2">적용 사례</h2>
                     <p className="text-gray-600 leading-relaxed max-w-3xl">
-                        SAPD가 제안하는 적응형 의사결정 루프 — Decision(t) = f(State(t)) → System Response → State(t+1) — 의
+                        SAPD가 제안하는 적응형 의사결정 루프 — Decision(t) = f(State(t); θ) → System Response → State(t+1) — 의
                         구성 요소가 실제 공공 정책 시스템에서 어떻게 구현되고 있는지를 분석한다.
                         완전한 SAPD 구현 사례는 아직 존재하지 않으나, 각 사례는 SAPD 아키텍처의 핵심 요소를 부분적으로 실현하고 있다.
                     </p>
@@ -920,6 +970,18 @@ export default function FrameworkPage() {
                     </Link>
                 </div>
             </nav>
+
+            {/* doctrine publication interface footer */}
+            <footer className="mt-12 pt-6 border-t border-gray-100 text-xs text-gray-500 leading-relaxed space-y-1">
+                <p>
+                    본 페이지는 <strong className="text-gray-700">project/sapd doctrine 의 publication interface</strong> 입니다 — 학술 원본:
+                    <code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded ml-1">paper/sapd.md</code> (이석민, 2026).
+                    doctrine 의 5 요소 갱신 시 본 페이지도 동기화 의무를 가지며, 본 페이지에서 정리된 운영화 산출물은 doctrine 의 인스턴스 적용 보조 자료로 paper §3.4 (Cross-layer Governance Overlay) 에 갱신 검토됩니다. 단 본 페이지의 운영화 산출물은 doctrine 명제의 학술적 정당화 근거가 아닙니다 (project/sapd ADR-0001, 2026-05-16).
+                </p>
+                <p className="text-gray-400">
+                    SAPD = State-based Adaptive Policy Design · SADD 의 공공정책 도메인 패키지 · monorepo: <code className="text-xs">LeeSeogMin/sapd</code> · 3 인스턴스: sapd-care · sapd-policy · sapd-gateway
+                </p>
+            </footer>
         </div>
     );
 }

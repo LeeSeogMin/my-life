@@ -25,7 +25,7 @@ for url in book_urls:
         print(f"Error fetching {url}: {e}")
 
 # 2. Journals (PDFs)
-journal_dir = "/Users/callii/Documents/dev/my-life/journal"
+journal_dir = "/Users/callii/Documents/my-life/journal"
 print("\n=== JOURNALS in /journal ===")
 for root, dirs, files in os.walk(journal_dir):
     for f in files:

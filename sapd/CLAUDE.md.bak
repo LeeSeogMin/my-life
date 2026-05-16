@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-SAPD (State-based Adaptive Policy Design) — SADD doctrine 의 공공정책 도메인 패키지 (paper/sapd.md, 이석민, 2026, 단일 진실원: `/Users/callii/Documents/project/sapd/`). my-life 의 `sapd/` 폴더는 doctrine 의 **외부 공개 인터페이스 (publication interface)** 의 내부 작업 메모로서 doctrine 운영화 산출물 정리·교육 채널 역할을 한다. my-life 는 sapd-care · sapd-policy · sapd-gateway 와 동등한 의미의 도메인 인스턴스가 아니라 publication interface 이다 (project/sapd ADR-0001, 2026-05-16). doctrine 의 5 요소 (형식적 순환 · 5 기능 분해 · 사이버네틱스 정박 · 3 차 적응 위계 + 민주적 정당성 제약 · Cross-layer Governance Overlay) 의 노출·풀어쓰기·운영화 산출물 정리가 본 폴더의 작업 범위.
+SAPD (Systematic Adaptive Policy Design) Framework — 이론(Adaptive Policy Design)과 실무(Validation Module)를 동시에 구축하는 연구·개발·문서화 통합 프로젝트. 이석민 교수(한신대, 공공인재빅데이터융합학)가 운영하며, 정책 AI 설계 + 검증 분야의 포지션을 확립하는 것이 최종 목표.
 
 ## Repository Structure
 
@@ -37,7 +37,7 @@ sapd/
 
 ### 홈페이지 연동
 - my-life-six-pi.vercel.app (Next.js 16, React 19, TypeScript, Supabase)
-- 별도 저장소: `/Users/callii/Documents/dev/my-life/`
+- 별도 저장소: `/Users/callii/Documents/my-life/`
 
 ## Language
 

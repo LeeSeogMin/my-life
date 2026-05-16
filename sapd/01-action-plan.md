@@ -5,6 +5,16 @@
 
 ---
 
+> **Frame 정정 (2026-05-16)**: 본 문서는 my-life/sapd/ 가 doctrine publication interface 로 위치 부여되기 전의 옛 frame 위에서 작성된 작업 기록이다. 본문 어휘는 다음과 같이 doctrine 매핑으로 읽는다 (`/CONTEXT.md` §2.3).
+>
+> - **"Validation Module"** → "Cross-layer Governance Overlay 운영화 인터페이스" (paper §3.4.6). 풀이판 명칭 보존.
+> - **"SAPD 5 계층"** → "L1~L5 + 5 번째 횡단 차원" (paper §3.4).
+> - **"Validation Module 구현 v1.0"** → 운영화 산출물 (4 국 AI 거버넌스 통합 비교 + 10 차원 × 5 단계 감사 가능성 평가) 의 도구화. doctrine 명제의 학술적 정당화 근거가 아니라 인스턴스 적용 보조 자료 (project/sapd ADR-0001).
+>
+> 본 문서의 Phase 1~4 계획 자체는 publication interface 의 내부 작업 메모로 보존된다.
+
+---
+
 ## 전제: 역량 재평가 결과
 
 이미 보유한 역량 (저서 6권, 논문 6편, 8과목 강의로 입증):

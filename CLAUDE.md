@@ -10,8 +10,14 @@ Personal academic portfolio and community site for Professor 이석민 (Seog-Min
 
 - `npm run dev` — Start dev server (Next.js)
 - `npm run build` — Production build
-- `npm run lint` — ESLint (flat config with next/core-web-vitals + typescript)
+- `npm run lint` — ESLint (flat config: `next/core-web-vitals` + `next/typescript`). No args — lints the whole repo per `eslint.config.mjs`.
 - `npm start` — Serve production build
+- `npm run pw:install` — Install Playwright browsers (one-time setup)
+- `npm run pw:open -- http://localhost:3000` — Open Playwright Inspector against a URL
+- `npm run pw:codegen -- http://localhost:3000` — Record a Playwright script
+- `npm run pw:test` — Run Playwright tests
+
+There is no unit-test runner configured; QA is done via Playwright against `npm run dev`.
 
 ## Tech Stack
 
@@ -29,23 +35,27 @@ Personal academic portfolio and community site for Professor 이석민 (Seog-Min
 **Primary nav**: 홈 / SAPD Framework / 프로젝트 / 칼럼 / About / Contact
 **Footer nav**: 연구 / 저서·논문 / 강의 / 커뮤니티
 
-- `/` — Home page: Hero(포지셔닝 + CTA 3개) + What I Do(3카드) + 연구철학 + 프로젝트 + 칼럼
-- `/framework` — SAPD Framework: 이론층 + Validation Module(placeholder) + How to Use(placeholder) + 적용사례(placeholder)
-- `/projects` — Working Prototypes(placeholder, Coming Soon) + Ongoing Research
-- `/writing` — Column list; `/writing/[slug]` — Individual MDX column
-- `/research` — Academic research focus (프로젝트 카드는 /projects로 이동됨)
-- `/archive` — Books & publications list; `/archive/[id]` — Detail page
-- `/lectures` — Lecture information (footer nav에서 접근)
-- `/about` — 학문적 궤적, 강의 요약, 저서·논문 링크
-- `/contact` — 협업 주제 목록 + 이메일
-- `/community` — Forum (footer nav에서 접근); `/community/[postId]` — Post detail; `/community/new` — New post (auth required)
-- `/auth/*` — Login, signup, password reset flows
+- `/` — Home
+- `/framework` — SAPD Framework (theory + placeholder sections for Validation Module, How to Use, 적용사례)
+- `/projects` — Working Prototypes (Coming Soon) + Ongoing Research
+- `/writings` — Canonical column index; `/writings/columns/[slug]` — individual MDX column
+- `/research` — Academic research focus (project cards have moved to `/projects`)
+- `/lectures`, `/about`, `/contact`
+- `/community` — Forum; `/community/[postId]` — post detail; `/community/new` — new post (auth-gated by middleware)
+- `/auth/{login,signup,reset-password,callback}` — Supabase auth flows
+
+**Legacy redirects** (defined in `next.config.ts`, permanent 308):
+- `/writing` → `/writings`
+- `/writing/:slug` → `/writings/columns/:slug`
+- `/archive` → `/writings` (the old `/archive/[id]` detail page no longer exists)
+
+When adding new column-style content, write the MDX file into `content/writing/` (the directory name is unchanged) — the route is `/writings/columns/[slug]`.
 
 ### Data Sources
 
-- **MDX columns**: `content/writing/*.mdx` with frontmatter (title, date, description). Parsed by `src/lib/mdx.ts` using `gray-matter`.
-- **Books & publications**: `data/books.json` and `data/publications.json`. Read by `src/lib/archive.ts`.
-- **Community posts/comments**: Supabase tables (`posts`, `profiles`, `comments`) with a `posts_with_author` view. Types in `src/lib/types/database.ts`.
+- **MDX columns**: `content/writing/*.mdx` with frontmatter `{ title, date, description }`. Parsed by `src/lib/mdx.ts` (`gray-matter`). Files are read at build/request time from `process.cwd()` — they must live in the repo, not be fetched.
+- **Archive items**: `data/books.json`, `data/publications.json`, `data/conferences.json`. Loaded by `src/lib/archive.ts` and merged into a discriminated `ArchiveItem` union (`type: "book" | "publication" | "conference"`). Each loader silently returns `[]` on missing/invalid files — be aware when adding required fields.
+- **Community posts/comments**: Supabase tables (`posts`, `profiles`, `comments`) with a `posts_with_author` view. Types in `src/lib/types/database.ts`. Schema/RLS migrations live at the repo root (`supabase_rls_migration.sql`, `supabase_category_migration.sql`) — they are applied manually in Supabase, not via a migration tool.
 
 ### Supabase Integration
 
@@ -56,10 +66,15 @@ Personal academic portfolio and community site for Professor 이석민 (Seog-Min
 
 ### Key Patterns
 
-- Pages with SEO include both `metadata` exports and inline JSON-LD `<script>` blocks for structured data (Person, ProfilePage, WebSite, CollectionPage schemas)
-- Community uses Supabase RLS (Row Level Security); migration SQL files are at project root
-- The `@` path alias maps to `src/` (configured in tsconfig.json)
-- Site language is Korean (`lang="ko"`); content is primarily in Korean
+- SEO pages export both `metadata` and inline JSON-LD `<script>` blocks (Person, ProfilePage, WebSite, CollectionPage). When adding a page that should appear in search, mirror this pattern and also add it to `src/app/sitemap.ts`.
+- Server Actions live in `src/lib/actions/{auth,posts,comments}.ts`. Forms call these directly — there is no separate API route layer for community CRUD.
+- Path alias `@/*` → `src/*` (see `tsconfig.json`). Use it for cross-module imports.
+- Site language is Korean (`lang="ko"` in `src/app/layout.tsx`); user-facing copy is Korean.
+- `next.config.ts` enables MDX via `@next/mdx` and sets `pageExtensions` to include `md`/`mdx` — pages can be authored as MDX inside `src/app/`, separate from the `content/writing/` MDX columns which are loaded as data.
+
+### Subproject: `sapd/`
+
+`sapd/` is a separate workspace for the SAPD research project with its own `CLAUDE.md` and docs. It is **not** part of the Next.js build. Don't import from it, and read `sapd/CLAUDE.md` before touching files inside that directory.
 
 ## Auto Memory
 
