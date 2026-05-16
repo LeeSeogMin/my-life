@@ -79,9 +79,26 @@ export default function ProjectsPage() {
                         <p className="text-gray-600 text-sm leading-relaxed">
                             <strong className="text-gray-700">목적</strong>은 정책 분석과 적응형 의사결정 시스템 설계에 사용되는 방법론들을 공통 라이브러리로 체계화하여, 응용 프로젝트들이 매번 새로 정리하지 않고 참조할 수 있게 만드는 데 있다.
                         </p>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            <strong className="text-gray-700">방법론</strong>은 각 방법을 개념·적용 조건·정책 생애주기 연결·도구·사례·다른 방법과의 조합의 여섯 차원으로 정리하는 실무형 가이드 형식을 따른다. 전문 교과서가 아니라 작업 중에 바로 인용할 수 있는 형태를 지향한다.
-                        </p>
+                        <p className="text-xs font-bold text-gray-500 uppercase tracking-widest pt-1">17 개 방법론</p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-gray-600">
+                            <div><span className="font-mono text-gray-400 mr-1">M1</span>LLM &amp; AI Agent 연구방법론</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M2</span>데이터 사이언스 &amp; 머신러닝</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M3</span>인과추론 &amp; 인과 머신러닝</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M4</span>의사결정 분석 &amp; AI 증강 기획</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M5</span>GeoAI &amp; 공간 데이터 분석</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M6</span>행동경제학 &amp; 넛지</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M7</span>현장 실험 &amp; RCT 설계</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M8</span>강화학습 &amp; 적응형 정책</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M9</span>디지털 트윈 &amp; 정책 시뮬레이션</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M10</span>참여형 정책 설계</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M11</span>온톨로지 &amp; 정책 지식 그래프</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M12</span>운영연구 &amp; 자원 최적화</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M13</span>정책 확산 &amp; 이전</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M14</span>게임이론 &amp; 전략적 상호작용</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M15</span>여론 동학 &amp; 정보 환경 분석</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M16</span>비용편익분석 &amp; 정책평가경제학</div>
+                            <div className="sm:col-span-2"><span className="font-mono text-gray-400 mr-1">M17</span>사례관리 &amp; 개인수준 적응 개입 방법론</div>
+                        </div>
                         <div className="flex flex-wrap gap-2 pt-2">
                             <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Methodology</span>
                             <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Research Library</span>
