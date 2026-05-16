@@ -53,7 +53,7 @@ export default function ProjectsPage() {
                         <div className="flex items-center gap-2">
                             <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full">진행 중</span>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900">SAPD doctrine — 상태 기반 적응형 정책 설계</h3>
+                        <h3 className="text-lg font-bold text-gray-900">SAPD — 상태 기반 적응형 정책 설계</h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
                             <strong className="text-gray-700">목적</strong>은 증거 기반 정책(EBP)의 시간 지연·맥락 의존성·복잡성·적응성 한계를 진단하고, 정책 환경의 상태 변화에 따라 판단과 대응이 함께 전환되는 정책 설계 원리를 제시하는 데 있다. 본 사이트는 doctrine 의 외부 공개 인터페이스이다.
                         </p>
@@ -151,10 +151,10 @@ export default function ProjectsPage() {
                         </div>
                         <h3 className="text-lg font-bold text-gray-900">ko-sim — 한국 공공정책 사전 탐색 시뮬레이션</h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            <strong className="text-gray-700">목적</strong>은 정책을 실제 시행하기 전에 인구 세그먼트별 반응을 시뮬레이션으로 미리 살펴보는 도구의 한국 도메인 타당성을 검증하는 데 있다. 서비스 MVP 가 아니라 방법론 자체가 어디서 작동하고 어디서 무너지는지를 측정한다.
+                            <strong className="text-gray-700">목적</strong>은 정책을 실제 시행하기 전에 인구 세그먼트별 반응을 미리 살펴보는 시뮬레이션 도구를 한국 도메인에 적용 가능한 형태로 개발하는 데 있다.
                         </p>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            <strong className="text-gray-700">방법론</strong>은 LLM 기반 페르소나 시뮬레이션(silicon sampling)을 실제 여론조사 시계열과 백테스트로 비교하는 것이다. 단순 LLM·후층화·PPI hybrid 등 여러 baseline 의 정확도와 실패 모드를 함께 보고한다.
+                            <strong className="text-gray-700">방법론</strong>은 LLM 기반 페르소나 시뮬레이션을 실제 여론조사 시계열과 백테스트로 비교하여 한국 인구 집단별 반응 예측의 정확도와 한계를 측정하는 것이다.
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
                             <span className="text-[10px] font-bold bg-rose-50 text-rose-600 px-2 py-0.5 rounded uppercase">Policy Pretest</span>
