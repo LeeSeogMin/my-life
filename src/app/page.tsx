@@ -1,10 +1,10 @@
-import { ArrowRight, BarChart3, Brain, Code2, Target } from "lucide-react";
+import { ArrowRight, BarChart3, Brain, Target } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="space-y-20 pb-12">
-      {/* Hero — SAPD 중심 포지셔닝 */}
+      {/* Hero — 3축 종합 포지셔닝 */}
       <section className="pt-16 lg:pt-20 pb-4">
         <div className="flex items-center gap-6 mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -29,23 +29,23 @@ export default function Home() {
         </div>
 
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug mb-6">
-          실시간 데이터 기반 정책 의사결정 시스템을 설계합니다
+          정책 AI 시스템의 의사결정, 평가, 방법론을 함께 설계합니다
         </h2>
 
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mb-8">
-          정책을 고정된 계획이 아니라, 실시간 상태 데이터에 기반해
-          지속적으로 적응하는 시스템으로 재설계합니다.
-          정책 분석·인과추론, AI 설계·검증, 데이터 파이프라인은
-          이 시스템의 방법론적 기반이며, 이를 통합한 것이 SAPD Framework입니다.
+          AI 기반 정책 의사결정 시스템, 정책분석·평가 시스템,
+          Policy Methodology Lab을 연결하여 공공영역에서 신뢰 가능한
+          정책 AI 시스템을 연구하고 구축합니다. SAPD Framework는 이 세 축을
+          정책 실행과 학습 환류로 연결하는 상위 설계 원리입니다.
         </p>
 
         {/* CTA */}
         <div className="flex flex-wrap gap-3">
           <Link
-            href="/framework"
+            href="/research"
             className="px-5 py-2.5 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition-colors"
           >
-            SAPD Framework 보기
+            연구 구조 보기
           </Link>
           <Link
             href="/projects"
@@ -56,30 +56,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What I Do — SAPD의 네 기능 */}
+      {/* What I Do — 3축 종합 구조 */}
       <section className="space-y-8 pt-12 border-t border-gray-200">
         <header>
           <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-2">What I Do</h2>
-          <p className="text-2xl font-semibold text-gray-900">SAPD — 실시간 적응형 정책 의사결정 시스템</p>
+          <p className="text-2xl font-semibold text-gray-900">정책 AI 연구·개발의 세 가지 축</p>
         </header>
 
-        {/* SAPD 시스템 개요 — 최상위 프레임 */}
+        {/* 종합 구조 — 최상위 프레임 */}
         <div className="p-6 bg-gray-50 border border-gray-200 rounded-lg">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-1 h-6 bg-gray-900 rounded-full" />
-            <h3 className="font-semibold text-gray-900 text-base">State-based Adaptive Policy Design</h3>
+            <h3 className="font-semibold text-gray-900 text-base">정책 AI 시스템 종합 구조</h3>
           </div>
           <p className="text-sm text-gray-600 leading-relaxed max-w-2xl mb-6">
-            SAPD는 정책 환경의 상태를 실시간으로 감지하고,
-            최적의 의사결정을 도출하며, 그 결과를 검증하고, 작동하는 시스템으로 구축하는
-            순환 프레임워크입니다. 아래 네 기능이 독립적으로 작동하지 않고 피드백 루프로 순환합니다.
+            Policy Methodology Lab은 방법론과 검토 기준을 축적하고,
+            정책분석·평가 시스템은 정책 질문과 인과추론 설계를 검토하며,
+            AI 기반 정책 의사결정 시스템은 평가 결과를 판단·실행·학습 환류로 연결합니다.
+            SAPD는 이 흐름을 상태 기반 적응형 정책 설계로 묶는 상위 프레임입니다.
           </p>
 
           <div className="flex justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/sapd-framework.svg"
-              alt="SAPD Framework 통합 구조 — 이론층(State → Decision → System Response 순환 루프)과 실무층(Validation Module: 분석 결과 타당성 검증, 시스템 설계 타당성 검증, 설명가능성 진단)"
+              alt="SAPD Framework 통합 구조 — 상태 정의, 감지, 전환 판단, 행위 포트폴리오, 학습 환류를 연결하는 정책 의사결정 구조"
               width={720}
               height={520}
               className="w-full max-w-2xl h-auto"
@@ -88,96 +89,69 @@ export default function Home() {
 
           <div className="mt-4">
             <Link
-              href="/framework"
+              href="/research"
               className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
-              SAPD Framework 상세 보기
+              Research 페이지에서 3축 보기
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
 
-        {/* SAPD 하위 4기능 카드 */}
-        <div className="grid sm:grid-cols-2 gap-5">
-          {/* Sense — State(t) */}
+        {/* 3축 카드 */}
+        <div className="grid sm:grid-cols-3 gap-5">
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-blue-500"><Target className="w-5 h-5" /></div>
               <div>
-                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">State(t) 감지</p>
-                <h3 className="font-semibold text-gray-900 text-base">정책 분석·평가 · 인과추론</h3>
+                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Axis 01</p>
+                <h3 className="font-semibold text-gray-900 text-base">AI 기반 정책 의사결정 시스템</h3>
               </div>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              정책 환경의 현재 상태를 데이터로 포착합니다.
-              인과추론과 실험설계로 &lsquo;왜 일어났는가&rsquo;, &lsquo;어떤 개입이 효과가 있는가&rsquo;를 분석하며,
-              정부·공공기관의 성과평가 체계를 설계합니다.
+              정책을 고정된 계획이 아니라 상태 변화에 따라 조정되는 의사결정 시스템으로 본다.
+              SAPD를 통해 상태 정의, 감지, 판단, 실행, 학습 환류를 연결한다.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {["정책분석", "성과평가", "인과추론", "실험설계"].map((kw) => (
+              {["SAPD", "Decision Loop", "Adaptive Policy"].map((kw) => (
                 <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
               ))}
             </div>
           </div>
 
-          {/* Decide — Decision(t) */}
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-blue-500"><Brain className="w-5 h-5" /></div>
               <div>
-                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Decision(t) 결정</p>
-                <h3 className="font-semibold text-gray-900 text-base">의사결정 지원 · 방법론 엔진</h3>
+                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Axis 02</p>
+                <h3 className="font-semibold text-gray-900 text-base">정책분석·평가 시스템</h3>
               </div>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              강화학습, 디지털 트윈, Causal ML, 에이전트 기반 시뮬레이션으로
-              정책 생애주기 전반의 의사결정을 데이터 기반으로 지원합니다.
-              상태 데이터에서 최적 정책 대응을 도출하는 SAPD의 방법론적 엔진입니다.
+              정책 질문이 평가 가능한지, 어떤 자료와 비교 기준이 필요한지,
+              어떤 인과추론 설계가 적절한지를 판단하는 정책평가 AI agent를 구축한다.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {["강화학습", "디지털 트윈", "Causal ML", "에이전트 시뮬레이션"].map((kw) => (
+              {["Policy Evaluation", "Causal Inference", "AI Agent"].map((kw) => (
                 <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
               ))}
             </div>
           </div>
 
-          {/* Validate */}
           <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
             <div className="flex items-center gap-3">
               <div className="text-blue-500"><BarChart3 className="w-5 h-5" /></div>
               <div>
-                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Validation 검증</p>
-                <h3 className="font-semibold text-gray-900 text-base">AI 시스템 설계 · 검증</h3>
+                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Axis 03</p>
+                <h3 className="font-semibold text-gray-900 text-base">Policy Methodology Lab</h3>
               </div>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
-              AI가 내놓은 분석을 그대로 쓰지 않습니다.
-              설명가능성, 재현가능성, 설계 타당성을 검증하는 체계를 연구합니다.
-              SAPD Validation Module의 평가 루브릭과 검증 프로토콜을 설계 중입니다.
+              AI 시대 정책연구 방법론을 재사용 가능한 라이브러리로 정리한다.
+              방법론 카드, 분석 프로토콜, 루브릭, 코드 템플릿을 축적한다.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {["설명가능성", "검증 프레임워크", "AI 거버넌스", "평가 루브릭"].map((kw) => (
-                <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
-              ))}
-            </div>
-          </div>
-
-          {/* Build */}
-          <div className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all space-y-3">
-            <div className="flex items-center gap-3">
-              <div className="text-blue-500"><Code2 className="w-5 h-5" /></div>
-              <div>
-                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Build 구축</p>
-                <h3 className="font-semibold text-gray-900 text-base">데이터 파이프라인 · 구축</h3>
-              </div>
-            </div>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              이론은 구현될 때 비로소 검증됩니다.
-              데이터 수집부터 변환, 분석, 시각화까지 재현 가능한 파이프라인을 설계하고,
-              실제 작동하는 프로토타입으로 구축합니다.
-            </p>
-            <div className="flex flex-wrap gap-1.5 pt-1">
-              {["파이프라인", "프로토타입", "데이터 엔지니어링", "운영 최적화"].map((kw) => (
+              {["Method Library", "Rubric", "Research Protocol"].map((kw) => (
                 <span key={kw} className="text-[11px] font-medium text-gray-500 bg-gray-50 px-2 py-0.5 rounded">{kw}</span>
               ))}
             </div>
@@ -197,39 +171,39 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">프로젝트</span>
               <div className="flex gap-1.5">
+                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">3축</span>
+                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">종합</span>
+              </div>
+            </div>
+            <h3 className="font-bold text-gray-900 text-base leading-snug">정책 AI 연구·개발 프로젝트</h3>
+            <p className="text-sm text-gray-600 line-clamp-2">AI 기반 의사결정 시스템, 정책분석·평가 시스템, Policy Methodology Lab을 연결하는 연구·개발 포트폴리오.</p>
+            <p className="text-xs text-gray-400">진행 중</p>
+          </Link>
+
+          <Link href="/projects" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">프로젝트</span>
+              <div className="flex gap-1.5">
+                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">정책평가</span>
                 <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">인과추론</span>
-                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">파이프라인</span>
               </div>
             </div>
-            <h3 className="font-bold text-gray-900 text-base leading-snug">AI 기반 국제관계 통합 분석 파이프라인</h3>
-            <p className="text-sm text-gray-600 line-clamp-2">동아시아 국제관계 변동이 국내에 미치는 영향을 분석하는 AI 파이프라인. LLM Router 패턴과 인과추론 모듈을 결합.</p>
-            <p className="text-xs text-gray-400">진행 중</p>
+            <h3 className="font-bold text-gray-900 text-base leading-snug">인과분석 기반 정책평가 AI agent</h3>
+            <p className="text-sm text-gray-600 line-clamp-2">정책 질문의 평가 가능성, 자료 요건, 식별전략, 해석 한계를 검토하는 정책분석·평가 시스템.</p>
+            <p className="text-xs text-gray-400">기획·설계</p>
           </Link>
 
           <Link href="/projects" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">프로젝트</span>
               <div className="flex gap-1.5">
-                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">SAPD</span>
-                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">의사결정 지원</span>
+                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">방법론</span>
+                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">라이브러리</span>
               </div>
             </div>
-            <h3 className="font-bold text-gray-900 text-base leading-snug">지능형 정책 의사결정 지원 시스템</h3>
-            <p className="text-sm text-gray-600 line-clamp-2">강화학습, 디지털 트윈, Causal ML, 에이전트 기반 시뮬레이션을 통합한 SAPD 기반 정책 의사결정 지원 체계.</p>
+            <h3 className="font-bold text-gray-900 text-base leading-snug">Policy Methodology Lab</h3>
+            <p className="text-sm text-gray-600 line-clamp-2">인과추론, 텍스트 분석, RAG, LLM 평가, 혼합방법을 방법론 카드와 분석 프로토콜로 정리하는 라이브러리.</p>
             <p className="text-xs text-gray-400">진행 중</p>
-          </Link>
-
-          <Link href="/projects" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">프로젝트</span>
-              <div className="flex gap-1.5">
-                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">구축</span>
-                <span className="text-[10px] font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">도메인 특화</span>
-              </div>
-            </div>
-            <h3 className="font-bold text-gray-900 text-base leading-snug">AI 기반 시니어 정신건강 진단 앱</h3>
-            <p className="text-sm text-gray-600 line-clamp-2">한신대학교 소프트웨어중심대학사업단 프로젝트. 시니어의 정신건강을 선제적으로 진단·관리하는 AI 소프트웨어를 개발.</p>
-            <p className="text-xs text-gray-400">2025. 05 – 2025. 09</p>
           </Link>
 
           <Link href="/writings/columns/sapd-palantir-convergence" className="p-5 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-sm transition-all block space-y-2">
@@ -259,10 +233,10 @@ export default function Home() {
 
         <div className="flex gap-6 pt-2">
           <Link
-            href="/projects"
+            href="/research"
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
-            전체 프로젝트 보기
+            연구 구조 보기
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link

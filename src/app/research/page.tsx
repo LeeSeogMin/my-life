@@ -5,13 +5,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "연구 — 주요 연구·개발 프로젝트",
-    description: "이석민의 SAPD Framework 기반 실시간 정책 의사결정 시스템 연구. AI 정책 분석, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트 소개.",
+    description: "이석민의 AI 기반 정책 의사결정, 정책분석·평가 시스템, Policy Methodology Lab 연구 소개.",
     alternates: {
         canonical: `${SITE_URL}/research`,
     },
     openGraph: {
         title: "연구 — 이석민 | 정책 × AI",
-        description: "AI 기반 정책 분석, 국제관계 예측, 정책 의사결정 지원 시스템 등 연구·개발 프로젝트.",
+        description: "AI 기반 정책 의사결정, 정책분석·평가 시스템, 정책연구 방법론 라이브러리 프로젝트.",
         url: `${SITE_URL}/research`,
     },
 };
@@ -20,7 +20,7 @@ const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "연구 — 이석민 | 정책 × AI",
-    description: "이석민의 SAPD Framework 기반 실시간 정책 의사결정 시스템 연구. AI 정책 분석, 국제관계 예측 파이프라인 등 주요 연구·개발 프로젝트.",
+    description: "이석민의 AI 기반 정책 의사결정, 정책분석·평가 시스템, Policy Methodology Lab 연구 소개.",
     url: `${SITE_URL}/research`,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     mainEntity: {
@@ -31,10 +31,10 @@ const jsonLd = {
                 position: 1,
                 item: {
                     "@type": "ResearchProject",
-                    name: "AI 기반 국제관계 통합 분석 파이프라인",
-                    description: "동아시아 국제관계의 변동이 국내에 미치는 영향을 과학적으로 분석하기 위해 AI 기반 통합 파이프라인 및 DSLM 방법론을 탐구합니다.",
+                    name: "AI 기반 정책 의사결정 시스템",
+                    description: "SAPD Framework를 중심으로 상태 정의, 감지, 전환 판단, 행위 포트폴리오, 학습 환류를 연결하는 AI 기반 정책 의사결정 구조를 연구합니다.",
                     member: { "@id": `${SITE_URL}/#person` },
-                    keywords: ["Forecasting", "International Relations", "DSLM", "LLM Router", "Causal Inference"],
+                    keywords: ["SAPD", "Decision Support", "Digital Twin", "Adaptive Policy", "Policy AI"],
                 },
             },
             {
@@ -42,10 +42,10 @@ const jsonLd = {
                 position: 2,
                 item: {
                     "@type": "ResearchProject",
-                    name: "지능형 정책 의사결정 지원 시스템",
-                    description: "인공지능, 강화학습, 디지털 트윈 등 최신 방법론을 통합한 계산사회과학 기반의 정책 지원 체계를 구축합니다.",
+                    name: "정책분석·평가 시스템",
+                    description: "인과추론, 정책평가, 평가 가능성 진단, 정책평가 AI agent를 결합한 정책분석·평가 시스템을 구축합니다.",
                     member: { "@id": `${SITE_URL}/#person` },
-                    keywords: ["Decision Support", "Digital Twin", "Causal ML", "Agent-based Simulation"],
+                    keywords: ["Policy Evaluation", "Causal Inference", "Causal ML", "AI Agent", "Evaluation Design"],
                 },
             },
             {
@@ -53,16 +53,10 @@ const jsonLd = {
                 position: 3,
                 item: {
                     "@type": "ResearchProject",
-                    name: "AI를 활용한 시니어 정신건강 진단 앱 개발",
-                    description: "한신대학교 소프트웨어중심대학사업단 프로젝트의 일환으로 시니어의 정신건강을 선제적으로 진단하고 관리할 수 있는 AI 기반 소프트웨어를 개발.",
+                    name: "Policy Methodology Lab",
+                    description: "AI 시대 정책연구 방법론을 방법론 카드, 분석 프로토콜, 루브릭, 코드 템플릿으로 정리하는 라이브러리 프로젝트입니다.",
                     member: { "@id": `${SITE_URL}/#person` },
-                    funder: {
-                        "@type": "Organization",
-                        name: "한신대학교 소프트웨어중심대학사업단",
-                    },
-                    startDate: "2025-05",
-                    endDate: "2025-09",
-                    keywords: ["Applied AI", "Public Health", "UI/UX for Seniors"],
+                    keywords: ["Research Methods", "Policy Methodology", "RAG", "LLM Evaluation", "Reproducibility"],
                 },
             },
         ],
@@ -80,51 +74,117 @@ export default function ResearchPage() {
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 border-b-2 border-gray-900 pb-4 inline-block">Research</h1>
                 <p className="text-xl text-gray-600 font-light">
-                    SAPD(State-based Adaptive Policy Design)를 중심으로,
-                    실시간 데이터 기반 정책 의사결정 시스템의 이론·방법론·검증 체계를 연구합니다.
+                    AI 기반 정책 의사결정, 정책분석·평가, 정책연구 방법론을 연결하여
+                    공공영역에서 신뢰 가능한 정책 AI 시스템을 연구하고 구축합니다.
                 </p>
             </header>
 
-            {/* Theoretical Paradigms (Academic Focus) - First Priority */}
+            {/* Research Axes */}
             <section className="space-y-12">
                 <header>
                     <h2 className="text-2xl font-bold text-gray-900 border-l-4 border-gray-900 pl-3">
-                        학술적 패러다임 연구 (Academic Focus)
+                        세 가지 연구축
                     </h2>
                 </header>
 
-                <div className="grid gap-6 md:grid-cols-2">
-                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
-                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            SAPD Framework — 이론층
-                        </h4>
+                <div className="grid gap-6 lg:grid-cols-3">
+                    <div className="flex flex-col gap-5 p-6 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors">
+                        <div className="space-y-3">
+                            <span className="text-xs font-bold tracking-[0.25em] text-gray-400">01</span>
+                            <h3 className="text-xl font-bold text-gray-900">
+                                AI 기반 정책 의사결정 시스템
+                            </h3>
+                        </div>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            정책을 실시간 상태 데이터에 기반해 지속적으로 적응하는 시스템으로 재설계하는 상태 기반 적응형 정책(State-based Adaptive Policy) 패러다임을 연구합니다.
+                            정책을 고정된 계획이 아니라 상태 변화에 따라 조정되는 의사결정 시스템으로 본다.
+                            SAPD Framework를 통해 상태 정의, 감지, 판단, 실행, 학습 환류를 연결하는
+                            AI 기반 정책 의사결정 구조를 설계한다.
+                        </p>
+                        <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">SAPD</span>
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Adaptive Policy</span>
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Decision Loop</span>
+                        </div>
+                        <Link href="/framework" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-gray-600">
+                            Framework 보기
+                            <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+
+                    <div className="flex flex-col gap-5 p-6 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors">
+                        <div className="space-y-3">
+                            <span className="text-xs font-bold tracking-[0.25em] text-gray-400">02</span>
+                            <h3 className="text-xl font-bold text-gray-900">
+                                정책분석·평가 시스템
+                            </h3>
+                        </div>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            정책 질문이 평가 가능한지, 어떤 자료와 비교 기준이 필요한지,
+                            어떤 인과추론 설계가 적절한지를 판단하는 정책분석·평가 시스템을 구축한다.
+                            핵심 관심은 평가방법, 식별전략, 해석 가능성, 검증 절차를 갖춘 정책평가 AI agent이다.
+                        </p>
+                        <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Causal Inference</span>
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Policy Evaluation</span>
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">AI Agent</span>
+                        </div>
+                        <Link href="/archive/B-006" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-gray-600">
+                            관련 저서 보기
+                            <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+
+                    <div className="flex flex-col gap-5 p-6 bg-gray-50 rounded-lg border border-gray-100 hover:border-gray-300 transition-colors">
+                        <div className="space-y-3">
+                            <span className="text-xs font-bold tracking-[0.25em] text-gray-400">03</span>
+                            <h3 className="text-xl font-bold text-gray-900">
+                                Policy Methodology Lab
+                            </h3>
+                        </div>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            Policy Methodology Lab은 AI 시대 정책연구 방법론을 재사용 가능한 형태로 정리하는
+                            라이브러리 프로젝트이다. 인과추론, 텍스트 분석, RAG, LLM 평가, 혼합방법,
+                            연구 재현성 기준을 방법론 카드와 분석 프로토콜로 구축한다.
+                        </p>
+                        <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Method Library</span>
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Rubric</span>
+                            <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-200">Research Protocol</span>
+                        </div>
+                        <Link href="/writings" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 hover:text-gray-600">
+                            방법론 글 보기
+                            <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="space-y-6">
+                <header>
+                    <h2 className="text-2xl font-bold text-gray-900 border-l-4 border-gray-900 pl-3">
+                        연구축 간 연결
+                    </h2>
+                </header>
+                <div className="grid gap-4 md:grid-cols-3">
+                    <div className="p-5 bg-white rounded-lg border border-gray-200">
+                        <p className="text-xs font-bold uppercase tracking-wider text-gray-400">Knowledge Base</p>
+                        <h3 className="mt-2 text-base font-bold text-gray-900">Policy Methodology Lab</h3>
+                        <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                            방법론 카드, 분석 프로토콜, 루브릭, 코드 템플릿을 축적한다.
                         </p>
                     </div>
-                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
-                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            SAPD Validation Module — 실무층
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            AI 기반 분석·평가 결과의 타당성 검증과 설계 시스템 자체의 검증 가능성을 평가하는 실무 프레임워크를 설계합니다. 설명가능성 진단, 검토 체크리스트, 평가 루브릭을 포함합니다.
+                    <div className="p-5 bg-white rounded-lg border border-gray-200">
+                        <p className="text-xs font-bold uppercase tracking-wider text-gray-400">Evaluation Engine</p>
+                        <h3 className="mt-2 text-base font-bold text-gray-900">정책분석·평가 시스템</h3>
+                        <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                            축적된 방법론을 바탕으로 정책 질문, 자료, 식별전략, 해석 가능성을 검토한다.
                         </p>
                     </div>
-                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
-                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            공공 의사결정 아키텍처
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            알고리즘 거버넌스 및 스마트시티 도메인 내부의 구조적 경계, 권한 체계, 그리고 적응형 피드백 루프 작동 방식을 분석합니다. SAPD의 이론적 토대를 구성하는 기반 연구입니다.
-                        </p>
-                    </div>
-                    <div className="space-y-3 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-300 transition-colors">
-                        <h4 className="text-lg font-bold text-gray-900 underline decoration-gray-300 underline-offset-4">
-                            SAPD 방법론 엔진
-                        </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            강화학습, 디지털 트윈, Causal ML, 에이전트 기반 시뮬레이션 등 다학제 계산 방법론을 통합하여
-                            SAPD의 Decision(t) 단계에서 최적 정책 대응을 도출하는 방법론적 기반을 연구합니다.
+                    <div className="p-5 bg-white rounded-lg border border-gray-200">
+                        <p className="text-xs font-bold uppercase tracking-wider text-gray-400">Decision System</p>
+                        <h3 className="mt-2 text-base font-bold text-gray-900">AI 기반 정책 의사결정 시스템</h3>
+                        <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                            평가 결과와 상태 정보를 정책 판단, 실행, 학습 환류 구조로 연결한다.
                         </p>
                     </div>
                 </div>

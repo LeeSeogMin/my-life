@@ -5,13 +5,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "About — 이석민",
-    description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 SAPD Framework 기반의 실시간 적응형 정책 의사결정 시스템을 연구하는 연구자.",
+    description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 AI 기반 정책 의사결정, 정책분석·평가 시스템, 정책연구 방법론을 연구하는 연구자.",
     alternates: {
         canonical: `${SITE_URL}/about`,
     },
     openGraph: {
         title: "About — 이석민 | 정책 × AI",
-        description: "정치학과 정책연구를 출발점으로, 통계·인과추론·AI를 결합하여 SAPD Framework 기반의 실시간 적응형 정책 의사결정 시스템을 연구합니다.",
+        description: "정치학과 정책연구를 출발점으로, AI 기반 정책 의사결정, 정책분석·평가 시스템, 정책연구 방법론을 연결합니다.",
         url: `${SITE_URL}/about`,
     },
 };
@@ -39,8 +39,9 @@ export default function AboutPage() {
                     </p>
                     <p>
                         이러한 방법론적 기반 위에 SAPD Framework를 설계하여,
-                        정책을 실시간 상태 데이터 기반으로 적응하는 의사결정 시스템으로 구현합니다.
-                        강화학습, 디지털 트윈, 에이전트 기반 시뮬레이션은 이 시스템의 방법론적 엔진입니다.
+                        정책을 상태 변화에 따라 적응하는 AI 기반 의사결정 시스템으로 구현합니다.
+                        동시에 인과추론 기반 정책분석·평가 시스템과 Policy Methodology Lab을 구축하여,
+                        정책 질문의 평가 가능성, 방법론 선택, 검증 절차를 함께 다룹니다.
                     </p>
                     <p>
                         &ldquo;공공 의사결정은 어떻게 더 나은 시스템이 될 수 있는가&rdquo;라는 질문이
@@ -82,7 +83,7 @@ export default function AboutPage() {
                     <div className="flex-1 w-full p-4 bg-white border border-gray-200 rounded-lg text-center shadow-sm">
                         <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-widest mb-2">기술 융합</p>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                            데이터사이언스 + AI 설계/응용 + SAPD 시스템 설계
+                            데이터사이언스 + AI 설계/응용 + 정책 AI 시스템 설계
                         </p>
                     </div>
                 </div>

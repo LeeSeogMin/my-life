@@ -6,13 +6,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "글과 연구 — 학술대회·저널·저서·칼럼",
-    description: "이석민의 학술대회 발표, 저널 논문, 저서, 칼럼 모음. 정책분석, AI, 데이터 기반 공공 의사결정 관련 학술 자료.",
+    description: "이석민의 학술대회 발표, 저널 논문, 저서, 칼럼 모음. AI 기반 정책 의사결정, 정책분석·평가 시스템, Policy Methodology Lab 관련 학술 자료.",
     alternates: {
         canonical: `${SITE_URL}/writings`,
     },
     openGraph: {
         title: "글과 연구 — 이석민 교수 | 한신대학교",
-        description: "학술대회 발표, 저널 논문, 저서, 칼럼 등 학술 자료 모음.",
+        description: "AI 기반 정책 의사결정, 정책분석·평가 시스템, Policy Methodology Lab 관련 학술 자료 모음.",
         url: `${SITE_URL}/writings`,
     },
 };
@@ -27,7 +27,28 @@ export default function WritingsPage() {
         <div className="space-y-16">
             <header className="text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">글과 연구</h1>
+                <p className="mt-4 text-lg text-gray-600 font-light">
+                    AI 기반 정책 의사결정, 정책분석·평가 시스템, Policy Methodology Lab을 뒷받침하는 학술 자료와 글을 정리합니다.
+                </p>
             </header>
+
+            <section className="grid gap-4 md:grid-cols-3">
+                <Link href="/research" className="p-4 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition-colors space-y-1">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Axis 01</p>
+                    <h2 className="text-sm font-bold text-gray-900">AI 기반 정책 의사결정</h2>
+                    <p className="text-xs text-gray-600 leading-relaxed">SAPD, 상태 기반 적응형 정책, 공공 의사결정 아키텍처 관련 글과 논문.</p>
+                </Link>
+                <Link href="/archive/B-006" className="p-4 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition-colors space-y-1">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Axis 02</p>
+                    <h2 className="text-sm font-bold text-gray-900">정책분석·평가 시스템</h2>
+                    <p className="text-xs text-gray-600 leading-relaxed">인과추론, 정책평가, 효과성 분석, 평가방법론 관련 저서와 논문.</p>
+                </Link>
+                <Link href="/research" className="p-4 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition-colors space-y-1">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Axis 03</p>
+                    <h2 className="text-sm font-bold text-gray-900">Policy Methodology Lab</h2>
+                    <p className="text-xs text-gray-600 leading-relaxed">AI 시대 정책연구 방법론, LLM 평가, RAG, 연구 프로토콜 관련 자료.</p>
+                </Link>
+            </section>
 
             <nav className="sticky top-[57px] z-[5] -mx-6 px-6 py-3 bg-gray-50/95 backdrop-blur-sm border-b border-gray-200 flex justify-center flex-wrap gap-3">
                 <a href="#conferences" className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-900 hover:text-white transition-colors">학술대회</a>
@@ -196,7 +217,7 @@ export default function WritingsPage() {
                 ) : (
                     <div className="bg-gray-50 border border-gray-200 rounded-md p-8 text-center">
                         <p className="text-gray-500 font-medium">
-                            상태 기반 적응형 정책과 SAPD 프레임워크를 기반으로 한 칼럼이 준비 중입니다.
+                            정책 AI 연구·개발 3축과 관련된 칼럼이 준비 중입니다.
                         </p>
                     </div>
                 )}

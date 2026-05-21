@@ -5,13 +5,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "SAPD Framework — 상태 기반 적응형 정책 설계 아키텍처",
-    description: "증거 기반 정책(EBP)의 구조적 한계를 실시간 적응형 의사결정 체계로 진화시키는 SAPD Framework. 5대 레이어 아키텍처와 순환 피드백 루프를 통해 공공 의사결정의 패러다임 전환을 설계합니다.",
+    description: "정책 AI 연구·개발 3축 중 AI 기반 정책 의사결정 시스템에 해당하는 SAPD Framework. 5층 본체와 횡단 거버넌스 차원을 통해 상태 기반 적응형 정책 설계 구조를 설명합니다.",
     alternates: {
         canonical: `${SITE_URL}/framework`,
     },
     openGraph: {
         title: "SAPD Framework — 이석민 | 상태 기반 적응형 정책",
-        description: "증거 기반 의사결정을 실시간 적응형으로 진화시키는 SAPD Framework의 5대 레이어 아키텍처.",
+        description: "정책 AI 연구·개발 3축 중 AI 기반 정책 의사결정 시스템에 해당하는 SAPD Framework.",
         url: `${SITE_URL}/framework`,
     },
 };
@@ -20,14 +20,45 @@ export default function FrameworkPage() {
     return (
         <div className="space-y-16">
             <header className="space-y-4 text-center">
+                <div className="inline-flex items-center justify-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-gray-500">
+                    Axis 01 · AI 기반 정책 의사결정 시스템
+                </div>
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 shadow-sm inline-block">SAPD Framework</h1>
                 <p className="text-xl text-gray-600 font-light">
-                    증거 기반 의사결정을 실시간 적응형으로 진화시키는 정책 설계 아키텍처
+                    상태 기반 적응형 정책 의사결정 시스템을 설계하는 1축 상세 페이지
                 </p>
                 <p className="text-sm text-gray-400 font-medium max-w-2xl mx-auto">
                     SAPD(State-based Adaptive Policy Design)는 증거 기반 정책(EBP)이 확립한 &apos;증거에 기반한 의사결정&apos;의 원칙을 계승하되, 증거를 처리하는 시간 구조를 <strong className="text-gray-500">사후적 스냅샷에서 실시간 상태 흐름으로</strong> 전환하는 설계 방법론이다.
                 </p>
+                <div className="flex flex-wrap justify-center gap-3 pt-2">
+                    <Link href="/research" className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition-colors">
+                        3축 연구 구조 보기
+                        <ArrowRight className="h-4 w-4" />
+                    </Link>
+                    <Link href="/projects" className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                        관련 프로젝트 보기
+                        <ArrowRight className="h-4 w-4" />
+                    </Link>
+                </div>
             </header>
+
+            <section className="grid gap-4 md:grid-cols-3">
+                <div className="p-4 bg-white border-2 border-gray-900 rounded-lg space-y-1">
+                    <p className="text-xs font-bold text-gray-900 uppercase tracking-wider">현재 페이지</p>
+                    <h2 className="text-sm font-bold text-gray-900">1축. AI 기반 정책 의사결정 시스템</h2>
+                    <p className="text-xs text-gray-600 leading-relaxed">SAPD의 상태 정의, 감지, 판단, 실행, 학습 환류 구조를 다룬다.</p>
+                </div>
+                <Link href="/research" className="p-4 bg-white border border-gray-200 rounded-lg space-y-1 hover:border-gray-300 transition-colors">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">연결 축</p>
+                    <h2 className="text-sm font-bold text-gray-900">2축. 정책분석·평가 시스템</h2>
+                    <p className="text-xs text-gray-600 leading-relaxed">인과추론, 정책평가, 평가 가능성 진단, 정책평가 AI agent와 연결된다.</p>
+                </Link>
+                <Link href="/research" className="p-4 bg-white border border-gray-200 rounded-lg space-y-1 hover:border-gray-300 transition-colors">
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">연결 축</p>
+                    <h2 className="text-sm font-bold text-gray-900">3축. Policy Methodology Lab</h2>
+                    <p className="text-xs text-gray-600 leading-relaxed">방법론 카드, 분석 프로토콜, 루브릭, 코드 템플릿의 지식 기반이다.</p>
+                </Link>
+            </section>
 
             {/* EBP → SAPD 패러다임 전환 */}
             <section className="space-y-6">

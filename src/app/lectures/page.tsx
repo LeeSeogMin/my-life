@@ -2,13 +2,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "강의 — 딥러닝, 데이터, 정책분석",
-    description: "이석민 교수의 학부 강의: 딥러닝 자연어 처리, 데이터 사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+    description: "이석민 교수의 학부 강의: AI 기반 정책 의사결정, 정책분석·평가, Policy Methodology Lab을 뒷받침하는 딥러닝, 데이터사이언스, 웹개발, AI 에이전트 강의.",
     alternates: {
         canonical: `${SITE_URL}/lectures`,
     },
     openGraph: {
         title: "강의 — 이석민 | 정책 × AI",
-        description: "딥러닝, 데이터분석, 정책분석, 웹프로그래밍 등 학부 강의 안내.",
+        description: "정책 AI 연구·개발 3축을 뒷받침하는 딥러닝, 데이터분석, 정책분석, 웹프로그래밍 강의 안내.",
         url: `${SITE_URL}/lectures`,
     },
 };
@@ -41,7 +41,7 @@ export default function LecturesPage() {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         name: "강의 — 이석민 | 정책 × AI",
-        description: "이석민 교수의 학부 강의: 딥러닝 자연어 처리, 데이터 사이언스, 정책분석과 기획, 웹프로그래밍, LLMOPs, geoAI, AI 에이전트 캡스톤, 정책분석평가론.",
+        description: "정책 AI 연구·개발 3축을 뒷받침하는 딥러닝, 데이터사이언스, 정책분석, 웹개발, AI 에이전트 강의.",
         url: `${SITE_URL}/lectures`,
         isPartOf: { "@id": `${SITE_URL}/#website` },
         mainEntity: {
@@ -76,8 +76,8 @@ export default function LecturesPage() {
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">강의 코너 (Lectures)</h1>
                 <p className="text-xl text-gray-600 font-light">
-                    데이터 주도형 정책 통합, 딥러닝 방법론, 상태 기반 적응형 정책 시스템 중심의<br className="hidden sm:block" />
-                    학술 교육 콘텐츠를 제공합니다.
+                    AI 기반 정책 의사결정, 정책분석·평가 시스템, Policy Methodology Lab을 뒷받침하는<br className="hidden sm:block" />
+                    데이터·AI·정책방법론 교육 콘텐츠를 제공합니다.
                 </p>
             </header>
 

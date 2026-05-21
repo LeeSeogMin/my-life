@@ -13,10 +13,9 @@ export async function generateStaticParams() {
 
 interface Props {
     params: { slug: string };
-    searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export async function generateMetadata({ params, searchParams }: Props) {
+export async function generateMetadata({ params }: Props) {
     const slug = (await params)?.slug;
     if (!slug) return { title: "Not Found" };
     const post = getPostBySlug(slug);
@@ -61,7 +60,7 @@ function buildJsonLd(post: { meta: { title: string; date: string; description: s
     };
 }
 
-export default async function BlogPostPage({ params, searchParams }: Props) {
+export default async function BlogPostPage({ params }: Props) {
     const slug = (await params)?.slug;
     const post = getPostBySlug(slug);
 

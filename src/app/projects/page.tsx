@@ -5,13 +5,13 @@ const SITE_URL = "https://my-life-six-pi.vercel.app";
 
 export const metadata = {
     title: "프로젝트 — 진행 중인 연구·개발",
-    description: "SAPD doctrine · Policy Methodology Lab · 정부 정책 평가 AI · 선거 캠프 플랫폼 · 한국 정책 시뮬레이션 · Senior MHealth · 입지 분석 등 진행 중인 연구·개발 프로젝트.",
+    description: "AI 기반 정책 의사결정 시스템 · 정책분석·평가 시스템 · Policy Methodology Lab 등 진행 중인 연구·개발 프로젝트.",
     alternates: {
         canonical: `${SITE_URL}/projects`,
     },
     openGraph: {
         title: "프로젝트 — 이석민 | 진행 중인 연구·개발",
-        description: "진행 중인 연구·개발 프로젝트.",
+        description: "AI 기반 정책 의사결정, 정책분석·평가, 정책연구 방법론 라이브러리 프로젝트.",
         url: `${SITE_URL}/projects`,
     },
 };
@@ -22,7 +22,7 @@ export default function ProjectsPage() {
             <header className="space-y-4 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">Projects</h1>
                 <p className="text-xl text-gray-600 font-light">
-                    SAPD doctrine · Policy Methodology Lab · 정부 정책 평가 AI · 선거 캠프 플랫폼 · 한국 정책 시뮬레이션 · Senior MHealth · 입지 분석
+                    AI 기반 정책 의사결정 시스템 · 정책분석·평가 시스템 · Policy Methodology Lab
                 </p>
             </header>
 
@@ -48,12 +48,12 @@ export default function ProjectsPage() {
                     <h2 className="text-2xl font-bold text-gray-900">진행 중인 프로젝트</h2>
                 </div>
                 <div className="grid gap-6 md:grid-cols-2">
-                    {/* 1. SAPD doctrine */}
+                    {/* 1. AI 기반 정책 의사결정 시스템 */}
                     <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
                         <div className="flex items-center gap-2">
                             <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full">진행 중</span>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900">SAPD — 상태 기반 적응형 정책 설계</h3>
+                        <h3 className="text-lg font-bold text-gray-900">AI 기반 정책 의사결정 시스템 — SAPD</h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
                             <strong className="text-gray-700">목적</strong>은 증거 기반 정책(EBP)의 시간 지연·맥락 의존성·복잡성·적응성 한계를 진단하고, 정책 환경의 상태 변화에 따라 판단과 대응이 함께 전환되는 정책 설계 원리를 제시하는 데 있다. 본 사이트는 doctrine 의 외부 공개 인터페이스이다.
                         </p>
@@ -70,48 +70,12 @@ export default function ProjectsPage() {
                         </div>
                     </div>
 
-                    {/* 2. policy-methodology-lab */}
-                    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
-                        <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full">진행 중</span>
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-900">Policy Methodology Lab — AI 시대 정책 연구방법론 라이브러리</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                            <strong className="text-gray-700">목적</strong>은 정책 분석과 적응형 의사결정 시스템 설계에 사용되는 방법론들을 공통 라이브러리로 체계화하여, 응용 프로젝트들이 매번 새로 정리하지 않고 참조할 수 있게 만드는 데 있다.
-                        </p>
-                        <p className="text-xs font-bold text-gray-500 uppercase tracking-widest pt-1">17 개 방법론</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-gray-600">
-                            <div><span className="font-mono text-gray-400 mr-1">M1</span>LLM &amp; AI Agent 연구방법론</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M2</span>데이터 사이언스 &amp; 머신러닝</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M3</span>인과추론 &amp; 인과 머신러닝</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M4</span>의사결정 분석 &amp; AI 증강 기획</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M5</span>GeoAI &amp; 공간 데이터 분석</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M6</span>행동경제학 &amp; 넛지</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M7</span>현장 실험 &amp; RCT 설계</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M8</span>강화학습 &amp; 적응형 정책</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M9</span>디지털 트윈 &amp; 정책 시뮬레이션</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M10</span>참여형 정책 설계</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M11</span>온톨로지 &amp; 정책 지식 그래프</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M12</span>운영연구 &amp; 자원 최적화</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M13</span>정책 확산 &amp; 이전</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M14</span>게임이론 &amp; 전략적 상호작용</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M15</span>여론 동학 &amp; 정보 환경 분석</div>
-                            <div><span className="font-mono text-gray-400 mr-1">M16</span>비용편익분석 &amp; 정책평가경제학</div>
-                            <div className="sm:col-span-2"><span className="font-mono text-gray-400 mr-1">M17</span>사례관리 &amp; 개인수준 적응 개입 방법론</div>
-                        </div>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                            <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Methodology</span>
-                            <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Research Library</span>
-                            <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">SADD Core</span>
-                        </div>
-                    </div>
-
-                    {/* 3. 정부 정책 평가 AI (policy-analysis) */}
+                    {/* 2. 정책분석·평가 시스템 */}
                     <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
                         <div className="flex items-center gap-2">
                             <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">기획·설계</span>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900">인과분석 기반 정책평가 AI agent</h3>
+                        <h3 className="text-lg font-bold text-gray-900">정책분석·평가 시스템 — 인과분석 기반 정책평가 AI agent</h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
                             <strong className="text-gray-700">목적</strong>은 정부의 다양한 정책평가에서 효과성 판단이 전문가의 주관에 크게 의존하는 구조를 진단하고, 정책의 실제 효과를 과학적으로 추정하는 객관적 평가 체계로 전환하는 데 있다.
                         </p>
@@ -121,7 +85,32 @@ export default function ProjectsPage() {
                         <div className="flex flex-wrap gap-2 pt-2">
                             <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">Causal Inference</span>
                             <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">Policy Evaluation</span>
-                            <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">Automation</span>
+                            <span className="text-[10px] font-bold bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded uppercase">AI Agent</span>
+                        </div>
+                    </div>
+
+                    {/* 3. policy-methodology-lab */}
+                    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-3">
+                        <div className="flex items-center gap-2">
+                            <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full">진행 중</span>
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900">Policy Methodology Lab — AI 시대 정책 연구방법론 라이브러리</h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                            <strong className="text-gray-700">목적</strong>은 정책 분석과 적응형 의사결정 시스템 설계에 사용되는 방법론들을 공통 라이브러리로 체계화하여, 응용 프로젝트들이 매번 새로 정리하지 않고 참조할 수 있게 만드는 데 있다.
+                        </p>
+                        <p className="text-xs font-bold text-gray-500 uppercase tracking-widest pt-1">핵심 방법론</p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-gray-600">
+                            <div><span className="font-mono text-gray-400 mr-1">M1</span>LLM &amp; AI Agent 연구방법론</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M2</span>데이터 사이언스 &amp; 머신러닝</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M3</span>인과추론 &amp; 인과 머신러닝</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M4</span>의사결정 분석 &amp; AI 증강 기획</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M5</span>정책 텍스트 분석</div>
+                            <div><span className="font-mono text-gray-400 mr-1">M6</span>정책평가경제학</div>
+                        </div>
+                        <div className="flex flex-wrap gap-2 pt-2">
+                            <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Methodology</span>
+                            <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Research Library</span>
+                            <span className="text-[10px] font-bold bg-teal-50 text-teal-600 px-2 py-0.5 rounded uppercase">Protocol</span>
                         </div>
                     </div>
 

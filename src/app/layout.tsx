@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const SITE_URL = "https://my-life-six-pi.vercel.app";
 const SITE_NAME = "이석민 교수 | 한신대학교";
 const SITE_DESCRIPTION =
-  "이석민 교수 — 한신대학교 공공인재빅데이터융합학과. 정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, 정책분석용 생성형 AI를 설계하고, 공공영역 AI의 설명가능성과 검토 가능성을 연구합니다.";
+  "이석민 교수 — 한신대학교 공공인재빅데이터융합학과. AI 기반 정책 의사결정 시스템, 정책분석·평가 시스템, Policy Methodology Lab을 연결하여 공공영역에서 신뢰 가능한 정책 AI를 연구합니다.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     "정책문서 분석 AI",
     "회의록 분석",
     "공공 AI 평가 프레임워크",
+    "정책분석·평가 시스템",
+    "Policy Methodology Lab",
     "SAPD framework",
     "상태 기반 적응형 정책",
     "Seog-Min Lee",
@@ -123,6 +125,8 @@ const jsonLd = {
         "인과추론",
         "예측 모델링",
         "정책분석용 생성형 AI 설계",
+        "정책분석·평가 시스템",
+        "Policy Methodology Lab",
         "공공 AI 설명가능성",
         "공공 AI 검토·평가",
         "정책문서·회의록 분석",
@@ -130,7 +134,7 @@ const jsonLd = {
         "SAPD Framework",
       ],
       description:
-        "정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, 정책분석용 생성형 AI를 설계하고 공공영역 AI의 설명가능성과 검토 가능성을 연구하는 융합 연구자.",
+        "정책 기획·분석·평가와 데이터사이언스·인과추론을 기반으로, AI 기반 정책 의사결정 시스템, 정책분석·평가 시스템, Policy Methodology Lab을 연구하는 융합 연구자.",
       sameAs: [
         "https://scholar.google.com/citations?user=P1uz0l8AAAAJ&hl=ko",
         "https://orcid.org/0009-0009-0754-8523",
@@ -181,7 +185,7 @@ export default function RootLayout({
             <div className="flex items-center gap-6">
               <nav className="flex gap-6 text-base font-semibold text-gray-700">
                 <Link href="/" className="hover:text-black transition-colors">홈</Link>
-                <Link href="/framework" className="hover:text-black transition-colors">SAPD</Link>
+                <Link href="/framework" className="hover:text-black transition-colors">Framework</Link>
                 <Link href="/projects" className="hover:text-black transition-colors">프로젝트</Link>
                 <Link href="/writings" className="hover:text-black transition-colors">글과 연구</Link>
                 <Link href="/about" className="hover:text-black transition-colors">About</Link>
