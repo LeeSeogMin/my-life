@@ -31,16 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/writing`,
+      url: `${SITE_URL}/writings`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/archive`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
     },
     {
       url: `${SITE_URL}/lectures`,
@@ -65,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 동적 칼럼 페이지
   const posts = getAllPosts();
   const postPages: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${SITE_URL}/writing/${post.slug}`,
+    url: `${SITE_URL}/writings/columns/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly" as const,
     priority: 0.6,
