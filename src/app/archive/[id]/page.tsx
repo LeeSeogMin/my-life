@@ -97,6 +97,7 @@ function buildJsonLd(item: ArchiveItem) {
       author: personRef,
       isPartOf: { "@type": "Periodical", name: item.journal },
       ...(item.volume_issue && { volumeNumber: item.volume_issue }),
+      ...(item.doi && { sameAs: `https://doi.org/${item.doi}` }),
       datePublished: item.year,
       description: item.description,
       inLanguage: "ko",
@@ -215,6 +216,21 @@ export default async function ArchiveDetailPage({
             )}
             <dt className="font-semibold text-gray-500">연도</dt>
             <dd className="text-gray-900">{item.year}</dd>
+            {item.doi && (
+              <>
+                <dt className="font-semibold text-gray-500">DOI</dt>
+                <dd className="text-gray-900">
+                  <a
+                    href={`https://doi.org/${item.doi}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    {item.doi}
+                  </a>
+                </dd>
+              </>
+            )}
           </dl>
           {item.description && (
             <div className="prose prose-gray max-w-none">

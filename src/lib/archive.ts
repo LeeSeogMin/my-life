@@ -21,6 +21,7 @@ export interface Publication {
   volume_issue: string;
   year: string;
   filename: string;
+  doi?: string;
   description: string;
   abstract: string;
 }
